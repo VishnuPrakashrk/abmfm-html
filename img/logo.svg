@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <defs>
+    <linearGradient id="cometGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3B00"/>
+      <stop offset="50%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#FFA800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ABM Mint Teal Typography -->
+  <text x="5" y="62" font-family="'Outfit', 'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="64" fill="#36C697" letter-spacing="-1">ABM</text>
+
+  <!-- Subtext Adding value -->
+  <text x="110" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="18" fill="#36C697" letter-spacing="-0.2">Adding value</text>
+
+  <!-- Flaming Comet Icon above M -->
+  <g transform="translate(170, 8)">
+    <!-- Comet Head -->
+    <circle cx="20" cy="18" r="14" fill="#FF3D00" />
+    <circle cx="20" cy="18" r="11" fill="#FF6B00" />
+    
+    <!-- Comet Flames Tail -->
+    <path d="M22,6 C38,7 65,12 85,15 C65,19 45,21 26,24 C40,26 60,28 75,30 C50,31 32,29 20,28 Z" fill="url(#cometGrad)"/>
+    <path d="M28,10 C45,12 68,16 88,18 C70,21 48,22 28,23 C42,24 62,25 78,26 C55,27 38,26 28,24 Z" fill="#FFA800"/>
+  </g>
+</svg>

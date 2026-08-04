@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ABMFM — Building Maintenance & Facility Services</title>
+  
+  <!-- Official Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ABMFM delivers innovative building maintenance, technical facility management, and energy infrastructure solutions for enterprise facilities across North America.">
+  <link rel="canonical" href="index.html">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Three.js 3D WebGL Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body class="home wp-singular page-template page-template-index page-template-index-php page page-id-6 wp-theme-abmfm">
+    <main class="site-main">
+    
+    <!-- Floating White Header Pill Bar (Sticky Header matching exact logo) -->
+    <header class="site-header-abm-floating">
+      <div class="container">
+        <div class="header-floating-pill d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <a href="index.html" class="header-brand-logo">
+            <img src="img/logo.png" alt="ABM Adding Value" style="height: 44px; width: auto;">
+          </a>
+
+          <!-- Navigation Links -->
+          <nav class="navbar navbar-expand-lg p-0">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#abmNavbar" aria-controls="abmNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="abmNavbar">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-abm-exact" href="industries.html">Industries</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-abm-exact" href="solutions.html">Solutions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-abm-exact" href="perspectives.html">Perspectives</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-abm-exact" href="about-us.html">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-abm-exact" href="company.html">Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-abm-exact" href="careers.html">Careers</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Right Action Cluster: Dark Green Contact Us Pill + Search + Language -->
+          <div class="d-none d-md-flex align-items-center gap-3">
+            <a href="contact-us.html" class="btn-abm-exact-contact">
+              Contact Us
+            </a>
+            <button class="header-search-btn" title="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="header-country-select">
+              <span>🇺🇸 US</span>
+              <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.75rem;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Floating Header End -->
+<!-- Full Width Video Hero Section: Driving Possibility, Together -->
+<section class="hero-section-fullwidth" id="heroFullwidthSection">
+  <video class="hero-bg-video" id="heroBgVideo" autoplay muted loop playsinline poster="img/hero-facility.png">
+    <source src="video/banner-video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-sector-anim-container" id="heroSectorAnimContainer"></div>
+  
+  <div class="container hero-content-wrap">
+    <div class="row align-items-center g-5 min-vh-75 py-4">
+      <!-- Content Column -->
+      <div class="col-lg-8 animate-on-scroll">
+        <div class="badge-pill-hero mb-4">
+          <span class="badge-dot"></span>
+          TRANSFORMING POSSIBILITY INTO OPERATIONAL EXCELLENCE
+        </div>
+
+        <h1 class="hero-heading-fullwidth text-white font-weight-bold mb-3">
+          Driving possibility, <br>
+          <span class="gradient-text-emerald">together.</span>
+        </h1>
+
+        <p class="hero-subtext-fullwidth mb-4">
+          We are making spaces smarter, modernizing infrastructure, and transforming facilities — making them more resilient, intelligent, and connected.
+        </p>
+
+        <!-- Interactive Industrial Sector Type Switcher Bar (Single Line Layout) -->
+        <div class="industrial-sector-tabs mb-4">
+          <div class="ind-tabs-single-line align-items-center">
+            <button class="ind-tab-btn active" data-sector="manufacturing" data-img="img/hero-facility.png" data-title="70+ Manufacturing Facilities" data-sub="Continuous Operations & Maintenance" data-stat="99.4%" data-stat-lbl="Uptime Rate" data-icon="fa-industry">
+              <i class="fa-solid fa-industry"></i> Manufacturing
+            </button>
+            <button class="ind-tab-btn" data-sector="aviation" data-img="img/airport-terminal.png" data-title="15+ International Airports" data-sub="24/7 Terminal Facilities & Ground Ops" data-stat="99.9%" data-stat-lbl="Compliance" data-icon="fa-plane-departure">
+              <i class="fa-solid fa-plane-departure"></i> Aviation
+            </button>
+            <button class="ind-tab-btn" data-sector="engineering" data-img="img/engineering-infrastructure.png" data-title="35+ Industrial Hubs" data-sub="Heavy Mechanical & Electrical Systems" data-stat="100%" data-stat-lbl="Reliability" data-icon="fa-gears">
+              <i class="fa-solid fa-gears"></i> Engineering
+            </button>
+            <button class="ind-tab-btn" data-sector="power" data-img="img/power-engineering.png" data-title="30+ Power & Microgrids" data-sub="Energy Efficiency & Grid Integration" data-stat="30%" data-stat-lbl="Cost Saved" data-icon="fa-bolt">
+              <i class="fa-solid fa-bolt"></i> Energy & Power
+            </button>
+            <button class="ind-tab-btn" data-sector="smart-campus" data-img="img/smart-campus.png" data-title="120+ Smart Tech Parks" data-sub="IoT Infrastructure & Building Tech" data-stat="100%" data-stat-lbl="Comfort" data-icon="fa-building-user">
+              <i class="fa-solid fa-building-user"></i> Smart Campuses
+            </button>
+            <button class="ind-tab-btn" data-sector="garment" data-img="img/garment-facility.png" data-title="45+ Industrial Plants" data-sub="Cleanroom Air & Textile Facilities" data-stat="ISO" data-stat-lbl="14001 Certified" data-icon="fa-shirt">
+              <i class="fa-solid fa-shirt"></i> Garment Plants
+            </button>
+          </div>
+        </div>
+
+        <!-- High Impact Pill Buttons matching abm.com -->
+        <div class="d-flex flex-wrap gap-3 align-items-center pt-2">
+          <a href="contact-us.html" class="btn-hero-primary">
+            <span>Speak with the Experts</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="contact-us.html" class="btn-hero-secondary">
+            <span>Explore Solutions</span>
+            <i class="fa-solid fa-layer-group"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Industrial Sector Glass Metric Card -->
+      <div class="col-lg-4 animate-on-scroll">
+        <div class="hero-fullwidth-badge-card p-4 rounded-4" id="heroBadgeCard">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="pillar-icon m-0" id="heroBadgeIconWrap" style="background: rgba(0,229,153,0.2); color: #00E599; width: 48px; height: 48px; font-size: 1.2rem;">
+              <i class="fa-solid fa-industry" id="heroBadgeIcon"></i>
+            </div>
+            <div>
+              <h6 class="m-0 text-white font-weight-bold" id="heroBadgeTitle" style="font-size: 0.98rem;">70+ Manufacturing Facilities</h6>
+              <p class="m-0 text-emerald" id="heroBadgeSub" style="font-size: 0.84rem; font-weight: 600;">Continuous Operations & Maintenance</p>
+            </div>
+          </div>
+          <div class="pt-3 border-top border-secondary d-flex justify-content-between align-items-center">
+            <div>
+              <span class="stat-number text-emerald d-block" id="heroBadgeStat" style="font-size: 2rem; font-weight: 900; line-height: 1;">99.4%</span>
+              <span class="text-light" id="heroBadgeStatLbl" style="font-size: 0.8rem;">Uptime Rate</span>
+            </div>
+            <span class="badge bg-success px-3 py-2 rounded-pill font-weight-bold" style="background-color: #166534 !important;">Active Industry</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- Live Animated Metric Stats Banner -->
+<section class="stats-banner-section">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="stat-item-box">
+          <div class="stat-number counter-val" data-target="100" data-suffix="M+">0</div>
+          <div class="stat-label">Sq. Ft. Serviced Daily</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="stat-item-box">
+          <div class="stat-number counter-val" data-target="25" data-suffix="%">0</div>
+          <div class="stat-label">Average Energy Cost Reduction</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="stat-item-box">
+          <div class="stat-number counter-val" data-target="98" data-suffix="%">0</div>
+          <div class="stat-label">In-House Client Satisfaction</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-6">
+        <div class="stat-item-box">
+          <div class="stat-number counter-val" data-target="70" data-suffix="+">0</div>
+          <div class="stat-label">Industrial Plants & Campuses</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Stats Banner End -->
+
+<!-- Discover Our Deep Expertise Across Industries -->
+<section class="section-padding bg-light-gray">
+  <div class="container">
+    <div class="text-center section-header animate-on-scroll">
+      <div class="badge-pill-custom mb-3" style="background: rgba(11,25,44,0.06); border-color: rgba(11,25,44,0.15); color: var(--primary-navy);">
+        <i class="fa-solid fa-industry"></i> Industry Expertise
+      </div>
+      <h2 class="section-title">Discover Our Deep Expertise in Your Industry</h2>
+      <p class="section-subtitle mx-auto">Your needs are unique and important. Our experts know your industry and stand ready to transform physical spaces into high-performing environments.</p>
+    </div>
+
+    <div class="row g-4 animate-on-scroll">
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card-item">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="pillar-icon m-0"><i class="fa-solid fa-shirt"></i></div>
+            <h4 class="m-0">Garment & Textile Plants</h4>
+          </div>
+          <p class="text-secondary mb-3">Turnkey Facilities Management and sustainability audits targeting energy savings, effluent water conservation, and HVAC steam systems.</p>
+          <a href="contact-us.html" class="text-emerald font-weight-bold fs-6">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card-item">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="pillar-icon m-0"><i class="fa-solid fa-building"></i></div>
+            <h4 class="m-0">Commercial Real Estate</h4>
+          </div>
+          <p class="text-secondary mb-3">Multi-tenant office park maintenance, indoor air quality management, janitorial standards, and tenant satisfaction programs.</p>
+          <a href="contact-us.html" class="text-emerald font-weight-bold fs-6">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card-item">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="pillar-icon m-0"><i class="fa-solid fa-plane"></i></div>
+            <h4 class="m-0">Airports & Aviation</h4>
+          </div>
+          <p class="text-secondary mb-3">Integrated passenger terminal operations, baggage handling maintenance, mobility solutions, and world-class guest experience standards.</p>
+          <a href="contact-us.html" class="text-emerald font-weight-bold fs-6">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card-item">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="pillar-icon m-0"><i class="fa-solid fa-server"></i></div>
+            <h4 class="m-0">Data Centers & Critical</h4>
+          </div>
+          <p class="text-secondary mb-3">Mission-critical power management, UPS systems maintenance, emergency backup generators, and 100% continuous uptime assurance.</p>
+          <a href="contact-us.html" class="text-emerald font-weight-bold fs-6">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card-item">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="pillar-icon m-0"><i class="fa-solid fa-hospital"></i></div>
+            <h4 class="m-0">Healthcare & Hospitals</h4>
+          </div>
+          <p class="text-secondary mb-3">Infection control cleaning, sterile environment maintenance, critical HVAC filtration, and compliance with healthcare statutory codes.</p>
+          <a href="contact-us.html" class="text-emerald font-weight-bold fs-6">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card-item">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="pillar-icon m-0"><i class="fa-solid fa-bolt"></i></div>
+            <h4 class="m-0">Power & Utilities</h4>
+          </div>
+          <p class="text-secondary mb-3">Energy efficiency programs, solar energy installation feasibility, electrical power distribution, and carbon footprint reduction roadmaps.</p>
+          <a href="contact-us.html" class="text-emerald font-weight-bold fs-6">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABM Solutions Categories -->
+<section id="services" class="section-padding">
+  <div class="container">
+    <div class="text-center section-header animate-on-scroll">
+      <div class="badge-pill-custom mb-3" style="background: rgba(11,25,44,0.06); border-color: rgba(11,25,44,0.15); color: var(--primary-navy);">
+        <i class="fa-solid fa-cubes"></i> End-to-End Capabilities
+      </div>
+      <h2 class="section-title">Solutions Tailored for Every Phase of Facility Operations</h2>
+      <p class="section-subtitle mx-auto">End-to-end value through customized packages — from routine building care to complex engineering and digital CAFM enablement.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="services-tab-nav animate-on-scroll">
+      <button class="tab-btn active" data-category="all">All Solutions</button>
+      <button class="tab-btn" data-category="fm">Facility Solutions</button>
+      <button class="tab-btn" data-category="engineering">Engineering & Infrastructure</button>
+      <button class="tab-btn" data-category="sustainability">Sustainability & Power</button>
+      <button class="tab-btn" data-category="connect">ABM Connect™ Platform</button>
+    </div>
+
+    <!-- Service Cards Grid -->
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 service-card-item animate-on-scroll" data-category="fm">
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="img/garment-facility.png" alt="Integrated Facility Solutions">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="service-icon-box mb-3">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <h4 class="font-weight-bold mb-2">Integrated Facility Solutions</h4>
+              <p class="text-secondary mb-4">Cleaning, daily maintenance, support services, parking, and landscape care tailored to protect your occupants and building assets.</p>
+            </div>
+            <a href="contact-us.html" class="text-emerald font-weight-bold text-uppercase" style="font-size: 0.88rem;">EXPLORE SOLUTIONS <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 service-card-item animate-on-scroll" data-category="engineering">
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="img/engineering-infrastructure.png" alt="Engineering Maintenance">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="service-icon-box mb-3">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h4 class="font-weight-bold mb-2">Engineering & Infrastructure Solutions</h4>
+              <p class="text-secondary mb-4">Preventive and predictive technical maintenance for HVAC mechanical, boilers, electrical distribution, and infrastructure modernizations.</p>
+            </div>
+            <a href="contact-us.html" class="text-emerald font-weight-bold text-uppercase" style="font-size: 0.88rem;">EXPLORE SOLUTIONS <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 service-card-item animate-on-scroll" data-category="sustainability">
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="img/sustainability-energy.png" alt="Sustainability and Energy">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="service-icon-box mb-3">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <h4 class="font-weight-bold mb-2">ABM Energy & Sustainability Solutions</h4>
+              <p class="text-secondary mb-4">Turnkey energy conservation programs, water recycling, carbon footprint reduction roadmaps, and LEED & WELL building support.</p>
+            </div>
+            <a href="contact-us.html" class="text-emerald font-weight-bold text-uppercase" style="font-size: 0.88rem;">EXPLORE SOLUTIONS <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 service-card-item animate-on-scroll" data-category="fm">
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="img/hero-facility.png" alt="ABM Performance Solutions">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="service-icon-box mb-3">
+                <i class="fa-solid fa-file-contract"></i>
+              </div>
+              <h4 class="font-weight-bold mb-2">ABM Performance Solutions™</h4>
+              <p class="text-secondary mb-4">Give your operation one contract, one invoice, and one single source of accountability across your entire physical facilities portfolio.</p>
+            </div>
+            <a href="contact-us.html" class="text-emerald font-weight-bold text-uppercase" style="font-size: 0.88rem;">EXPLORE SOLUTIONS <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 service-card-item animate-on-scroll" data-category="connect">
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="img/smart-campus.png" alt="ABM Connect Platform">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="service-icon-box mb-3">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <h4 class="font-weight-bold mb-2">ABM Connect™ Data Platform</h4>
+              <p class="text-secondary mb-4">Our powerful data intelligence platform bringing real-time actionable metrics, executive dashboard reporting, and KPI visibility at a glance.</p>
+            </div>
+            <a href="contact-us.html" class="text-emerald font-weight-bold text-uppercase" style="font-size: 0.88rem;">EXPLORE SOLUTIONS <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 service-card-item animate-on-scroll" data-category="engineering">
+        <div class="service-card">
+          <div class="service-card-img-wrapper">
+            <img src="img/power-engineering.png" alt="Mission Critical Services">
+          </div>
+          <div class="service-card-body">
+            <div>
+              <div class="service-icon-box mb-3">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h4 class="font-weight-bold mb-2">Mission Critical Facilities</h4>
+              <p class="text-secondary mb-4">Specialized operations and risk mitigation for data centers, life science cleanrooms, emergency centers, and continuous production environments.</p>
+            </div>
+            <a href="contact-us.html" class="text-emerald font-weight-bold text-uppercase" style="font-size: 0.88rem;">EXPLORE SOLUTIONS <i class="fa-solid fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Solutions Section End -->
+
+<!-- Why ABM Section -->
+<section id="why-abm" class="section-padding bg-light-gray">
+  <div class="container">
+    <div class="text-center section-header animate-on-scroll">
+      <div class="badge-pill-custom mb-3" style="background: rgba(11,25,44,0.06); border-color: rgba(11,25,44,0.15); color: var(--primary-navy);">
+        <i class="fa-solid fa-award"></i> Core Pillars
+      </div>
+      <h2 class="section-title">Why ABM? Because What We Value Creates Value for You</h2>
+      <p class="section-subtitle mx-auto">We believe in driving possibility for a healthier, more sustainable, ever-changing world.</p>
+    </div>
+
+    <div class="row g-4 animate-on-scroll">
+      <div class="col-lg-3 col-sm-6">
+        <div class="pillar-item h-100">
+          <div class="pillar-icon"><i class="fa-solid fa-building-circle-check"></i></div>
+          <h5>Transforming Spaces & Places</h5>
+          <p class="text-secondary m-0">Trusted leader in the comfort, safety, and operational excellence of shared environments across diverse industries.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="pillar-item h-100">
+          <div class="pillar-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h5>Championing People</h5>
+          <p class="text-secondary m-0">Essential workforce of 100,000+ diverse specialists caring for occupants, communities, and each other.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="pillar-item h-100">
+          <div class="pillar-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h5>Advancing Sustainability</h5>
+          <p class="text-secondary m-0">Working to reduce environmental impact, improve energy efficiency, and support client CSR commitments.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <div class="pillar-item h-100">
+          <div class="pillar-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h5>Inspiring Innovation</h5>
+          <p class="text-secondary m-0">Applying AI, IoT monitoring, machine learning, and living labs to prototype new facility technologies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Energy & Sustainability ROI Estimator Widget -->
+<section id="roi-calculator" class="section-padding">
+  <div class="container">
+    <div class="text-center section-header animate-on-scroll">
+      <div class="badge-pill-custom mb-3" style="background: rgba(11,25,44,0.06); border-color: rgba(11,25,44,0.15); color: var(--primary-navy);">
+        <i class="fa-solid fa-calculator"></i> Interactive Estimator
+      </div>
+      <h2 class="section-title">Calculate Your Estimated Annual Energy & Cost Savings</h2>
+      <p class="section-subtitle mx-auto">Adjust facility specifications below to see real-time projections based on ABM benchmark data.</p>
+    </div>
+
+    <div class="row align-items-stretch g-4 animate-on-scroll">
+      <div class="col-lg-7">
+        <div class="roi-calculator-card">
+          <h4 class="mb-4">Facility Details</h4>
+          
+          <div class="mb-4">
+            <label class="form-label font-weight-bold d-flex justify-content-between">
+              <span>Total Facility Area (Sq. Ft.)</span>
+              <span id="calcAreaValue" class="text-emerald font-weight-bold fs-5">50,000 sq ft</span>
+            </label>
+            <input type="range" class="calc-range-slider" id="calcArea" min="10000" max="500000" step="5000" value="50000">
+            <div class="d-flex justify-content-between text-secondary mt-1" style="font-size: 0.85rem;">
+              <span>10,000 sq ft</span>
+              <span>500,000 sq ft</span>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label font-weight-bold">Facility Type / Industry</label>
+            <select class="form-control-custom" id="calcType">
+              <option value="commercial">Commercial Office Building</option>
+              <option value="industrial">Industrial & Manufacturing Plant</option>
+              <option value="garment">Garment Manufacturing Facility</option>
+              <option value="healthcare">Healthcare & Hospital Campus</option>
+            </select>
+          </div>
+
+          <div class="p-3 bg-light rounded-3 text-secondary" style="font-size: 0.9rem;">
+            <i class="fa-solid fa-circle-info text-blue me-2"></i>
+            Projections are estimated using ABM’s historical performance metrics (20%–28% energy saving, optimized maintenance resourcing, and water conservation).
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="calc-result-box">
+          <span class="badge-pill-custom mb-2" style="width: fit-content;">Estimated Annual Savings</span>
+          <div id="estSavingsDisplay" class="calc-result-value">$11,000</div>
+          <p class="text-light mb-4">Direct operating cost reduction from energy & maintenance interventions.</p>
+
+          <hr style="border-color: rgba(255,255,255,0.15);">
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-light"><i class="fa-solid fa-leaf text-emerald me-2"></i>Carbon Reduction:</span>
+            <strong id="estCo2Display" class="text-white">600 Metric Tons / yr</strong>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="text-light"><i class="fa-solid fa-clock text-gold me-2"></i>Est. Payback:</span>
+            <strong id="estRoiDisplay" class="text-white">10 Months Payback</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Perspectives & Case Studies Section -->
+<section id="case-studies" class="section-padding bg-light-gray">
+  <div class="container">
+    <div class="text-center section-header animate-on-scroll">
+      <div class="badge-pill-custom mb-3" style="background: rgba(11,25,44,0.06); border-color: rgba(11,25,44,0.15); color: var(--primary-navy);">
+        <i class="fa-solid fa-book-open"></i> Perspectives & Successes
+      </div>
+      <h2 class="section-title">Success Stories of "Driving Possibility, Together"</h2>
+      <p class="section-subtitle mx-auto">Learn how ABM partners with leading organizations to help systems perform, businesses prosper, and occupants thrive.</p>
+    </div>
+
+    <div class="row g-4 animate-on-scroll">
+      <!-- Case 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="case-study-card">
+          <div class="mb-3 rounded-3 overflow-hidden" style="height: 200px;">
+            <img src="img/smart-campus.png" alt="Mahindra Lifespaces Facility" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-primary text-white px-3 py-2 rounded-pill">Commercial Real Estate</span>
+            <span class="text-emerald font-weight-bold">18% Cost Savings</span>
+          </div>
+          <h4>Mahindra Lifespaces</h4>
+          <p class="text-secondary mb-3">Improved operational adaptability, streamlined SOPs, and achieved a record 89% in-house occupant satisfaction result across multi-tenant environments.</p>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="case-study-card">
+          <div class="mb-3 rounded-3 overflow-hidden" style="height: 200px;">
+            <img src="img/airport-terminal.png" alt="Adani Realty Terminal B" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-success text-white px-3 py-2 rounded-pill">Transport & Airport</span>
+            <span class="text-emerald font-weight-bold">World Class Experience</span>
+          </div>
+          <h4>Adani Realty & Terminal B</h4>
+          <p class="text-secondary mb-3">Implemented a demand-based resourcing model and real-time operational dashboard elevating terminal guest experience to "Best in the World".</p>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="case-study-card">
+          <div class="mb-3 rounded-3 overflow-hidden" style="height: 200px;">
+            <img src="img/power-engineering.png" alt="L&T Mumbai Emergency Center" class="w-100 h-100 object-fit-cover">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-dark text-white px-3 py-2 rounded-pill">Critical Infrastructure</span>
+            <span class="text-emerald font-weight-bold">Zero Power Interruption</span>
+          </div>
+          <h4>L&T Mumbai Emergency Center</h4>
+          <p class="text-secondary mb-3">Engineers maintained 100% continuous emergency generator power and enhanced indoor air quality during critical crisis situations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Speak with the Experts Callout & Contact Section -->
+<section id="contact" class="section-padding">
+  <div class="container">
+    <div class="row align-items-stretch g-4 animate-on-scroll">
+      <div class="col-lg-5">
+        <div class="service-card h-100">
+          <div>
+            <div class="badge-pill-custom mb-3" style="background: rgba(11,25,44,0.06); border-color: rgba(11,25,44,0.15); color: var(--primary-navy);">
+              <i class="fa-solid fa-headset"></i> Direct Consultation
+            </div>
+            <h3>Speak with the Experts</h3>
+            <p class="text-secondary mb-4">Together, we'll transform your most critical assets into modern facilities that support growth and efficiency.</p>
+
+            <ul class="list-unstyled">
+              <li class="d-flex gap-3 mb-4">
+                <div class="pillar-icon m-0" style="width: 44px; height: 44px;"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="text-secondary d-block fs-6">Direct Line</span>
+                  <strong class="fs-5">+91 85938 05828</strong>
+                </div>
+              </li>
+
+              <li class="d-flex gap-3 mb-4">
+                <div class="pillar-icon m-0" style="width: 44px; height: 44px;"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="text-secondary d-block fs-6">Email Support</span>
+                  <strong class="fs-6">info@abmfm.com</strong>
+                </div>
+              </li>
+
+              <li class="d-flex gap-3 mb-4">
+                <div class="pillar-icon m-0" style="width: 44px; height: 44px;"><i class="fa-brands fa-whatsapp text-success"></i></div>
+                <div>
+                  <span class="text-secondary d-block fs-6">Instant WhatsApp</span>
+                  <a href="https://wa.me/918593805828" target="_blank" class="text-success font-weight-bold">Chat Live with Advisor <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-3 bg-light rounded-3 text-secondary" style="font-size: 0.88rem;">
+            <strong>Office Hours:</strong> Mon — Fri: 9:00 AM – 6:00 PM | Sat: 9:00 AM – 2:00 PM
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="map-embed-container">
+          <iframe
+            src="https://maps.google.com/maps?q=10%C2%B046'30.3%22N+76%C2%B022'29.1%22E&z=15&output=embed"
+            width="100%" height="100%" style="border:0; min-height: 450px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Section End -->
+
+    <!-- Site Footer-->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-sm-6">
+            <div class="footer-top d-flex flex-column h-100 justify-content-between">
+              <div>
+                <a href="index.html" class="header-brand-logo mb-3">
+                  <img src="img/logo.png" alt="ABM Adding Value" style="height: 42px; width: auto;">
+                </a>
+
+                <p class="text-light mb-4" style="font-size: 0.92rem; max-width: 320px;">
+                  ABM provides leading facility, engineering, and infrastructure solutions that drive possibility across a diverse set of industries. Under our care, systems perform, businesses prosper, and occupants thrive.
+                </p>
+              </div>
+
+              <div class="social-media mb-3">
+                <ul class="list-unstyled d-flex gap-2 m-0">
+                  <li><a href="https://wa.me/918593805828" target="_blank" class="social-icon-btn"><i class="fa-brands fa-whatsapp"></i></a></li>
+                  <li><a href="#" target="_blank" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="#" target="_blank" class="social-icon-btn"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-menu-holder">
+              <h6 class="footer-title">Solutions & Services</h6>
+              <ul class="footer-links-list">
+                <li><a href="industries.html">Industries & Sectors</a></li>
+                <li><a href="solutions.html">Integrated Facility Solutions</a></li>
+                <li><a href="solutions.html">Engineering & Infrastructure</a></li>
+                <li><a href="company.html">Energy & Power Solutions</a></li>
+                <li><a href="perspectives.html">Perspectives & Case Studies</a></li>
+                <li><a href="careers.html">Careers & Engineering Roles</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-sm-6">
+            <div class="footer-menu-holder">
+              <h6 class="footer-title">Company</h6>
+              <ul class="footer-links-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">Who We Are</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="company.html">Company & Sustainability</a></li>
+                <li><a href="perspectives.html">Perspectives</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-address">
+              <h6 class="footer-title">Speak with the Experts</h6>
+              <ul class="footer-links-list">
+                <li class="d-flex align-items-start gap-2">
+                  <i class="fa-solid fa-phone text-emerald mt-1"></i>
+                  <span>+91 85938 05828</span>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                  <i class="fa-solid fa-envelope text-emerald mt-1"></i>
+                  <span>info@abmfm.com</span>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                  <i class="fa-solid fa-location-dot text-emerald mt-1"></i>
+                  <span>ABM FM Advisory Hub, Sengupta Road, Palakkad, Kerala</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar text-center">
+          <p class="m-0">© 2026 ABM Industries / ABM FM Solutions. All rights reserved. | Driving possibility, together</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Site Footer End-->
+
+  </main>
+
+  <!-- JS Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/abm-animated.js"></script>
+  <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/abmfm/*"},{"not":{"href_matches":["/abmfm/wp-*.php","/abmfm/wp-admin/*","/abmfm/wp-content/uploads/*","/abmfm/wp-content/*","/abmfm/wp-content/plugins/*","/abmfm/wp-content/themes/abmfm/*","/abmfm/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script type="module">
+/*! This file is auto-generated */
+
+</script>
+</body>
+
+</html>

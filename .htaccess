@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Automatically redirect requests ending in .html/ to .html to prevent 404s
+RewriteRule ^(.*\.html)/$ $1 [R=301,L]
+</IfModule>
