@@ -25,6 +25,7 @@
   --radius-full: 9999px;
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --color--blue-03: rgba(5, 69, 245, 0.45);
 }
 
 * {
@@ -233,7 +234,7 @@ a:hover {
 /* Full Width Video Hero Banner */
 .hero-section-fullwidth {
   position: relative;
-  min-height: 90vh;
+  min-height: 102vh;
   padding-top: 140px;
   padding-bottom: 90px;
   margin-top: -85px;
@@ -257,6 +258,30 @@ a:hover {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   background: linear-gradient(90deg, rgba(7, 25, 48, 0.75) 0%, rgba(7, 25, 48, 0.45) 40%, rgba(0, 0, 0, 0.2) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-svg-banner-overlay,
+.home-hero_path {
+  object-fit: contain;
+  object-position: 50% 100%;
+  flex: none;
+  align-self: flex-end;
+  width: 100%;
+  min-width: 32rem;
+  max-width: none;
+  display: block;
+  position: absolute;
+  inset: auto 0% 0% auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.home-hero__curtain {
+  background-image: radial-gradient(circle farthest-corner at 0% 0%, var(--color--blue-03), transparent 75%);
+  position: absolute;
+  inset: 0%;
   pointer-events: none;
   z-index: 1;
 }
@@ -350,13 +375,13 @@ a:hover {
   line-height: 1.75;
 }
 
-/* Hero CTA Buttons */
 .btn-hero-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 15px 32px;
+  height: 52px;
+  padding: 0 32px;
   background: linear-gradient(135deg, #166534 0%, #15803D 100%);
   color: #FFFFFF !important;
   font-weight: 800;
@@ -381,7 +406,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 14px 28px;
+  height: 52px;
+  padding: 0 28px;
   background: rgba(255, 255, 255, 0.12);
   border: 1.5px solid rgba(255, 255, 255, 0.35);
   color: #FFFFFF !important;
@@ -864,9 +890,12 @@ a:hover {
 /* Responsive Overrides */
 @media (max-width: 991.98px) {
   .site-header-abm-floating { position: sticky; top: 10px; z-index: 1050; }
-  .header-floating-pill { border-radius: 20px; padding: 12px 18px; flex-wrap: wrap; }
-  .navbar { order: 3; width: 100%; }
-  .navbar-collapse { width: 100%; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(22, 101, 52, 0.12); }
+  .header-floating-pill { border-radius: 20px; padding: 10px 18px; flex-wrap: wrap; align-items: center; justify-content: space-between; display: flex !important; }
+  .header-brand-logo { order: 1; display: inline-flex; align-items: center; }
+  .header-brand-logo img { height: 38px !important; width: auto !important; }
+  .navbar { order: 2; width: auto !important; display: flex !important; align-items: center !important; justify-content: flex-end !important; padding: 0 !important; margin: 0 !important; }
+  .navbar-toggler { margin-left: auto !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; }
+  .navbar-collapse { width: 100% !important; flex-basis: 100% !important; order: 3 !important; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(22, 101, 52, 0.12); }
   .navbar-nav { flex-direction: column; align-items: stretch !important; gap: 4px; }
   .nav-link-abm-exact { text-align: center; padding: 10px 16px !important; border-radius: 8px; }
   .nav-link-abm-exact.active, .nav-link-abm-exact:hover { background: rgba(22, 101, 52, 0.08); }
@@ -879,13 +908,15 @@ a:hover {
 
 /* Industrial Sector Type Switcher Bar in Hero */
 .industrial-sector-tabs {
-  background: rgba(11, 25, 44, 0.72);
+  background: rgba(18, 22, 50, 0.72);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: var(--radius-md);
-  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50px;
+  padding: 10px 14px;
   margin-top: 15px;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  max-width: 100%;
 }
 
 /* Single Line Layout for Industrial Sector Tabs */

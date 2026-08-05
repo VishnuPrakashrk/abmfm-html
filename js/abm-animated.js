@@ -423,59 +423,102 @@ function initIndustrialBannerSwitcher() {
     const badgeStatLbl = document.getElementById('heroBadgeStatLbl');
     const badgeIcon = document.getElementById('heroBadgeIcon');
 
-    if (!tabBtns.length) return;
+    if (!badgeTitle) return;
+
+    const sectorData = [
+        {
+            title: "30+ Data Centers",
+            sub: "Continuous Operations & Maintenance",
+            stat: "99.4%",
+            statLbl: "Uptime Rate",
+            icon: "fa-server"
+        },
+        {
+            title: "15+ International Airports",
+            sub: "24/7 Terminal Facilities & Ground Ops",
+            stat: "99.9%",
+            statLbl: "Compliance",
+            icon: "fa-plane-departure"
+        },
+        {
+            title: "35+ Industrial Hubs",
+            sub: "Heavy Mechanical & Electrical Systems",
+            stat: "100%",
+            statLbl: "Reliability",
+            icon: "fa-gears"
+        },
+        {
+            title: "30+ Power & Microgrids",
+            sub: "Energy Efficiency & Grid Integration",
+            stat: "30%",
+            statLbl: "Cost Saved",
+            icon: "fa-bolt"
+        },
+        {
+            title: "120+ Smart Tech Parks",
+            sub: "IoT Infrastructure & Building Tech",
+            stat: "100%",
+            statLbl: "Comfort",
+            icon: "fa-building-user"
+        },
+        {
+            title: "45+ Industrial Plants",
+            sub: "Cleanroom Air & Textile Facilities",
+            stat: "ISO",
+            statLbl: "Certified Systems",
+            icon: "fa-shirt"
+        }
+    ];
 
     let currentIndex = 0;
-    let autoRotateInterval;
 
-    const updateBanner = (btn) => {
-        const imgSrc = btn.getAttribute('data-img') || btn.getAttribute('data-bg');
-        const title = btn.getAttribute('data-title');
-        const sub = btn.getAttribute('data-sub');
-        const stat = btn.getAttribute('data-stat');
-        const statLbl = btn.getAttribute('data-stat-lbl');
-        const iconClass = btn.getAttribute('data-icon');
-
-        tabBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const heroVideo = heroSection ? heroSection.querySelector('.hero-bg-video') : null;
-        if (heroSection && imgSrc && !heroVideo) {
-            heroSection.style.backgroundImage = `url('${imgSrc}')`;
-        }
-
-        if (badgeTitle && title) badgeTitle.innerText = title;
-        if (badgeSub && sub) badgeSub.innerText = sub;
-        if (badgeStat && stat) badgeStat.innerText = stat;
-        if (badgeStatLbl && statLbl) badgeStatLbl.innerText = statLbl;
-        if (badgeIcon && iconClass) {
-            badgeIcon.className = `fa-solid ${iconClass}`;
+    const updateCard = (data) => {
+        if (badgeTitle && data.title) badgeTitle.innerText = data.title;
+        if (badgeSub && data.sub) badgeSub.innerText = data.sub;
+        if (badgeStat && data.stat) badgeStat.innerText = data.stat;
+        if (badgeStatLbl && data.statLbl) badgeStatLbl.innerText = data.statLbl;
+        if (badgeIcon && data.icon) {
+            badgeIcon.className = `fa-solid ${data.icon}`;
         }
     };
 
-    tabBtns.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-            currentIndex = index;
-            updateBanner(btn);
-            resetAutoRotate();
+    if (tabBtns.length) {
+        const updateBanner = (btn) => {
+            const imgSrc = btn.getAttribute('data-img') || btn.getAttribute('data-bg');
+            const title = btn.getAttribute('data-title');
+            const sub = btn.getAttribute('data-sub');
+            const stat = btn.getAttribute('data-stat');
+            const statLbl = btn.getAttribute('data-stat-lbl');
+            const iconClass = btn.getAttribute('data-icon');
+
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const heroVideo = heroSection ? heroSection.querySelector('.hero-bg-video') : null;
+            if (heroSection && imgSrc && !heroVideo) {
+                heroSection.style.backgroundImage = `url('${imgSrc}')`;
+            }
+
+            updateCard({ title, sub, stat, statLbl, icon: iconClass });
+        };
+
+        tabBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                currentIndex = index;
+                updateBanner(btn);
+            });
         });
-    });
 
-    const autoRotate = () => {
-        currentIndex = (currentIndex + 1) % tabBtns.length;
-        updateBanner(tabBtns[currentIndex]);
-    };
-
-    const startAutoRotate = () => {
-        autoRotateInterval = setInterval(autoRotate, 6000);
-    };
-
-    const resetAutoRotate = () => {
-        clearInterval(autoRotateInterval);
-        startAutoRotate();
-    };
-
-    startAutoRotate();
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % tabBtns.length;
+            updateBanner(tabBtns[currentIndex]);
+        }, 5000);
+    } else {
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % sectorData.length;
+            updateCard(sectorData[currentIndex]);
+        }, 4000);
+    }
 }
 
 /* Interactive 3D Building Creation Animation (Three.js WebGL Engine) */

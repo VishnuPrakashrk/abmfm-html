@@ -38,7 +38,7 @@
         <div class="header-floating-pill d-flex align-items-center justify-content-between">
           <!-- Logo -->
           <a href="index.html" class="header-brand-logo">
-            <img src="img/logo.png" alt="ABM Adding Value" style="height: 44px; width: auto;">
+            <img src="img/logo-abmfm.png" alt="ABM FM" style="height: 44px; width: auto;">
           </a>
 
           <!-- Navigation Links -->
@@ -89,12 +89,14 @@
     Your browser does not support HTML5 video.
   </video>
   <div class="hero-bg-overlay"></div>
+  <div class="home-hero__curtain"></div>
+  <img src="img/home-banner.svg" class="hero-svg-banner-overlay home-hero_path" alt="ABM Hero Banner Graphic Shapes">
   <div class="hero-sector-anim-container" id="heroSectorAnimContainer"></div>
   
   <div class="container hero-content-wrap">
     <div class="row align-items-center g-5 min-vh-75 py-4">
       <!-- Content Column -->
-      <div class="col-lg-8 animate-on-scroll">
+      <div class="col-lg-8">
         <div class="badge-pill-hero mb-4">
           <span class="badge-dot"></span>
           TRANSFORMING POSSIBILITY INTO OPERATIONAL EXCELLENCE
@@ -109,29 +111,6 @@
           We are making spaces smarter, modernizing infrastructure, and transforming facilities — making them more resilient, intelligent, and connected.
         </p>
 
-        <!-- Interactive Industrial Sector Type Switcher Bar (Single Line Layout) -->
-        <div class="industrial-sector-tabs mb-4">
-          <div class="ind-tabs-single-line align-items-center">
-            <button class="ind-tab-btn active" data-sector="manufacturing" data-img="img/hero-facility.png" data-title="70+ Manufacturing Facilities" data-sub="Continuous Operations & Maintenance" data-stat="99.4%" data-stat-lbl="Uptime Rate" data-icon="fa-industry">
-              <i class="fa-solid fa-industry"></i> Manufacturing
-            </button>
-            <button class="ind-tab-btn" data-sector="aviation" data-img="img/airport-terminal.png" data-title="15+ International Airports" data-sub="24/7 Terminal Facilities & Ground Ops" data-stat="99.9%" data-stat-lbl="Compliance" data-icon="fa-plane-departure">
-              <i class="fa-solid fa-plane-departure"></i> Aviation
-            </button>
-            <button class="ind-tab-btn" data-sector="engineering" data-img="img/engineering-infrastructure.png" data-title="35+ Industrial Hubs" data-sub="Heavy Mechanical & Electrical Systems" data-stat="100%" data-stat-lbl="Reliability" data-icon="fa-gears">
-              <i class="fa-solid fa-gears"></i> Engineering
-            </button>
-            <button class="ind-tab-btn" data-sector="power" data-img="img/power-engineering.png" data-title="30+ Power & Microgrids" data-sub="Energy Efficiency & Grid Integration" data-stat="30%" data-stat-lbl="Cost Saved" data-icon="fa-bolt">
-              <i class="fa-solid fa-bolt"></i> Energy & Power
-            </button>
-            <button class="ind-tab-btn" data-sector="smart-campus" data-img="img/smart-campus.png" data-title="120+ Smart Tech Parks" data-sub="IoT Infrastructure & Building Tech" data-stat="100%" data-stat-lbl="Comfort" data-icon="fa-building-user">
-              <i class="fa-solid fa-building-user"></i> Smart Campuses
-            </button>
-            <button class="ind-tab-btn" data-sector="garment" data-img="img/garment-facility.png" data-title="45+ Industrial Plants" data-sub="Cleanroom Air & Textile Facilities" data-stat="ISO" data-stat-lbl="14001 Certified" data-icon="fa-shirt">
-              <i class="fa-solid fa-shirt"></i> Garment Plants
-            </button>
-          </div>
-        </div>
 
         <!-- High Impact Pill Buttons matching abm.com -->
         <div class="d-flex flex-wrap gap-3 align-items-center pt-2">
@@ -148,14 +127,14 @@
       </div>
 
       <!-- Right Column: Industrial Sector Glass Metric Card -->
-      <div class="col-lg-4 animate-on-scroll">
+      <div class="col-lg-4">
         <div class="hero-fullwidth-badge-card p-4 rounded-4" id="heroBadgeCard">
           <div class="d-flex align-items-center gap-3 mb-3">
             <div class="pillar-icon m-0" id="heroBadgeIconWrap" style="background: rgba(0,229,153,0.2); color: #00E599; width: 48px; height: 48px; font-size: 1.2rem;">
-              <i class="fa-solid fa-industry" id="heroBadgeIcon"></i>
+              <i class="fa-solid fa-server" id="heroBadgeIcon"></i>
             </div>
             <div>
-              <h6 class="m-0 text-white font-weight-bold" id="heroBadgeTitle" style="font-size: 0.98rem;">70+ Manufacturing Facilities</h6>
+              <h6 class="m-0 text-white font-weight-bold" id="heroBadgeTitle" style="font-size: 0.98rem;">30+ Data Centers</h6>
               <p class="m-0 text-emerald" id="heroBadgeSub" style="font-size: 0.84rem; font-weight: 600;">Continuous Operations & Maintenance</p>
             </div>
           </div>
@@ -672,7 +651,7 @@
             <div class="footer-top d-flex flex-column h-100 justify-content-between">
               <div>
                 <a href="index.html" class="header-brand-logo mb-3">
-                  <img src="img/logo.png" alt="ABM Adding Value" style="height: 42px; width: auto;">
+                  <img src="img/logo-abmfm.png" alt="ABM FM" style="height: 42px; width: auto;">
                 </a>
 
                 <p class="text-light mb-4" style="font-size: 0.92rem; max-width: 320px;">
@@ -721,19 +700,23 @@
 
           <div class="col-lg-3 col-sm-6">
             <div class="footer-address">
-              <h6 class="footer-title">Speak with the Experts</h6>
+              <h6 class="footer-title">Global Offices</h6>
               <ul class="footer-links-list">
-                <li class="d-flex align-items-start gap-2">
-                  <i class="fa-solid fa-phone text-emerald mt-1"></i>
-                  <span>+91 85938 05828</span>
-                </li>
-                <li class="d-flex align-items-start gap-2">
-                  <i class="fa-solid fa-envelope text-emerald mt-1"></i>
-                  <span>info@abmfm.com</span>
-                </li>
-                <li class="d-flex align-items-start gap-2">
+                <li class="d-flex align-items-start gap-2 mb-2">
                   <i class="fa-solid fa-location-dot text-emerald mt-1"></i>
-                  <span>ABM FM Advisory Hub, Sengupta Road, Palakkad, Kerala</span>
+                  <span><strong>Global HQ:</strong> 123 Madison Ave, New York, NY 10016, USA<br><small class="text-emerald">+1 (212) 555-1234</small></span>
+                </li>
+                <li class="d-flex align-items-start gap-2 mb-2">
+                  <i class="fa-solid fa-location-dot text-emerald mt-1"></i>
+                  <span><strong>Europe:</strong> 125 Kingsway, London WC2B 6NH, UK<br><small class="text-emerald">+44 20 7946 0123</small></span>
+                </li>
+                <li class="d-flex align-items-start gap-2 mb-2">
+                  <i class="fa-solid fa-location-dot text-emerald mt-1"></i>
+                  <span><strong>APAC:</strong> Suasana Sentral, Kuala Lumpur, 50470<br><small class="text-emerald">01111373817</small></span>
+                </li>
+                <li class="d-flex align-items-center gap-2 mt-2">
+                  <i class="fa-solid fa-envelope text-emerald"></i>
+                  <span>info@abmfm.com</span>
                 </li>
               </ul>
             </div>
