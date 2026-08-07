@@ -338,9 +338,9 @@ function initServiceTabs() {
 
 /* Interactive ROI & Energy Savings Estimator */
 function initRoiCalculator() {
-    const areaInput = document.getElementById('calcArea');
-    const areaValDisplay = document.getElementById('calcAreaValue');
-    const typeSelect = document.getElementById('calcType');
+    const areaInput = document.getElementById('sqftRange') || document.getElementById('calcArea');
+    const areaValDisplay = document.getElementById('sqftVal') || document.getElementById('calcAreaValue');
+    const typeSelect = document.getElementById('facilityTypeSelect') || document.getElementById('calcType');
     const estSavingsDisplay = document.getElementById('estSavingsDisplay');
     const estCo2Display = document.getElementById('estCo2Display');
     const estRoiDisplay = document.getElementById('estRoiDisplay');
@@ -348,40 +348,20 @@ function initRoiCalculator() {
     if (!areaInput || !typeSelect || !estSavingsDisplay) return;
 
     const calculateROI = () => {
-        const areaSqFt = parseFloat(areaInput.value) || 50000;
-        const facilityType = typeSelect.value || 'commercial';
+        const areaSqFt = parseFloat(areaInput.value) || 150000;
+        const multiplier = parseFloat(typeSelect.value) || 1.2;
 
         if (areaValDisplay) {
-            areaValDisplay.innerText = areaSqFt.toLocaleString() + ' sq ft';
+            areaValDisplay.innerText = areaSqFt.toLocaleString() + ' Sq. Ft.';
         }
 
-        let energyCostPerSqFt = 2.5;
-        let savingsRate = 0.22;
+        const baseEnergyCost = 2.50;
+        const savingsRate = 0.245;
 
-        switch (facilityType) {
-            case 'industrial':
-                energyCostPerSqFt = 3.8;
-                savingsRate = 0.28;
-                break;
-            case 'garment':
-                energyCostPerSqFt = 3.2;
-                savingsRate = 0.25;
-                break;
-            case 'healthcare':
-                energyCostPerSqFt = 4.5;
-                savingsRate = 0.24;
-                break;
-            case 'commercial':
-            default:
-                energyCostPerSqFt = 2.5;
-                savingsRate = 0.20;
-                break;
-        }
-
-        const totalAnnualEnergySpend = areaSqFt * energyCostPerSqFt;
-        const estAnnualSavings = totalAnnualEnergySpend * savingsRate;
-        const estCo2ReductionTons = Math.round((areaSqFt * 0.012) * (savingsRate / 0.2));
-        const paybackMonths = Math.max(4, Math.round(14 - (savingsRate * 20)));
+        const totalAnnualSpend = areaSqFt * baseEnergyCost * multiplier;
+        const estAnnualSavings = totalAnnualSpend * savingsRate;
+        const estCo2ReductionTons = Math.round(areaSqFt * 0.0022 * multiplier);
+        const paybackMonths = Math.max(5, Math.round(14 / multiplier));
 
         estSavingsDisplay.innerText = '$' + Math.round(estAnnualSavings).toLocaleString();
         if (estCo2Display) estCo2Display.innerText = estCo2ReductionTons.toLocaleString() + ' Metric Tons / yr';

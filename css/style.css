@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --primary-navy: #071930;
-  --navy-dark: #071930;
-  --navy-card: #0D223F;
+  --primary-navy: #151F6D;
+  --navy-dark: #0D154A;
+  --navy-card: #1B2782;
   --primary-emerald: #166534;
   --emerald-bright: #00E599;
   --emerald-hover: #14532D;
@@ -52,7 +52,7 @@ body {
 /* Navy Background & Helper Utilities */
 .bg-navy,
 .bg-navy-dark {
-  background: linear-gradient(135deg, #071930 0%, #0D2849 50%, #030D1B 100%) !important;
+  background: linear-gradient(135deg, #151F6D 0%, #1A298B 50%, #0A1143 100%) !important;
   color: #FFFFFF !important;
   position: relative;
 }
@@ -70,6 +70,12 @@ h1, h2, h3, h4, h5, h6, .heading-font {
   font-weight: 800;
   color: var(--primary-navy);
   letter-spacing: -0.02em;
+}
+
+.bg-navy h1, .bg-navy h2, .bg-navy h3, .bg-navy h4, .bg-navy h5, .bg-navy h6,
+.bg-navy-dark h1, .bg-navy-dark h2, .bg-navy-dark h3, .bg-navy-dark h4, .bg-navy-dark h5, .bg-navy-dark h6,
+.bg-navy .section-title, .bg-navy-dark .section-title {
+  color: #FFFFFF !important;
 }
 
 h1 { font-size: clamp(2.8rem, 5.5vw, 4.6rem); line-height: 1.1; }
