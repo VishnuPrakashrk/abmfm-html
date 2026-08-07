@@ -422,63 +422,165 @@ function initIndustrialBannerSwitcher() {
     const badgeStat = document.getElementById('heroBadgeStat');
     const badgeStatLbl = document.getElementById('heroBadgeStatLbl');
     const badgeIcon = document.getElementById('heroBadgeIcon');
+    const badgeBadgeText = document.getElementById('heroBadgeBadgeText');
+    const badgeBadgeIcon = document.getElementById('heroBadgeBadgeIcon');
 
     if (!badgeTitle) return;
 
     const sectorData = [
         {
+            title: "25+ Airport Facilities",
+            sub: "Safe & Seamless Operations",
+            stat: "98.7%",
+            statLbl: "Reliability Rate",
+            badge: "24/7 Operations",
+            badgeIcon: "fa-plane-departure",
+            icon: "fa-plane-departure"
+        },
+        {
             title: "30+ Data Centers",
             sub: "Continuous Operations & Maintenance",
             stat: "99.4%",
             statLbl: "Uptime Rate",
+            badge: "Mission Critical",
+            badgeIcon: "fa-shield-halved",
             icon: "fa-server"
         },
         {
-            title: "15+ International Airports",
-            sub: "24/7 Terminal Facilities & Ground Ops",
-            stat: "99.9%",
-            statLbl: "Compliance",
-            icon: "fa-plane-departure"
+            title: "150+ Healthcare Facilities",
+            sub: "Safe, Hygienic & Compliant",
+            stat: "99.2%",
+            statLbl: "Compliance Rate",
+            badge: "Patient First",
+            badgeIcon: "fa-user-nurse",
+            icon: "fa-square-plus"
         },
         {
-            title: "35+ Industrial Hubs",
-            sub: "Heavy Mechanical & Electrical Systems",
-            stat: "100%",
-            statLbl: "Reliability",
-            icon: "fa-gears"
+            title: "45+ Pharma Facilities",
+            sub: "Precision, Compliance & Quality",
+            stat: "99.3%",
+            statLbl: "Quality Standard",
+            badge: "GMP Compliant",
+            badgeIcon: "fa-check-double",
+            icon: "fa-flask"
         },
         {
-            title: "30+ Power & Microgrids",
-            sub: "Energy Efficiency & Grid Integration",
-            stat: "30%",
-            statLbl: "Cost Saved",
-            icon: "fa-bolt"
+            title: "500+ Commercial Buildings",
+            sub: "Productive & Sustainable Workplaces",
+            stat: "98.6%",
+            statLbl: "Efficiency Score",
+            badge: "Integrated FM",
+            badgeIcon: "fa-building-user",
+            icon: "fa-building"
         },
         {
-            title: "120+ Smart Tech Parks",
-            sub: "IoT Infrastructure & Building Tech",
-            stat: "100%",
-            statLbl: "Comfort",
-            icon: "fa-building-user"
+            title: "200+ Industrial Facilities",
+            sub: "Reliable & Efficient Operations",
+            stat: "98.8%",
+            statLbl: "Performance Index",
+            badge: "High Performance",
+            badgeIcon: "fa-gears",
+            icon: "fa-industry"
         },
         {
-            title: "45+ Industrial Plants",
-            sub: "Cleanroom Air & Textile Facilities",
-            stat: "ISO",
-            statLbl: "Certified Systems",
-            icon: "fa-shirt"
+            title: "120+ Educational Campuses",
+            sub: "Safe & Conducive Learning",
+            stat: "98.9%",
+            statLbl: "Safety & Uptime",
+            badge: "Safe Campus",
+            badgeIcon: "fa-shield-heart",
+            icon: "fa-graduation-cap"
+        },
+        {
+            title: "90+ Hotels & Resorts",
+            sub: "Exceptional Guest Experiences",
+            stat: "97.9%",
+            statLbl: "Satisfaction Score",
+            badge: "Guest Focused",
+            badgeIcon: "fa-star",
+            icon: "fa-bell-concierge"
+        },
+        {
+            title: "350+ Retail Outlets",
+            sub: "Safe & Welcoming Spaces",
+            stat: "98.5%",
+            statLbl: "Readiness Rate",
+            badge: "Customer Ready",
+            badgeIcon: "fa-bag-shopping",
+            icon: "fa-cart-shopping"
+        },
+        {
+            title: "80+ Government Facilities",
+            sub: "Secure & Compliant Operations",
+            stat: "99.0%",
+            statLbl: "Security Compliance",
+            badge: "Trusted Partner",
+            badgeIcon: "fa-handshake",
+            icon: "fa-landmark"
+        },
+        {
+            title: "400+ Residential Communities",
+            sub: "Comfortable & Well-Maintained Living",
+            stat: "98.4%",
+            statLbl: "Resident Care Score",
+            badge: "Resident Care",
+            badgeIcon: "fa-heart",
+            icon: "fa-house-chimney"
+        },
+        {
+            title: "35+ Oil & Gas Facilities",
+            sub: "Safety, Reliability & Excellence",
+            stat: "98.3%",
+            statLbl: "Safety Record",
+            badge: "Safety First",
+            badgeIcon: "fa-shield-halved",
+            icon: "fa-oil-well"
+        },
+        {
+            title: "100+ Utility Assets",
+            sub: "Reliable & Continuous Service",
+            stat: "99.1%",
+            statLbl: "Grid Uptime",
+            badge: "Critical Infrastructure",
+            badgeIcon: "fa-bolt",
+            icon: "fa-tower-cell"
+        },
+        {
+            title: "180+ Logistics & Warehouses",
+            sub: "Efficient & Optimized Operations",
+            stat: "98.2%",
+            statLbl: "Operational Uptime",
+            badge: "Always Moving",
+            badgeIcon: "fa-truck-fast",
+            icon: "fa-truck-fast"
+        },
+        {
+            title: "220+ Manufacturing Facilities",
+            sub: "Performance & Productivity",
+            stat: "98.7%",
+            statLbl: "Equipment Reliability",
+            badge: "Operational Excellence",
+            badgeIcon: "fa-gears",
+            icon: "fa-robot"
         }
     ];
 
     let currentIndex = 0;
 
     const updateCard = (data) => {
+        if (!data) return;
         if (badgeTitle && data.title) badgeTitle.innerText = data.title;
         if (badgeSub && data.sub) badgeSub.innerText = data.sub;
         if (badgeStat && data.stat) badgeStat.innerText = data.stat;
         if (badgeStatLbl && data.statLbl) badgeStatLbl.innerText = data.statLbl;
         if (badgeIcon && data.icon) {
             badgeIcon.className = `fa-solid ${data.icon}`;
+        }
+        if (badgeBadgeText && data.badge) {
+            badgeBadgeText.innerText = data.badge;
+        }
+        if (badgeBadgeIcon && data.badgeIcon) {
+            badgeBadgeIcon.className = `fa-solid ${data.badgeIcon}`;
         }
     };
 
@@ -490,6 +592,8 @@ function initIndustrialBannerSwitcher() {
             const stat = btn.getAttribute('data-stat');
             const statLbl = btn.getAttribute('data-stat-lbl');
             const iconClass = btn.getAttribute('data-icon');
+            const badge = btn.getAttribute('data-badge');
+            const badgeIcon = btn.getAttribute('data-badge-icon');
 
             tabBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
@@ -499,7 +603,7 @@ function initIndustrialBannerSwitcher() {
                 heroSection.style.backgroundImage = `url('${imgSrc}')`;
             }
 
-            updateCard({ title, sub, stat, statLbl, icon: iconClass });
+            updateCard({ title, sub, stat, statLbl, icon: iconClass, badge, badgeIcon });
         };
 
         tabBtns.forEach((btn, index) => {
@@ -512,12 +616,12 @@ function initIndustrialBannerSwitcher() {
         setInterval(() => {
             currentIndex = (currentIndex + 1) % tabBtns.length;
             updateBanner(tabBtns[currentIndex]);
-        }, 5000);
+        }, 4000);
     } else {
         setInterval(() => {
             currentIndex = (currentIndex + 1) % sectorData.length;
             updateCard(sectorData[currentIndex]);
-        }, 4000);
+        }, 3500);
     }
 }
 
