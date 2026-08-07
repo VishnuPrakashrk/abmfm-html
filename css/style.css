@@ -673,7 +673,7 @@ a:hover {
   width: 100%;
   height: 220px;
   overflow: hidden;
-  background: #0B192C;
+  background: #151F6D;
 }
 
 .service-card-img-wrapper img {
@@ -1105,7 +1105,7 @@ a:hover {
   padding-bottom: 65px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #071930 0%, #0D2849 45%, #030D1B 100%) !important;
+  background: linear-gradient(135deg, #151F6D 0%, #1A298B 45%, #0A1143 100%) !important;
   color: #FFFFFF;
   overflow: hidden;
   display: flex;
