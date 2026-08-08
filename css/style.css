@@ -852,16 +852,16 @@ a:hover {
 
 /* Site Footer */
 .site-footer {
-  background: linear-gradient(135deg, #151F6D 0%, #1A298B 45%, #0A1143 100%);
-  color: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(180deg, var(--primary-navy) 0%, var(--navy-dark) 100%) !important;
+  color: rgba(255, 255, 255, 0.9);
   padding-top: 70px;
-  padding-bottom: 30px;
-  border-top: 2px solid var(--emerald-bright);
+  padding-bottom: 35px;
+  border-top: 4px solid var(--primary-emerald);
 }
 
 .footer-title {
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 800;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -879,8 +879,8 @@ a:hover {
 }
 
 .footer-links-list a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.93rem;
   transition: var(--transition-fast);
 }
 
@@ -893,7 +893,7 @@ a:hover {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   color: #FFFFFF;
   display: inline-flex;
   align-items: center;
@@ -908,10 +908,10 @@ a:hover {
 
 .footer-bottom-bar {
   margin-top: 50px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* 3D Depth Scroll Animation Classes */
