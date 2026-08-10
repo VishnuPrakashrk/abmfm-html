@@ -1756,7 +1756,7 @@ img:hover,
   100% { transform: translateX(0); }
 }
 
-/* Big Stadium Pill Card (abm.com Official Match) */
+/* Big Stadium Pill Card (Matches Marquee Showcase Layout) */
 .abm-pill-card {
   position: relative;
   width: 480px;
@@ -1795,7 +1795,7 @@ img:hover,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.7s ease;
+  transition: transform 0.7s ease, filter 0.5s ease;
   filter: brightness(0.92) contrast(1.05);
 }
 
@@ -1804,39 +1804,40 @@ img:hover,
   filter: brightness(1) contrast(1.1);
 }
 
-/* White Pill Badge on Left side (abm.com Match) */
+/* White Pill Badge on Left side */
 .abm-white-pill-badge {
   position: relative;
   z-index: 3;
   background: #FFFFFF;
   border-radius: 9999px;
-  padding: 16px 26px 16px 30px;
+  padding: 14px 24px 14px 28px;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  min-width: 235px;
+  min-width: 240px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   transition: all 0.35s ease;
 }
 
 .abm-pill-card:hover .abm-white-pill-badge {
   box-shadow: 0 12px 35px rgba(0, 229, 153, 0.35);
+  transform: scale(1.02);
 }
 
 /* Bold Title inside White Pill */
 .abm-pill-text {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', 'Inter', sans-serif;
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   color: #0A1446;
   white-space: nowrap;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
-/* Vector Line Icon on Right inside White Pill */
+/* Vector Icon inside Blue Circle on Right of White Pill */
 .abm-pill-icon {
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   color: #0066FF;
   display: flex;
   align-items: center;
@@ -1845,7 +1846,7 @@ img:hover,
   height: 44px;
   min-width: 44px;
   border-radius: 50%;
-  background: rgba(0, 102, 255, 0.08);
+  background: #EDF4FF;
   transition: all 0.35s ease;
 }
 
@@ -1857,18 +1858,17 @@ img:hover,
 
 @media (max-width: 992px) {
   .abm-pill-card {
-    width: 360px;
-    height: 130px;
+    height: 160px;
   }
   .abm-white-pill-badge {
-    padding: 12px 20px 12px 24px;
-    min-width: 190px;
+    padding: 8px 12px 8px 18px;
+    max-width: 220px;
   }
   .abm-pill-text {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
   .abm-pill-icon {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     width: 36px;
     height: 36px;
     min-width: 36px;
