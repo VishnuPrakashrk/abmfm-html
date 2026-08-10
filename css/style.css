@@ -1700,3 +1700,407 @@ img:hover,
   align-items: center;
   gap: 8px;
 }
+
+/* Official ABM.com Stadium Pill Showcase Section */
+.abm-industry-section {
+  background-color: #0A1446 !important;
+  padding: 95px 0 105px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.abm-industry-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.abm-industry-row {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 3%, #000 97%, transparent 100%);
+}
+
+.abm-industry-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  will-change: transform;
+}
+
+.abm-track-left {
+  animation: abmMarqueeLeft 42s linear infinite;
+}
+
+.abm-track-right {
+  animation: abmMarqueeRight 42s linear infinite;
+}
+
+.abm-industry-row:hover .abm-industry-track {
+  animation-play-state: paused;
+}
+
+@keyframes abmMarqueeLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes abmMarqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Big Stadium Pill Card (abm.com Official Match) */
+.abm-pill-card {
+  position: relative;
+  width: 480px;
+  height: 160px;
+  border-radius: 9999px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  background: #0D1B48;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.abm-pill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(0, 229, 153, 0.38);
+  border-color: rgba(0, 229, 153, 0.65);
+  z-index: 10;
+}
+
+/* Industry Photo Background */
+.abm-pill-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.abm-pill-bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+  filter: brightness(0.92) contrast(1.05);
+}
+
+.abm-pill-card:hover .abm-pill-bg-img img {
+  transform: scale(1.08);
+  filter: brightness(1) contrast(1.1);
+}
+
+/* White Pill Badge on Left side (abm.com Match) */
+.abm-white-pill-badge {
+  position: relative;
+  z-index: 3;
+  background: #FFFFFF;
+  border-radius: 9999px;
+  padding: 16px 26px 16px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-width: 235px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s ease;
+}
+
+.abm-pill-card:hover .abm-white-pill-badge {
+  box-shadow: 0 12px 35px rgba(0, 229, 153, 0.35);
+}
+
+/* Bold Title inside White Pill */
+.abm-pill-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #0A1446;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+}
+
+/* Vector Line Icon on Right inside White Pill */
+.abm-pill-icon {
+  font-size: 1.85rem;
+  color: #0066FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: rgba(0, 102, 255, 0.08);
+  transition: all 0.35s ease;
+}
+
+.abm-pill-card:hover .abm-pill-icon {
+  background: #0066FF;
+  color: #FFFFFF;
+  transform: rotate(6deg);
+}
+
+@media (max-width: 992px) {
+  .abm-pill-card {
+    width: 360px;
+    height: 130px;
+  }
+  .abm-white-pill-badge {
+    padding: 12px 20px 12px 24px;
+    min-width: 190px;
+  }
+  .abm-pill-text {
+    font-size: 1.1rem;
+  }
+  .abm-pill-icon {
+    font-size: 1.4rem;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+  }
+}
+
+/* Hero Banner 2 Feature Cards (User Screenshot Match) */
+.hero-feature-cards-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-top: 36px;
+  padding-top: 10px;
+}
+
+.hero-feature-card-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  flex: 1;
+  position: relative;
+}
+
+.hero-feature-card-item:first-child::after {
+  content: '';
+  position: absolute;
+  right: -16px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.hero-feature-card-icon {
+  font-size: 2.6rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+}
+
+.hero-feature-card-icon.icon-blue {
+  color: #0088FF;
+}
+
+.hero-feature-card-icon.icon-orange {
+  color: #FF8200;
+}
+
+.hero-feature-card-content h5 {
+  font-family: 'Outfit', sans-serif;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.hero-feature-card-content p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-feature-cards-wrap {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero-feature-card-item:first-child::after {
+    display: none;
+  }
+}
+
+/* ABM FM Overview Brochure Download Section (User Screenshot Match) */
+.abm-overview-section {
+  background: linear-gradient(135deg, #07102D 0%, #151F6D 50%, #0A1143 100%) !important;
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+  border-bottom: 3px solid rgba(0, 229, 153, 0.3);
+}
+
+.abm-overview-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 75% 50%, rgba(5, 69, 245, 0.25) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.overview-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.overview-trust-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 229, 153, 0.15);
+  border: 1px solid rgba(0, 229, 153, 0.35);
+  color: #00E599;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.btn-download-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #0545F5 0%, #0088FF 100%);
+  color: #FFFFFF !important;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 16px 36px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 30px rgba(5, 69, 245, 0.45);
+  transition: all 0.35s ease;
+  text-decoration: none !important;
+  border: none;
+}
+
+.btn-download-pdf:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 229, 153, 0.5);
+  background: linear-gradient(135deg, #00E599 0%, #0545F5 100%);
+  color: #FFFFFF !important;
+}
+
+/* 3D Realistic Brochure Booklet Cover Mockup */
+.brochure-3d-wrapper {
+  perspective: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brochure-3d-book {
+  width: 380px;
+  height: 520px;
+  background: #FFFFFF;
+  border-radius: 6px 18px 18px 6px;
+  box-shadow: -25px 25px 55px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: rotateY(-18deg) rotateX(8deg) rotateZ(2deg);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 12px solid #E2E8F0;
+}
+
+.brochure-3d-book:hover {
+  transform: rotateY(-8deg) rotateX(4deg) rotateZ(1deg) scale(1.02);
+  box-shadow: -35px 35px 70px rgba(0, 0, 0, 0.6);
+}
+
+.brochure-cover-header {
+  padding: 24px 24px 12px 24px;
+}
+
+.brochure-cover-title-group h4 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #0545F5;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.brochure-cover-title-group h4 span {
+  color: #FF8200;
+}
+
+.brochure-cover-img-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.brochure-cover-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brochure-cover-swoosh {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background: linear-gradient(135deg, #0545F5 0%, #FF8200 100%);
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.brochure-cover-footer {
+  background: #07102D;
+  color: #FFFFFF;
+  padding: 16px 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.brochure-footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.brochure-footer-item i {
+  color: #00E599;
+  font-size: 1.1rem;
+}
+
+.brochure-footer-item span {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.1;
+}
