@@ -2969,3 +2969,102 @@ img:hover,
 .section-engineering-solutions img:hover {
   transform: translateY(-4px) scale(1.01);
 }
+
+/* Mega Dropdown Menu - Key Verticals */
+.nav-item.dropdown-mega {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .nav-item.dropdown-mega {
+    position: static !important;
+  }
+
+  .nav-item.dropdown-mega:hover .mega-menu-box {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) translateY(0) !important;
+    pointer-events: auto !important;
+  }
+
+  .mega-menu-box {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(12px);
+    width: 95vw;
+    max-width: 1140px;
+    background: #FFFFFF;
+    border-radius: 24px !important;
+    padding: 32px 36px !important;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18) !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    z-index: 1060;
+    margin-top: 8px;
+  }
+
+  .mega-left-panel {
+    background: #FAFAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 18px;
+    padding: 28px 24px;
+  }
+
+  .mega-vertical-title {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 8px;
+    line-height: 1.35;
+  }
+
+  .mega-vertical-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mega-vertical-links li {
+    margin-bottom: 6px;
+  }
+
+  .mega-link {
+    color: #475569;
+    font-size: 0.91rem;
+    line-height: 1.5;
+    font-weight: 500;
+    border-bottom: 1.5px solid #CBD5E1;
+    display: inline-block;
+    padding-bottom: 1px;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .mega-link:hover {
+    color: #0055FF;
+    border-bottom-color: #0055FF;
+  }
+
+  .btn-mega-explore {
+    background: #111C44;
+    color: #FFFFFF !important;
+    font-weight: 600;
+    font-size: 0.92rem;
+    padding: 10px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.25s ease;
+  }
+
+  .btn-mega-explore:hover {
+    background: #0055FF;
+    transform: translateY(-2px);
+  }
+}
