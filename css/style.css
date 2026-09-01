@@ -620,6 +620,7 @@ a:hover {
   width: 100%;
   min-width: 32rem;
   max-width: none;
+  max-height: 40%;
   display: block;
   position: absolute;
   inset: auto 0% 0% auto;
@@ -637,7 +638,8 @@ a:hover {
 
 .hero-content-wrap {
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  margin-top: -60px;
 }
 
 .hero-heading-fullwidth {
@@ -1412,6 +1414,10 @@ a:hover {
     padding-top: 110px;
     padding-bottom: 60px;
     min-height: 80vh;
+  }
+
+  .hero-content-wrap {
+    margin-top: -10px;
   }
 
   .hero-heading-fullwidth {
@@ -2418,8 +2424,10 @@ img:hover,
   display: flex;
   align-items: flex-start;
   gap: 32px;
-  margin-top: 36px;
-  padding-top: 10px;
+  margin-top: 24px;
+  padding-top: 5px;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-feature-card-item {
@@ -3565,6 +3573,20 @@ img:hover,
 }
 
 /* Footer Address Block Alignment Matching Reference */
+.footer-address {
+  position: relative;
+}
+
+.footer-address::before {
+  content: '';
+  display: block;
+  width: 46px;
+  height: 4px;
+  background: #0075FF;
+  border-radius: 2px;
+  margin-bottom: 18px;
+}
+
 .footer-address-list {
   list-style: none;
   padding: 0;
@@ -3580,44 +3602,158 @@ img:hover,
 
 .footer-address-item:last-child {
   margin-bottom: 0;
+  align-items: center;
 }
 
 .footer-address-icon {
   color: #0075FF !important;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   margin-top: 2px;
   flex-shrink: 0;
+  width: 24px;
+  text-align: center;
 }
 
 .footer-address-content {
   color: #FFFFFF;
-  font-size: 0.92rem;
-  line-height: 1.45;
+  font-size: 0.94rem;
+  line-height: 1.38;
 }
 
 .footer-address-title {
   display: block;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.02rem;
   color: #FFFFFF;
   margin-bottom: 2px;
 }
 
 .footer-address-text {
   display: block;
-  color: rgba(255, 255, 255, 0.92);
-  font-weight: 400;
+  color: #FFFFFF;
+  font-weight: 500;
   margin-bottom: 2px;
 }
 
 .footer-address-tel {
   display: block;
-  color: rgba(255, 255, 255, 0.92);
-  font-weight: 400;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .footer-address-email {
-  color: rgba(255, 255, 255, 0.92);
-  font-weight: 400;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+/* Key Verticals Mega Menu (Compact Height & Viewport Fit) */
+.dropdown-menu.key-verticals-mega-new {
+  width: 980px !important;
+  max-width: 95vw !important;
+  max-height: calc(100vh - 90px) !important;
+  overflow-y: auto !important;
+  padding: 0 !important;
+  border-radius: 18px !important;
+  border: none !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2) !important;
+  background-color: #FFFFFF !important;
+}
+
+.mega-left-panel-blue {
+  background: linear-gradient(180deg, #A5C9FF 0%, #8EB7FD 100%) !important;
+  color: #0B2545 !important;
+  padding: 22px 20px !important;
+}
+
+.mega-left-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.65rem;
+  line-height: 1.15;
+  color: #071930;
+  margin-bottom: 8px;
+}
+
+.mega-left-desc {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #1A365D;
+}
+
+.mega-card-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #E8F1FF;
+  box-shadow: 0 4px 12px rgba(0, 85, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0055FF;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.mega-card-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.94rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.mega-card-heading a {
+  color: #0F172A;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.mega-card-heading a:hover {
+  color: #0055FF;
+}
+
+.mega-card-bullet-list {
+  list-style-type: disc;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.mega-card-bullet-list li {
+  font-size: 0.78rem;
+  color: #334155;
+  line-height: 1.32;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.mega-card-bullet-list li::marker {
+  color: #1E293B;
+  font-size: 0.75em;
+}
+
+.mega-bottom-banner {
+  background-color: #EDF3FA !important;
+  border-top: 1px solid #E2E8F0;
+  padding: 10px 20px !important;
+}
+
+.btn-mega-view-all {
+  background-color: #0052FF;
+  color: #FFFFFF !important;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 6px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition-fast);
+}
+
+.btn-mega-view-all:hover {
+  background-color: #003ECC;
+  transform: translateX(2px);
 }
