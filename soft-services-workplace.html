@@ -1,0 +1,1380 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>07 Soft Services & Workplace Solutions | ABMFM Solutions</title>
+  
+  <!-- Official Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Our advisory covers cleaning, security, landscaping, waste management, catering, reception, workplace services, and other support functions, assessing service models, resources, standards, workflows, contracts, and expectations.">
+  <link rel="canonical" href="soft-services-workplace.html">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Three.js 3D WebGL Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* ============================================================
+       FULL WIDTH SLIDE PRESENTATION DESIGN (MATCHING SOLUTION-02.JPG)
+       ============================================================ */
+    .solution-slide-section {
+      background: #F1F5F9;
+      padding: 30px 0 60px 0;
+      width: 100%;
+    }
+    .solution-slide-card {
+      background: #FFFFFF;
+      border-radius: 28px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+      border: 1px solid #E2E8F0;
+      padding: 32px 36px;
+      position: relative;
+      width: 100%;
+    }
+    
+    /* Left Column (Executive & Blue Card) */
+    .slide-left-column {
+      background: #0055FF;
+      border-radius: 22px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-shadow: 0 12px 30px rgba(0, 85, 255, 0.22);
+    }
+    .slide-portrait-wrap {
+      position: relative;
+      background: #F8FAFC;
+      height: 380px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .slide-portrait-img {
+      width: 275%;
+      max-width: none;
+      height: 100%;
+      object-fit: cover;
+      object-position: left top;
+      display: block;
+    }
+    .slide-blue-box {
+      background: #0055FF;
+      color: #FFFFFF;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+    .slide-blue-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.45rem;
+      line-height: 1.25;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+    .slide-blue-title .highlight-green {
+      color: #38E54D;
+    }
+    .slide-blue-desc {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+      margin-bottom: 20px;
+    }
+    .slide-pillars-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      text-align: center;
+    }
+    .slide-pillar-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      position: relative;
+    }
+    .slide-pillar-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: -3px;
+      top: 15%;
+      height: 70%;
+      width: 1px;
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .slide-pillar-item i {
+      font-size: 1.25rem;
+      color: #FFFFFF;
+    }
+    .slide-pillar-item span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.15;
+    }
+
+    /* Right Column (Header, Target, Key Areas, Focus Bar) */
+    .slide-right-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    .slide-main-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 2.6rem;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+    .slide-main-title .line-dark {
+      color: #0F172A;
+      display: block;
+    }
+    .slide-main-title .line-blue {
+      color: #0055FF;
+      display: block;
+    }
+    .slide-orange-accent {
+      width: 48px;
+      height: 4.5px;
+      background: #FF7A00;
+      border-radius: 2px;
+      margin-top: 12px;
+    }
+    .slide-core-badge {
+      background: linear-gradient(90deg, #0055FF 0%, #22c55e 100%);
+      color: #FFFFFF;
+      border-radius: 30px;
+      padding: 9px 22px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(0, 85, 255, 0.2);
+      white-space: nowrap;
+    }
+    .slide-lead-p {
+      font-size: 0.98rem;
+      line-height: 1.65;
+      color: #334155;
+      margin-bottom: 14px;
+    }
+    .slide-target-box {
+      background: #EEF5FF;
+      border-radius: 16px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 22px;
+      border-left: 4px solid #0055FF;
+    }
+    .slide-target-icon-wrap {
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      color: #0055FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 85, 255, 0.1);
+      font-size: 1.35rem;
+    }
+    .slide-target-text {
+      font-size: 0.96rem;
+      color: #1E293B;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .slide-target-text strong {
+      color: #0055FF;
+    }
+    .slide-keyareas-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .slide-keyareas-divider span {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.1em;
+      color: #0F172A;
+      text-transform: uppercase;
+    }
+    .slide-keyareas-divider .divider-line {
+      flex-grow: 1;
+      height: 1px;
+      background: #CBD5E1;
+    }
+    .slide-keyareas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .slide-keyarea-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.25s ease;
+      min-height: 62px;
+    }
+    .slide-keyarea-card:hover {
+      background: #FFFFFF;
+      border-color: #0055FF;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 85, 255, 0.08);
+    }
+    .slide-keyarea-icon-box {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .slide-keyarea-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #1E293B;
+      line-height: 1.3;
+      margin: 0;
+      text-transform: lowercase;
+    }
+    .slide-bottom-focus-bar {
+      background: #EEF4FF;
+      border-radius: 30px;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .slide-focus-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      z-index: 2;
+    }
+    .slide-focus-icon-circle {
+      width: 42px;
+      height: 42px;
+      min-width: 42px;
+      border-radius: 50%;
+      background: #0055FF;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 12px rgba(0, 85, 255, 0.25);
+    }
+    .slide-focus-heading {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #0055FF;
+      white-space: nowrap;
+    }
+    .slide-focus-divider-v {
+      width: 1.5px;
+      height: 30px;
+      background: #94A3B8;
+      opacity: 0.5;
+    }
+    .slide-focus-desc {
+      font-size: 0.92rem;
+      color: #334155;
+      margin: 0;
+      line-height: 1.45;
+      font-weight: 500;
+    }
+    .slide-focus-skyline {
+      position: absolute;
+      right: 18px;
+      bottom: 0;
+      height: 48px;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+    @media (max-width: 991px) {
+      .slide-keyareas-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .slide-bottom-focus-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .slide-focus-skyline {
+        display: none;
+      }
+    }
+    @media (max-width: 576px) {
+      .slide-keyareas-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="wp-singular page-template page-template-page-services page-template-page-services-php page page-id-13 wp-theme-abmfm">
+  <main class="site-main">
+
+    <!-- Floating White Header Pill Bar (Sticky Header matching exact logo) -->
+    <header class="site-header-abm-floating">
+      <div class="container-fluid px-lg-5">
+        <div class="header-floating-pill d-flex align-items-center justify-content-between">
+          <!-- Logo -->
+          <a href="index.html" class="header-brand-logo">
+            <img src="img/logo-abmfm.png" alt="ABM FM" style="height: 50px; width: auto;">
+          </a>
+
+          <!-- Navigation Links -->
+          <nav class="navbar navbar-expand-lg p-0">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#abmNavbar" aria-controls="abmNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="abmNavbar">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item dropdown dropdown-mega">
+                  <a class="nav-link nav-link-abm-exact dropdown-toggle" href="commercial-hospitality.html" id="keyVerticalsDropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Key Verticals <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+                  </a>
+                  <div class="dropdown-menu mega-menu-box key-verticals-mega-new" aria-labelledby="keyVerticalsDropdown">
+                    <div class="container-fluid p-0">
+                      <div class="row g-0 align-items-stretch rounded-4 overflow-hidden bg-white">
+                        
+                        <!-- Left Blue Sidebar Panel -->
+                        <div class="col-lg-3 col-12 mega-left-panel-blue p-3 d-flex flex-column justify-content-between">
+                          <div>
+                            <div class="mega-left-icon-box mb-2">
+                              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="8" height="8" rx="2.5" fill="#0055FF"/>
+                                <rect x="13" y="3" width="8" height="8" rx="4" fill="#0055FF"/>
+                                <rect x="3" y="13" width="8" height="8" rx="2.5" fill="#0055FF"/>
+                                <rect x="13" y="13" width="8" height="8" rx="2.5" fill="#0055FF"/>
+                              </svg>
+                            </div>
+                            <h2 class="mega-left-title mb-2">Key<br>Verticals</h2>
+                            <p class="mega-left-desc">
+                              We serve clients across six key verticals with a comprehensive suite of facility solutions.
+                            </p>
+                          </div>
+                          <div class="mega-left-dots mt-3">
+                            <svg width="50" height="20" viewBox="0 0 60 24" fill="#60A5FA" opacity="0.6">
+                              <circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="30" cy="6" r="2.5"/><circle cx="42" cy="6" r="2.5"/><circle cx="54" cy="6" r="2.5"/>
+                              <circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><circle cx="30" cy="18" r="2.5"/><circle cx="42" cy="18" r="2.5"/><circle cx="54" cy="18" r="2.5"/>
+                            </svg>
+                          </div>
+                        </div>
+
+                        <!-- Right Panel: 6 Vertical Cards (3 cols x 2 rows) -->
+                        <div class="col-lg-9 col-12">
+                          <div class="row g-0 border-bottom">
+                            
+                            <!-- Card 1: Aviation & Transportation Infrastructure -->
+                            <div class="col-md-4 col-12 p-3 border-end border-bottom">
+                              <div class="mega-card-icon-circle mb-2">
+                                <i class="fa-solid fa-plane"></i>
+                              </div>
+                              <h5 class="mega-card-heading mb-2"><a href="aviation-transportation.html">Aviation &amp; Transportation Infrastructure</a></h5>
+                              <ul class="mega-card-bullet-list">
+                                <li>Terminal Operations &amp; FM</li>
+                                <li>Cleaning and Janitorial Services</li>
+                                <li>MEP Systems - HVAC, Electrical, Plumbing, BMS, SCADA</li>
+                                <li>Fire &amp; Security Systems</li>
+                              </ul>
+                            </div>
+
+                            <!-- Card 2: High-Tech & Mission-Critical Facilities -->
+                            <div class="col-md-4 col-12 p-3 border-end border-bottom">
+                              <div class="mega-card-icon-circle mb-2">
+                                <i class="fa-solid fa-microchip"></i>
+                              </div>
+                              <h5 class="mega-card-heading mb-2"><a href="hightech-missioncritical.html">High-Tech &amp; Mission-Critical Facilities</a></h5>
+                              <ul class="mega-card-bullet-list">
+                                <li>Data Centre MEP Infrastructure</li>
+                                <li>Backup Power UPS, Batteries, Diesel Generators, ATS/STS</li>
+                                <li>Precision Air Conditioning System</li>
+                                <li>Fire Alarm, VESDA, FM-200 / Novec / Inert Gas, Sprinklers</li>
+                              </ul>
+                            </div>
+
+                            <!-- Card 3: Commercial Real Estate FM Solutions -->
+                            <div class="col-md-4 col-12 p-3 border-bottom">
+                              <div class="mega-card-icon-circle mb-2">
+                                <i class="fa-solid fa-city"></i>
+                              </div>
+                              <h5 class="mega-card-heading mb-2"><a href="commercial-hospitality.html">Commercial Real Estate FM Solutions</a></h5>
+                              <ul class="mega-card-bullet-list">
+                                <li>Smart Building Systems &amp; BMS</li>
+                                <li>Tenant Services &amp; MEP Maintenance</li>
+                                <li>Sustainable Practices &amp; WTP</li>
+                                <li>Asset Management &amp; Civil Infra</li>
+                              </ul>
+                            </div>
+
+                            <!-- Card 4: Healthcare Facility Management -->
+                            <div class="col-md-4 col-12 p-3 border-end">
+                              <div class="mega-card-icon-circle mb-2">
+                                <i class="fa-solid fa-notes-medical"></i>
+                              </div>
+                              <h5 class="mega-card-heading mb-2"><a href="healthcare-lifesciences.html">Healthcare Facility Management</a></h5>
+                              <ul class="mega-card-bullet-list">
+                                <li>Environment of Care (EOC)</li>
+                                <li>Bio-Medical Support Infra</li>
+                                <li>Infection Control &amp; WTP</li>
+                                <li>Critical Power &amp; Fire Safety</li>
+                              </ul>
+                            </div>
+
+                            <!-- Card 5: Industrial, Manufacturing & Energy -->
+                            <div class="col-md-4 col-12 p-3 border-end">
+                              <div class="mega-card-icon-circle mb-2">
+                                <i class="fa-solid fa-gears"></i>
+                              </div>
+                              <h5 class="mega-card-heading mb-2"><a href="industrial-manufacturing.html">Industrial, Manufacturing &amp; Energy</a></h5>
+                              <ul class="mega-card-bullet-list">
+                                <li>Industrial Manufacturing O&amp;M</li>
+                                <li>Warehousing &amp; Logistics</li>
+                                <li>Energy, Oil &amp; Gas Facilities</li>
+                                <li>Food &amp; Beverage Facility O&amp;M</li>
+                              </ul>
+                            </div>
+
+                            <!-- Card 6: Education & Public Sector -->
+                            <div class="col-md-4 col-12 p-3">
+                              <div class="mega-card-icon-circle mb-2">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                              </div>
+                              <h5 class="mega-card-heading mb-2"><a href="education-publicsector.html">Education &amp; Public Sector</a></h5>
+                              <ul class="mega-card-bullet-list">
+                                <li>Academic Campuses</li>
+                                <li>Public Infrastructure</li>
+                                <li>Defense Facilities</li>
+                                <li>Sustainable Campuses</li>
+                              </ul>
+                            </div>
+
+                          </div>
+
+                          <!-- Bottom Action Bar Banner -->
+                          <div class="mega-bottom-banner p-2 px-3 d-flex align-items-center justify-content-between">
+                            <span class="text-secondary font-weight-bold" style="font-size: 0.85rem;">Need custom solutions for your industry?</span>
+                            <a href="industries.html" class="btn-mega-view-all">
+                              View All Industries <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown dropdown-mega">
+                  <a class="nav-link nav-link-abm-exact dropdown-toggle active" href="solutions.html" id="solutionsDropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Solutions <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+                  </a>
+                  <div class="dropdown-menu mega-menu-box solutions-mega-menu" aria-labelledby="solutionsDropdown">
+                    <div class="container-fluid p-0">
+                      <div class="row g-4 align-items-stretch">
+                        
+                        <!-- Column 1: Facility Solutions -->
+                        <div class="col-lg-4 col-md-6">
+                          <h5 class="solutions-mega-header"><a href="solutions.html#facility-solutions" class="text-decoration-none text-primary">Facility Solutions</a></h5>
+                          <ul class="solutions-mega-list">
+                            <li><a href="strategic-fm-consultancy.html">Strategic FM Consultancy</a></li>
+                            <li><a href="operational-planning-excellence.html">Operational Planning &amp; Performance Excellence</a></li>
+                            <li><a href="fm-contracts-operations.html">FM Contracts &amp; Operations Management</a></li>
+                            <li><a href="stakeholder-customer-experience.html">Stakeholder &amp; Customer Experience</a></li>
+                            <li><a href="training-capability-development.html">Training &amp; Capability Development</a></li>
+                            <li><a href="fm-technology-digital-solutions.html">FM Technology &amp; Digital Solutions</a></li>
+                            <li><a href="soft-services-workplace.html">Soft Services &amp; Workplace Solutions</a></li>
+                            <li><a href="service-quality-improvement.html">Service Quality &amp; Continuous Improvement</a></li>
+                            <li><a href="fm-governance-compliance.html">FM Governance &amp; Compliance</a></li>
+                            <li><a href="fm-mobilization-transition.html">FM Mobilization &amp; Transition</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Column 2: Engineering & Infrastructure Solutions -->
+                        <div class="col-lg-4 col-md-6">
+                          <h5 class="solutions-mega-header"><a href="solutions.html#engineering-solutions" class="text-decoration-none text-primary">Engineering &amp; Infrastructure Solutions</a></h5>
+                          <ul class="solutions-mega-list">
+                            <li><a href="asset-infrastructure-advisory.html">Asset &amp; Infrastructure Advisory</a></li>
+                            <li><a href="engineering-systems-assessment.html">Engineering Systems Assessment</a></li>
+                            <li><a href="reliability-maintenance-engineering.html">Reliability &amp; Maintenance Engineering</a></li>
+                            <li><a href="root-cause-analysis.html">Root Cause Analysis &amp; Failure Investigation</a></li>
+                            <li><a href="energy-management-efficiency.html">Energy Management &amp; Efficiency</a></li>
+                            <li><a href="sustainability-green-energy.html">Sustainability &amp; Green Energy</a></li>
+                            <li><a href="engineering-projects-capex.html">Engineering Projects &amp; CAPEX Advisory</a></li>
+                            <li><a href="infrastructure-risk-resilience.html">Infrastructure Risk &amp; Resilience</a></li>
+                            <li><a href="smart-infrastructure-technology.html">Smart Infrastructure &amp; Engineering Technology</a></li>
+                            <li><a href="asset-lifecycle-planning.html">Asset Lifecycle &amp; Replacement Planning</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Column 3: Promo Cards Right Panel -->
+                        <div class="col-lg-4 col-12 ps-lg-3">
+                          <div class="solutions-right-panel">
+                            <!-- Card 1: Our Technology Platform -->
+                            <a href="solutions.html#technology-platform" class="solutions-promo-card">
+                              <div>
+                                <h5>OUR TECHNOLOGY<br>PLATFORM</h5>
+                              </div>
+                              <div class="promo-icon-wrap">
+                                <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M46 32a10 10 0 0 0-18.4-5.2A14 14 0 0 0 12 40a10 10 0 0 0 10 10h24a10 10 0 0 0 0-20z" opacity="0.35"/>
+                                  <circle cx="44" cy="28" r="11" />
+                                  <path d="M33 28h22" />
+                                  <path d="M44 17a14 14 0 0 1 3.8 11 14 14 0 0 1-3.8 11 14 14 0 0 1-3.8-17z" />
+                                </svg>
+                              </div>
+                            </a>
+
+                            <!-- Card 2: Innovative Case Studies -->
+                            <a href="perspectives.html" class="solutions-promo-card">
+                              <div>
+                                <h5>INNOVATIVE<br>CASE STUDIES</h5>
+                              </div>
+                              <div class="promo-icon-wrap">
+                                <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M8 44V16a4 4 0 0 1 4-4h18v32H12a4 4 0 0 0-4 4z" />
+                                  <path d="M56 44V16a4 4 0 0 0-4-4H34v32h18a4 4 0 0 1 4 4z" />
+                                  <line x1="14" y1="20" x2="24" y2="20" />
+                                  <line x1="14" y1="26" x2="24" y2="26" />
+                                  <line x1="14" y1="32" x2="32" y2="32" />
+                                  <path d="M38 34l6-6 4 4 8-8" />
+                                  <path d="M50 14h6v6" />
+                                  <line x1="40" y1="38" x2="40" y2="34" />
+                                  <line x1="46" y1="38" x2="46" y2="30" />
+                                  <line x1="52" y1="38" x2="52" y2="24" />
+                                </svg>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown dropdown-mega">
+                  <a class="nav-link nav-link-abm-exact dropdown-toggle" href="perspectives.html" id="perspectivesDropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Perspectives <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+                  </a>
+                  <div class="dropdown-menu mega-menu-box perspectives-mega-menu" aria-labelledby="perspectivesDropdown">
+                    <div class="container-fluid p-0">
+                      
+                      <!-- Top Banner Header -->
+                      <div class="perspective-top-banner">
+                        <h3 class="perspective-banner-title mb-2">Creating Better Places to Work, Live and Thrive</h3>
+                        <p class="perspective-banner-text mb-2">
+                          At ABM, we believe facility management is more than maintaining buildings—it is about creating environments where people, businesses, and communities can perform at their best.
+                        </p>
+                        <p class="perspective-banner-text mb-0">
+                          Our perspective is built on the idea that every facility has a purpose, and every space should be managed with that purpose in mind.
+                        </p>
+                      </div>
+
+                      <!-- 3 Column Cards -->
+                      <div class="row g-4 align-items-stretch">
+                        <div class="col-lg-4 col-md-6">
+                          <div class="perspective-mega-card">
+                            <img src="img/perspective-datacenter.jpg" alt="Beyond Maintenance" class="perspective-card-img">
+                            <div class="perspective-card-body">
+                              <h4 class="perspective-card-title">Beyond Maintenance</h4>
+                              <p class="perspective-card-text">
+                                A well-managed facility should be safe, efficient, reliable, and ready for what comes next.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="perspective-mega-card">
+                            <img src="img/perspective-people-first.jpg" alt="People First" class="perspective-card-img">
+                            <div class="perspective-card-body">
+                              <h4 class="perspective-card-title">People First</h4>
+                              <p class="perspective-card-text">
+                                Facilities are ultimately about people. Our teams deliver services that make a meaningful difference.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="perspective-mega-card">
+                            <img src="img/perspective-sustainability.jpg" alt="Smarter, More Sustainable Facilities" class="perspective-card-img">
+                            <div class="perspective-card-body">
+                              <h4 class="perspective-card-title">Smarter, More Sustainable Facilities</h4>
+                              <p class="perspective-card-text">
+                                The future of facility management is driven by technology, data, and sustainability.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Bottom Banner: Our Commitment -->
+                      <div class="perspective-bottom-banner">
+                        <h5 class="perspective-commit-title">Our Commitment</h5>
+                        <p class="perspective-commit-text">
+                          Manage proactively. Operate efficiently. Put people first. Create lasting value.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown dropdown-mega">
+                  <a class="nav-link nav-link-abm-exact dropdown-toggle" href="about-us.html" id="whoWeAreDropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Who We Are <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+                  </a>
+                  <div class="dropdown-menu mega-menu-box who-we-are-mega-menu" aria-labelledby="whoWeAreDropdown">
+                    <div class="container-fluid p-0">
+                      <div class="row g-4 align-items-stretch">
+                        <div class="col-lg-4 col-md-6">
+                          <h2 class="whoweare-mega-title mb-2">Who We Are</h2>
+                          <h6 class="whoweare-mega-subtitle mb-3">Facility Management &amp; Engineering Excellence</h6>
+                          <p class="whoweare-mega-text mb-3">
+                            We are a premier facility management and engineering services organization delivering end-to-end solutions.
+                          </p>
+                          <a href="about-us.html" class="btn-whoweare-learn">Learn More About Us <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 px-lg-3">
+                          <div class="whoweare-mega-block mb-4">
+                            <h5 class="whoweare-block-title">Our Approach</h5>
+                            <p class="whoweare-block-text">We combine operational expertise with smart technology and high standards of service.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 ps-lg-4">
+                          <div class="whoweare-mega-block mb-4">
+                            <h5 class="whoweare-block-title">Expertise You Can Rely On</h5>
+                            <p class="whoweare-block-text">Our experienced teams work closely with clients to keep operations moving with minimal disruption.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown dropdown-mega">
+                  <a class="nav-link nav-link-abm-exact dropdown-toggle" href="company.html" id="companyDropdown" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                    Company <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.7rem;"></i>
+                  </a>
+                  <div class="dropdown-menu mega-menu-box company-mega-menu" aria-labelledby="companyDropdown">
+                    <div class="container-fluid p-0">
+                      <div class="row g-4 align-items-start">
+                        <div class="col-lg-3 col-md-6 pe-lg-3">
+                          <h2 class="company-mega-title mb-2">Company</h2>
+                          <h6 class="company-mega-subtitle mb-3">One Partner. Multiple Capabilities. Global Reach.</h6>
+                          <p class="company-mega-text mb-3">We are a US-based Facility Management, Infrastructure, and Engineering company delivering integrated solutions.</p>
+                          <a href="company.html" class="btn-company-news">Company Overview</a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 px-lg-3">
+                          <div class="company-mega-block mb-4">
+                            <h5 class="company-block-title">Our Global Presence</h5>
+                            <p class="company-block-text">International standards combined with local execution across North America, Europe, and Asia.</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 px-lg-3">
+                          <h5 class="company-block-title mb-2">What We Do</h5>
+                          <ul class="company-mega-list">
+                            <li>Facility Management &amp; Operations</li>
+                            <li>Technical &amp; Engineering Services</li>
+                            <li>Infrastructure Management</li>
+                            <li>Energy &amp; Sustainability Solutions</li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ps-lg-3">
+                          <div class="company-mega-block">
+                            <h5 class="company-block-title mb-3">Built for Complex Environments</h5>
+                            <p class="company-block-text">Supporting commercial, industrial, healthcare, and high-tech critical facilities worldwide.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-abm-exact" href="careers.html">Careers</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Right Action Cluster -->
+          <div class="d-none d-md-flex align-items-center gap-3">
+            <a href="contact-us.html" class="btn-abm-exact-contact">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top Breadcrumb Hero Banner with 3D Canvas (Full Width) -->
+    <section class="page-banner-hero">
+      <div class="container-fluid px-lg-5 page-banner-content">
+        <div class="breadcrumb-abm">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <a href="solutions.html">Solutions</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <a href="solutions.html#facility-solutions">Facility Solutions</a>
+          <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+          <span>Soft Services & Workplace Solutions</span>
+        </div>
+        
+        <div class="d-inline-flex align-items-center gap-2 mb-2">
+          <span class="badge bg-primary text-white px-3 py-2 rounded-pill font-weight-bold" style="font-size: 0.85rem;">
+            Core Advisory Service
+          </span>
+          <span class="badge bg-light text-dark px-3 py-2 rounded-pill fw-bold border" style="font-size: 0.85rem;">
+            Solution #07
+          </span>
+        </div>
+
+        <h1 class="page-banner-title mb-3">07 Soft Services & Workplace Solutions</h1>
+        <p class="page-banner-subtitle">
+          Enhancing Experience. Ensuring Safety. Optimizing Operations.
+        </p>
+      </div>
+    </section>
+
+    <!-- FULL WIDTH PRESENTATION SLIDE SECTION (MATCHING SOLUTION-02.JPG PIXEL FOR PIXEL) -->
+    <section class="solution-slide-section">
+      <div class="container-fluid px-3 px-lg-5">
+        
+        <!-- Master Infographic Slide Presentation Card (Full Width) -->
+        <div class="solution-slide-card">
+          <div class="row g-4 align-items-stretch">
+            
+            <!-- LEFT COLUMN: Executive Portrait + Solid Blue Box -->
+            <div class="col-xl-4 col-lg-5 col-12">
+              <div class="slide-left-column">
+                
+                <!-- Portrait Top Half with Seamless Crop of Executive -->
+                <div class="slide-portrait-wrap">
+                  
+                  <div class="slide-floating-number-pill" style="position: absolute; top: 16px; left: 16px; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); border: 1px solid rgba(0, 85, 255, 0.15); border-radius: 20px; padding: 6px 14px; box-shadow: 0 4px 14px rgba(0,0,0,0.12); z-index: 5; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fa-solid fa-bullseye" style="color: #0055FF; font-size: 0.95rem;"></i>
+                    <strong style="font-size: 1.05rem; color: #0F172A; font-family: 'Outfit', sans-serif;">07</strong>
+                    <span style="font-size: 0.75rem; font-weight: 600; color: #475569; border-left: 1px solid #CBD5E1; padding-left: 8px;">Soft Services & Workplace</span>
+                  </div>
+                  <img src="img/solutions/solution-07.webp" alt="Soft Services & Workplace Solutions" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;">
+                  
+                </div>
+
+                <!-- Solid Blue Lower Half with Green Highlights & 4 Pillars -->
+                <div class="slide-blue-box">
+                  <div>
+                    <h3 class="slide-blue-title">
+                      Enhancing Experience.<br>
+                      <span class="highlight-green">Ensuring Safety.</span> Optimizing Operations.
+                    </h3>
+                    <p class="slide-blue-desc">
+                      Our advisory covers cleaning, security, landscaping, waste management, catering, reception, workplace services, and other support functions, assessing service models, resources, standards, workflows, contracts, and expectations.
+                    </p>
+                  </div>
+
+                  <!-- 4 Icon Pillars in a Row -->
+                  <div class="slide-pillars-row">
+                    
+                    <div class="slide-pillar-item">
+                      <i class="fa-solid fa-broom"></i>
+                      <span>Hygiene & Cleaning</span>
+                    </div>
+                    <div class="slide-pillar-item">
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <span>Security & Access</span>
+                    </div>
+                    <div class="slide-pillar-item">
+                      <i class="fa-solid fa-bell-concierge"></i>
+                      <span>Reception Services</span>
+                    </div>
+                    <div class="slide-pillar-item">
+                      <i class="fa-solid fa-recycle"></i>
+                      <span>Sustainable Waste</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Title, Target Box, Key Areas, Focus Bar -->
+            <div class="col-xl-8 col-lg-7 col-12 ps-xl-5 ps-lg-4 d-flex flex-column justify-content-between">
+              
+              <div>
+                <!-- Top Header Row with Title & Core Advisory Service Badge -->
+                <div class="slide-right-header">
+                  <div>
+                    <h2 class="slide-main-title">
+                      <span class="line-dark">Soft Services &</span>
+                      <span class="line-blue">Workplace Solutions</span>
+                    </h2>
+                    <div class="slide-orange-accent"></div>
+                  </div>
+
+                  <div class="slide-core-badge">
+                    <i class="fa-regular fa-star"></i>
+                    <span>Core Advisory Service</span>
+                  </div>
+                </div>
+
+                <!-- 2 Content Paragraphs -->
+                <p class="slide-lead-p">
+                  Our advisory covers cleaning, security, landscaping, waste management, catering, reception, workplace services, and other support functions, assessing service models, resources, standards, workflows, contracts, and expectations.
+                </p>
+                <p class="slide-lead-p mb-3">
+                  We help organizations achieve clean, safe, secure, and welcoming work environments that enhance employee satisfaction, retention, and productivity, while driving consistent standards and cost-effectiveness.
+                </p>
+
+                <!-- Target Callout Banner Box -->
+                <div class="slide-target-box">
+                  <div class="slide-target-icon-wrap">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                  <p class="slide-target-text">
+                    We help organizations achieve clean, safe, and welcoming environments that <strong>enhance employee satisfaction</strong> while driving <strong>consistent standards and cost-effectiveness</strong>.
+                  </p>
+                </div>
+
+                <!-- KEY AREAS Labeled Line -->
+                <div class="slide-keyareas-divider">
+                  <span>KEY AREAS</span>
+                  <div class="divider-line"></div>
+                </div>
+
+                <!-- 3x3 Key Areas Grid with Soft Pastel Colored Icons -->
+                <div class="slide-keyareas-grid">
+                  
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #eff6ff; color: #2563eb;">
+                      <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Cleaning & Hygiene</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #ecfdf5; color: #059669;">
+                      <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Physical Security</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #fffbeb; color: #d97706;">
+                      <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Landscaping & Grounds</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #fdf2f8; color: #db2777;">
+                      <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Zero-Waste Programs</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #f5f3ff; color: #7c3aed;">
+                      <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Catering & Food Service</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #ecfeff; color: #0891b2;">
+                      <i class="fa-solid fa-hand-sparkles"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Reception & Concierge</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #fef2f2; color: #dc2626;">
+                      <i class="fa-solid fa-chair"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Workplace Planning</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #f0fdf4; color: #16a34a;">
+                      <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Service Quality Audits</h6>
+                    </div>
+                  </div>
+                  <div class="slide-keyarea-card">
+                    <div class="slide-keyarea-icon-box" style="background: #fefce8; color: #ca8a04;">
+                      <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div>
+                      <h6 class="slide-keyarea-title">Vendor Management</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom "Our Focus" Capsule Bar with City Skyline Graphic -->
+              <div class="slide-bottom-focus-bar">
+                <div class="slide-focus-left">
+                  <div class="slide-focus-icon-circle">
+                    <i class="fa-regular fa-lightbulb"></i>
+                  </div>
+                  <span class="slide-focus-heading">Our Focus</span>
+                  <div class="slide-focus-divider-v d-none d-sm-block"></div>
+                  <p class="slide-focus-desc">To create well-managed, safe, efficient and productive workplaces while optimizing quality and cost.</p>
+                </div>
+
+                <!-- City Skyline Silhouette Graphic -->
+                <svg class="slide-focus-skyline d-none d-md-block" viewBox="0 0 160 50" fill="#0055FF">
+                  <rect x="5" y="25" width="10" height="25" rx="1"/>
+                  <rect x="18" y="15" width="12" height="35" rx="1"/>
+                  <rect x="33" y="8" width="15" height="42" rx="1"/>
+                  <rect x="51" y="20" width="10" height="30" rx="1"/>
+                  <rect x="64" y="2" width="16" height="48" rx="1"/>
+                  <polygon points="72,0 68,2 76,2"/>
+                  <rect x="83" y="18" width="12" height="32" rx="1"/>
+                  <rect x="98" y="10" width="14" height="40" rx="1"/>
+                  <rect x="115" y="22" width="11" height="28" rx="1"/>
+                  <rect x="129" y="14" width="15" height="36" rx="1"/>
+                  <rect x="147" y="28" width="10" height="22" rx="1"/>
+                </svg>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Key Metrics & Performance Overview (Full Width) -->
+    <section class="py-5 bg-white border-top border-bottom">
+      <div class="container-fluid px-lg-5 py-2">
+        <div class="row g-4 text-center">
+          
+          <div class="col-md-3 col-6">
+            <div class="p-3 rounded-4 bg-light h-100 d-flex flex-column justify-content-center border">
+              <h2 class="font-weight-bold text-primary mb-1" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem;">99.7%</h2>
+              <p class="text-secondary m-0" style="font-size: 0.9rem; font-weight: 500;">Hygiene Audit Score</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="p-3 rounded-4 bg-light h-100 d-flex flex-column justify-content-center border">
+              <h2 class="font-weight-bold text-primary mb-1" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem;">40%</h2>
+              <p class="text-secondary m-0" style="font-size: 0.9rem; font-weight: 500;">Waste Diverted from Landfills</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="p-3 rounded-4 bg-light h-100 d-flex flex-column justify-content-center border">
+              <h2 class="font-weight-bold text-primary mb-1" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem;">100%</h2>
+              <p class="text-secondary m-0" style="font-size: 0.9rem; font-weight: 500;">Front-Desk Uptime</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="p-3 rounded-4 bg-light h-100 d-flex flex-column justify-content-center border">
+              <h2 class="font-weight-bold text-primary mb-1" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem;">5-Star</h2>
+              <p class="text-secondary m-0" style="font-size: 0.9rem; font-weight: 500;">Hospitality Rating</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Capabilities & Scope Section (Cards Grid Full Width) -->
+    <section id="detailed-capabilities" class="py-5 bg-light">
+      <div class="container-fluid px-lg-5 py-4">
+        <div class="text-center mb-5" style="max-width: 750px; margin: 0 auto;">
+          <span class="badge bg-primary px-3 py-2 rounded-pill font-weight-bold mb-2">Service Scopes</span>
+          <h2 class="font-weight-bold text-dark mb-3" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem;">
+            Deep-Dive Capabilities &amp; Execution Scopes
+          </h2>
+          <p class="text-secondary">
+            Explore how our team executes each critical service stream for <strong>Soft Services & Workplace Solutions</strong>.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #eff6ff; color: #2563eb;">
+                  <i class="fa-solid fa-spray-can-sparkles"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Cleaning & Hygiene</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Cleaning & Hygiene.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #ecfdf5; color: #059669;">
+                  <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Physical Security</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Physical Security.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #fffbeb; color: #d97706;">
+                  <i class="fa-solid fa-tree"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Landscaping & Grounds</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Landscaping & Grounds.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #fdf2f8; color: #db2777;">
+                  <i class="fa-solid fa-recycle"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Zero-Waste Programs</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Zero-Waste Programs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #f5f3ff; color: #7c3aed;">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Catering & Food Service</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Catering & Food Service.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #ecfeff; color: #0891b2;">
+                  <i class="fa-solid fa-hand-sparkles"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Reception & Concierge</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Reception & Concierge.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #fef2f2; color: #dc2626;">
+                  <i class="fa-solid fa-chair"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Workplace Planning</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Workplace Planning.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #f0fdf4; color: #16a34a;">
+                  <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Service Quality Audits</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Service Quality Audits.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 bg-white" style="transition: all 0.3s ease;">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle p-3 fs-4"
+                  style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #fefce8; color: #ca8a04;">
+                  <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <h4 class="font-weight-bold m-0" style="font-size: 1.15rem; color: #0B2265; text-transform: capitalize;">Vendor Management</h4>
+              </div>
+              <p class="text-secondary mb-0" style="font-size: 0.93rem; line-height: 1.6;">
+                Structured execution protocols and dedicated operational management for Vendor Management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Creation & Category Navigation Panel (Full Width) -->
+    <section class="section-padding bg-white">
+      <div class="container-fluid px-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="badge bg-success-subtle text-success fw-semibold px-3 py-2 rounded-pill mb-3">Value Creation</span>
+            <h2 class="font-weight-bold mb-4" style="font-family: 'Outfit', sans-serif; color: #0B2265; font-size: 2.1rem;">
+              Why Partner with ABM FM for Soft Services & Workplace?
+            </h2>
+            <p class="text-secondary mb-4" style="line-height: 1.7;">
+              With decades of specialized experience across North America, Europe, and Asia, our certified teams combine rigorous engineering standards with cutting-edge digital intelligence to ensure your facilities operate at peak potential.
+            </p>
+            
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div class="d-flex align-items-start gap-3">
+                <div class="rounded-circle text-white p-2" style="background: #0055FF; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.85rem;">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                  <strong class="text-dark d-block">Data-Driven Advisory</strong>
+                  <span class="text-secondary" style="font-size: 0.9rem;">Empirical insights, sensor telemetry, and predictive modeling back every recommendation.</span>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="rounded-circle text-white p-2" style="background: #00bc98; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.85rem;">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                  <strong class="text-dark d-block">End-to-End Governance</strong>
+                  <span class="text-secondary" style="font-size: 0.9rem;">Rigorous SLA enforcement, audit-ready compliance matrices, and risk mitigation frameworks.</span>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="rounded-circle text-white p-2" style="background: #0055FF; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.85rem;">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <div>
+                  <strong class="text-dark d-block">Measurable Bottom-Line Value</strong>
+                  <span class="text-secondary" style="font-size: 0.9rem;">Proven reduction in operational expenditure (OPEX) and optimized capital expenditure (CAPEX).</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="contact-us.html" class="btn-abm-primary">
+              <span>Schedule Strategic Consultation</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 rounded-4 shadow-sm" style="background: #0B2265; color: white;">
+              <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom border-secondary border-opacity-25">
+                <h5 class="m-0 text-white font-weight-bold"><i class="fa-solid fa-layer-group text-cyan me-2"></i> Facility Solutions Suite</h5>
+                <span class="badge bg-success text-white">Active Services</span>
+              </div>
+              <p class="text-light mb-4" style="font-size: 0.95rem; opacity: 0.9;">
+                Explore other complementary sub-solutions within our <strong>Facility Solutions</strong> portfolio:
+              </p>
+              <div class="d-flex flex-column gap-3">
+                
+                <a href="strategic-fm-consultancy.html" class="p-3 rounded-3 text-white text-decoration-none d-flex align-items-center justify-content-between" style="background: rgba(255,255,255,0.08); transition: background 0.2s ease;">
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="badge bg-primary text-white">#01</span>
+                    <span class="fw-semibold">Strategic FM Consultancy</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-light" style="font-size: 0.8rem;"></i>
+                </a>
+                <a href="operational-planning-excellence.html" class="p-3 rounded-3 text-white text-decoration-none d-flex align-items-center justify-content-between" style="background: rgba(255,255,255,0.08); transition: background 0.2s ease;">
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="badge bg-primary text-white">#02</span>
+                    <span class="fw-semibold">Operational Planning & Performance Excellence</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-light" style="font-size: 0.8rem;"></i>
+                </a>
+                <a href="fm-contracts-operations.html" class="p-3 rounded-3 text-white text-decoration-none d-flex align-items-center justify-content-between" style="background: rgba(255,255,255,0.08); transition: background 0.2s ease;">
+                  <div class="d-flex align-items-center gap-3">
+                    <span class="badge bg-primary text-white">#03</span>
+                    <span class="fw-semibold">FM Contracts & Operations Management</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right text-light" style="font-size: 0.8rem;"></i>
+                </a>
+              </div>
+              <div class="text-center mt-4 pt-2">
+                <a href="solutions.html#facility-solutions" class="text-cyan fw-bold text-decoration-none" style="font-size: 0.9rem;">
+                  View All 10 Facility Solutions <i class="fa-solid fa-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout Banner -->
+    <section class="py-5 bg-navy-dark text-white text-center">
+      <div class="container py-4">
+        <h2 class="text-white font-weight-bold mb-3">Ready to Optimize Your Operations?</h2>
+        <p class="text-light mb-4" style="max-width: 650px; margin: 0 auto;">
+          Connect with our technical advisory specialists to learn how <strong>Soft Services & Workplace Solutions</strong> delivers measurable value and operational resilience.
+        </p>
+        <a href="contact-us.html" class="btn-hero-primary d-inline-flex">
+          <span>Request Infrastructure Proposal</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container-fluid px-lg-5">
+        <div class="row g-4">
+          <!-- Column 1: Brand Logo & Description -->
+          <div class="col-lg-3 col-sm-6">
+            <a href="index.html" class="header-brand-logo mb-3 d-inline-block">
+              <img src="img/logo-abmfm.png" alt="ABM FM" style="height: 42px; width: auto;">
+            </a>
+            <p class="text-light mb-4" style="font-size: 0.9rem; line-height: 1.6; color: rgba(255, 255, 255, 0.82);">
+              ABM FM delivers specialized facility and engineering solutions across commercial, industrial, healthcare, and infrastructure environments.
+            </p>
+          </div>
+
+          <!-- Column 2: Key Verticals -->
+          <div class="col-lg-3 col-sm-6">
+            <h6 class="footer-title">Key Verticals</h6>
+            <ul class="footer-links-list">
+              <li><a href="aviation-transportation.html">Aviation &amp; Transportation</a></li>
+              <li><a href="hightech-missioncritical.html">High-Tech &amp; Data Centers</a></li>
+              <li><a href="commercial-hospitality.html">Commercial &amp; Hospitality</a></li>
+              <li><a href="healthcare-lifesciences.html">Healthcare &amp; Life Sciences</a></li>
+              <li><a href="industrial-manufacturing.html">Industrial &amp; Energy</a></li>
+              <li><a href="education-publicsector.html">Education &amp; Public Sector</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Company -->
+          <div class="col-lg-2 col-sm-6">
+            <h6 class="footer-title">Company</h6>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">Who We Are</a></li>
+              <li><a href="solutions.html">Solutions</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Global Offices -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="footer-address">
+              <h6 class="footer-title">Global Offices</h6>
+              <ul class="footer-address-list">
+                <li class="footer-address-item">
+                  <i class="fa-solid fa-location-dot footer-address-icon"></i>
+                  <div class="footer-address-content">
+                    <strong class="footer-address-title">Global HQ:</strong>
+                    <span class="footer-address-text">123 Madison Avenue, New York, NY 10016, United States of America</span>
+                    <span class="footer-address-tel">Tel: +1 (212) 555-1234</span>
+                  </div>
+                </li>
+                <li class="footer-address-item">
+                  <i class="fa-solid fa-location-dot footer-address-icon"></i>
+                  <div class="footer-address-content">
+                    <strong class="footer-address-title">Europe HQ:</strong>
+                    <span class="footer-address-text">125 Kingsway, London WC2B 6NH, United Kingdom</span>
+                    <span class="footer-address-tel">Tel: +44 20 7946 0123</span>
+                  </div>
+                </li>
+                <li class="footer-address-item">
+                  <i class="fa-solid fa-location-dot footer-address-icon"></i>
+                  <div class="footer-address-content">
+                    <strong class="footer-address-title">APAC:</strong>
+                    <span class="footer-address-text">Suasana Sentral, 3 Jalan Stesen Sentral, Kuala Lumpur, Malaysia</span>
+                    <span class="footer-address-tel">Tel: +60 11-1137 3817</span>
+                  </div>
+                </li>
+                <li class="footer-address-item">
+                  <i class="fa-regular fa-envelope footer-address-icon"></i>
+                  <div class="footer-address-content">
+                    <strong class="footer-address-title d-inline">Email:</strong>
+                    <span class="footer-address-email ms-1">info@abmfm.com</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar text-center pt-4 border-top mt-5" style="border-color: rgba(255, 255, 255, 0.1) !important;">
+          <p class="m-0" style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">© 2026 ABM FM Solutions. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JS Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/abm-animated.js"></script>
+</body>
+
+</html>
