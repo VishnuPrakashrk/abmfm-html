@@ -3619,11 +3619,11 @@ img:hover,
 .footer-address::before {
   content: '';
   display: block;
-  width: 46px;
+  width: 44px;
   height: 4px;
   background: #0075FF;
   border-radius: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .footer-address-list {
@@ -3636,7 +3636,7 @@ img:hover,
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .footer-address-item:last-child {
@@ -3646,11 +3646,17 @@ img:hover,
 
 .footer-address-icon {
   color: #0075FF !important;
-  font-size: 1.5rem;
-  margin-top: 2px;
+  font-size: 1.65rem;
+  line-height: 1;
+  margin-top: 1px;
   flex-shrink: 0;
-  width: 24px;
+  width: 26px;
   text-align: center;
+}
+
+.footer-address-item:last-child .footer-address-icon {
+  font-size: 1.4rem;
+  margin-top: 0;
 }
 
 .footer-address-content {
@@ -3663,27 +3669,48 @@ img:hover,
   display: block;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   color: #FFFFFF;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
+  line-height: 1.25;
 }
 
 .footer-address-text {
   display: block;
   color: #FFFFFF;
   font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
+  line-height: 1.35;
 }
 
 .footer-address-tel {
   display: block;
   color: #FFFFFF;
   font-weight: 500;
+  line-height: 1.35;
+}
+
+.footer-email-content {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.footer-email-content .footer-address-title {
+  display: inline;
+  margin-bottom: 0;
 }
 
 .footer-address-email {
   color: #FFFFFF;
   font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.footer-address-email:hover {
+  color: #0075FF;
+  text-decoration: underline;
 }
 
 /* Key Verticals Mega Menu (Compact Height & Viewport Fit) */
