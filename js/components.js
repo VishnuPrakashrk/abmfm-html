@@ -9,7 +9,7 @@
     if (!placeholder) return false;
 
     try {
-      const response = await fetch(componentPath);
+      const response = await fetch(`${componentPath}?t=${Date.now()}`, { cache: 'no-store' });
       if (!response.ok) {
         throw new Error(`Failed to load ${componentPath}: ${response.status} ${response.statusText}`);
       }
@@ -101,6 +101,26 @@
       ];
       if (solutionPages.includes(cleanPath)) {
         document.getElementById('solutionsDropdown')?.classList.add('active');
+        return;
+      }
+
+      // Who We Are sub-pages
+      const whoWeArePages = [
+        'about-us.html',
+        'what-we-provide.html',
+        'expertise-value.html'
+      ];
+      if (whoWeArePages.includes(cleanPath)) {
+        document.getElementById('whoWeAreDropdown')?.classList.add('active');
+        return;
+      }
+
+      // Perspectives sub-pages
+      const perspectivesPages = [
+        'perspectives.html'
+      ];
+      if (perspectivesPages.includes(cleanPath)) {
+        document.getElementById('perspectivesDropdown')?.classList.add('active');
         return;
       }
     }
