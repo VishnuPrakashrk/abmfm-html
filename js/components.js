@@ -117,7 +117,10 @@
 
       // Perspectives sub-pages
       const perspectivesPages = [
-        'perspectives.html'
+        'perspectives.html',
+        'beyond-maintenance.html',
+        'people-first.html',
+        'smarter-sustainable-facilities.html'
       ];
       if (perspectivesPages.includes(cleanPath)) {
         document.getElementById('perspectivesDropdown')?.classList.add('active');
