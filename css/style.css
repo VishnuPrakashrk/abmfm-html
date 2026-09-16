@@ -4316,6 +4316,46 @@ img:hover,
     width: 100%;
   }
 }
+.slide-keyareas-highlight-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: -10px;
+  margin-bottom: 24px;
+}
+@media (max-width: 767.98px) {
+  .slide-keyareas-highlight-row {
+    grid-template-columns: 1fr;
+  }
+}
+.slide-keyarea-highlight-card {
+  background: #F0F6FF;
+  border: 1px solid #BFDBFE;
+  border-radius: 14px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.25s ease;
+  min-height: 62px;
+}
+.slide-keyarea-highlight-card:hover {
+  background: #FFFFFF;
+  border-color: #0055FF;
+  box-shadow: 0 6px 18px rgba(0, 85, 255, 0.12);
+  transform: translateY(-2px);
+}
+.slide-keyarea-highlight-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0055FF;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
 .slide-keyarea-card {
   background: #F8FAFC;
   border: 1px solid #E2E8F0;
