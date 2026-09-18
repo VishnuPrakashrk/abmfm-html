@@ -1,0 +1,778 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React Artifact</title>
+    <style>*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.18 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.-bottom-32{bottom:-8rem}.-bottom-4{bottom:-1rem}.-bottom-\[18px\]{bottom:-18px}.-left-32{left:-8rem}.-left-8{left:-2rem}.-right-1{right:-.25rem}.-right-10{right:-2.5rem}.-right-24{right:-6rem}.-right-3{right:-.75rem}.-top-1{top:-.25rem}.-top-24{top:-6rem}.-top-3{top:-.75rem}.-top-6{top:-1.5rem}.bottom-4{bottom:1rem}.bottom-\[22\%\]{bottom:22%}.left-0{left:0}.left-1\/2{left:50%}.left-4{left:1rem}.left-5{left:1.25rem}.left-\[28\%\]{left:28%}.right-0{right:0}.right-4{right:1rem}.right-6{right:1.5rem}.top-0{top:0}.top-1\/2{top:50%}.top-5{top:1.25rem}.top-6{top:1.5rem}.top-\[22\%\]{top:22%}.top-\[76px\]{top:76px}.z-10{z-index:10}.z-50{z-index:50}.z-\[60\]{z-index:60}.mx-auto{margin-left:auto;margin-right:auto}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-0\.5{margin-top:.125rem}.mt-1\.5{margin-top:.375rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-8{margin-top:2rem}.mt-\[2px\]{margin-top:2px}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-\[4\/5\]{aspect-ratio:4/5}.h-1{height:.25rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-2{height:.5rem}.h-20{height:5rem}.h-24{height:6rem}.h-28{height:7rem}.h-3{height:.75rem}.h-5{height:1.25rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[22px\]{height:22px}.h-\[280px\]{height:280px}.h-\[2px\]{height:2px}.h-\[32px\]{height:32px}.h-\[34px\]{height:34px}.h-\[3px\]{height:3px}.h-\[420px\]{height:420px}.h-\[42px\]{height:42px}.h-\[44px\]{height:44px}.h-\[500px\]{height:500px}.h-\[56px\]{height:56px}.h-\[68px\]{height:68px}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:.5rem}.w-20{width:5rem}.w-24{width:6rem}.w-28{width:7rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-\[220px\]{width:220px}.w-\[22px\]{width:22px}.w-\[32px\]{width:32px}.w-\[34px\]{width:34px}.w-\[420px\]{width:420px}.w-\[42px\]{width:42px}.w-\[44px\]{width:44px}.w-\[500px\]{width:500px}.w-\[56px\]{width:56px}.w-\[5px\]{width:5px}.w-full{width:100%}.max-w-\[1280px\]{max-width:1280px}.max-w-\[520px\]{max-width:520px}.max-w-\[560px\]{max-width:560px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.-translate-y-1\/2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%}.rotate-\[-8deg\]{--tw-rotate:-8deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0{gap:0}.gap-10{gap:2.5rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-3\.5{gap:.875rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}.gap-8{gap:2rem}.gap-\[3px\]{gap:3px}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-\[10px\]{border-radius:10px}.rounded-\[12px\]{border-radius:12px}.rounded-\[18px\]{border-radius:18px}.rounded-\[22px\]{border-radius:22px}.rounded-\[28px\]{border-radius:28px}.rounded-\[32px\]{border-radius:32px}.rounded-\[6px\]{border-radius:6px}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-2{border-width:2px}.border-\[3px\]{border-width:3px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-\[\#D6E8FF\]{--tw-border-opacity:1;border-color:rgb(214 232 255/var(--tw-border-opacity,1))}.border-\[\#D9E6FF\]{--tw-border-opacity:1;border-color:rgb(217 230 255/var(--tw-border-opacity,1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/20{border-color:hsla(0,0%,100%,.2)}.border-white\/30{border-color:hsla(0,0%,100%,.3)}.bg-\[\#0A1931\]{--tw-bg-opacity:1;background-color:rgb(10 25 49/var(--tw-bg-opacity,1))}.bg-\[\#0A4AB0\]{--tw-bg-opacity:1;background-color:rgb(10 74 176/var(--tw-bg-opacity,1))}.bg-\[\#0A4AB0\]\/15{background-color:rgba(10,74,176,.15)}.bg-\[\#0A4AB0\]\/20{background-color:rgba(10,74,176,.2)}.bg-\[\#0F5BFF\]{--tw-bg-opacity:1;background-color:rgb(15 91 255/var(--tw-bg-opacity,1))}.bg-\[\#0F5BFF\]\/20{background-color:rgba(15,91,255,.2)}.bg-\[\#C6FF00\]{--tw-bg-opacity:1;background-color:rgb(198 255 0/var(--tw-bg-opacity,1))}.bg-\[\#C6FF00\]\/20{background-color:rgba(198,255,0,.2)}.bg-\[\#C6FF00\]\/30{background-color:rgba(198,255,0,.3)}.bg-\[\#EEF4FF\]{--tw-bg-opacity:1;background-color:rgb(238 244 255/var(--tw-bg-opacity,1))}.bg-\[\#EEF6FF\]{--tw-bg-opacity:1;background-color:rgb(238 246 255/var(--tw-bg-opacity,1))}.bg-\[\#F7F9FF\]{--tw-bg-opacity:1;background-color:rgb(247 249 255/var(--tw-bg-opacity,1))}.bg-\[\#FBFCFF\]{--tw-bg-opacity:1;background-color:rgb(251 252 255/var(--tw-bg-opacity,1))}.bg-\[\#FF7A00\]{--tw-bg-opacity:1;background-color:rgb(255 122 0/var(--tw-bg-opacity,1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/10{background-color:hsla(0,0%,100%,.1)}.bg-white\/15{background-color:hsla(0,0%,100%,.15)}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-white\/95{background-color:hsla(0,0%,100%,.95)}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top,var(--tw-gradient-stops))}.from-\[\#0A1931\]\/30{--tw-gradient-from:rgba(10,25,49,.3) var(--tw-gradient-from-position);--tw-gradient-to:rgba(10,25,49,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#0A4AB0\]{--tw-gradient-from:#0a4ab0 var(--tw-gradient-from-position);--tw-gradient-to:rgba(10,74,176,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#0D6EFD\]{--tw-gradient-from:#0d6efd var(--tw-gradient-from-position);--tw-gradient-to:rgba(13,110,253,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#0F5BFF\]{--tw-gradient-from:#0f5bff var(--tw-gradient-from-position);--tw-gradient-to:rgba(15,91,255,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#EEF6FF\]{--tw-gradient-from:#eef6ff var(--tw-gradient-from-position);--tw-gradient-to:rgba(238,246,255,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-white\/90{--tw-gradient-from:hsla(0,0%,100%,.9) var(--tw-gradient-from-position);--tw-gradient-to:hsla(0,0%,100%,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-\[\#0D6EFD\]{--tw-gradient-to:rgba(13,110,253,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#0d6efd var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),transparent var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-\[\#0A4AB0\]{--tw-gradient-to:#0a4ab0 var(--tw-gradient-to-position)}.to-\[\#2EC5B6\]{--tw-gradient-to:#2ec5b6 var(--tw-gradient-to-position)}.to-\[\#F0FDF4\]{--tw-gradient-to:#f0fdf4 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-white\/60{--tw-gradient-to:hsla(0,0%,100%,.6) var(--tw-gradient-to-position)}.object-contain{-o-object-fit:contain;object-fit:contain}.object-cover{-o-object-fit:cover;object-fit:cover}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-\[14px\]{padding:14px}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem}.pb-8,.py-8{padding-bottom:2rem}.pl-2{padding-left:.5rem}.pr-4{padding-right:1rem}.pt-2{padding-top:.5rem}.pt-8{padding-top:2rem}.pt-\[3px\]{padding-top:3px}.text-left{text-align:left}.text-center{text-align:center}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13\.5px\]{font-size:13.5px}.text-\[13px\]{font-size:13px}.text-\[14\.5px\]{font-size:14.5px}.text-\[14px\]{font-size:14px}.text-\[18px\]{font-size:18px}.text-\[22px\]{font-size:22px}.text-\[28px\]{font-size:28px}.text-\[30px\]{font-size:30px}.text-\[32px\]{font-size:32px}.text-\[36px\]{font-size:36px}.text-\[9px\]{font-size:9px}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[0\.95\]{line-height:.95}.leading-\[1\.15\]{line-height:1.15}.leading-\[1\.35\]{line-height:1.35}.leading-\[1\.4\]{line-height:1.4}.leading-\[1\.6\]{line-height:1.6}.leading-\[1\.75\]{line-height:1.75}.leading-\[1\.7\]{line-height:1.7}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-\[0\.18em\]{letter-spacing:.18em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-\[\#0A1931\]{--tw-text-opacity:1;color:rgb(10 25 49/var(--tw-text-opacity,1))}.text-\[\#0A4AB0\]{--tw-text-opacity:1;color:rgb(10 74 176/var(--tw-text-opacity,1))}.text-\[\#0A4AB0\]\/60{color:rgba(10,74,176,.6)}.text-\[\#0F5BFF\]{--tw-text-opacity:1;color:rgb(15 91 255/var(--tw-text-opacity,1))}.text-\[\#1A2B4A\]{--tw-text-opacity:1;color:rgb(26 43 74/var(--tw-text-opacity,1))}.text-\[\#2D3748\]{--tw-text-opacity:1;color:rgb(45 55 72/var(--tw-text-opacity,1))}.text-\[\#C6FF00\]{--tw-text-opacity:1;color:rgb(198 255 0/var(--tw-text-opacity,1))}.text-\[\#FF7A00\]{--tw-text-opacity:1;color:rgb(255 122 0/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-white\/60{color:hsla(0,0%,100%,.6)}.text-white\/75{color:hsla(0,0%,100%,.75)}.text-white\/80{color:hsla(0,0%,100%,.8)}.text-white\/90{color:hsla(0,0%,100%,.9)}.opacity-20{opacity:.2}.opacity-30{opacity:.3}.opacity-60{opacity:.6}.opacity-90{opacity:.9}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_10px_24px_rgba\(0\2c 0\2c 0\2c 0\.15\)\]{--tw-shadow:0 10px 24px rgba(0,0,0,.15);--tw-shadow-colored:0 10px 24px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_10px_24px_rgba\(255\2c 122\2c 0\2c 0\.4\)\]{--tw-shadow:0 10px 24px rgba(255,122,0,.4);--tw-shadow-colored:0 10px 24px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_10px_28px_rgba\(10\2c 74\2c 176\2c 0\.4\)\]{--tw-shadow:0 10px 28px rgba(10,74,176,.4);--tw-shadow-colored:0 10px 28px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_12px_32px_rgba\(0\2c 0\2c 0\2c 0\.2\)\]{--tw-shadow:0 12px 32px rgba(0,0,0,.2);--tw-shadow-colored:0 12px 32px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_16px_32px_rgba\(10\2c 74\2c 176\2c 0\.4\)\]{--tw-shadow:0 16px 32px rgba(10,74,176,.4);--tw-shadow-colored:0 16px 32px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_20px_60px_rgba\(0\2c 0\2c 0\2c 0\.25\)\]{--tw-shadow:0 20px 60px rgba(0,0,0,.25);--tw-shadow-colored:0 20px 60px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_24px_64px_-16px_rgba\(10\2c 74\2c 176\2c 0\.35\)\]{--tw-shadow:0 24px 64px -16px rgba(10,74,176,.35);--tw-shadow-colored:0 24px 64px -16px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_24px_64px_rgba\(10\2c 74\2c 176\2c 0\.25\)\]{--tw-shadow:0 24px 64px rgba(10,74,176,.25);--tw-shadow-colored:0 24px 64px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_24px_80px_rgba\(15\2c 91\2c 255\2c 0\.08\)\]{--tw-shadow:0 24px 80px rgba(15,91,255,.08);--tw-shadow-colored:0 24px 80px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_6px_16px_rgba\(15\2c 91\2c 255\2c 0\.25\)\]{--tw-shadow:0 6px 16px rgba(15,91,255,.25);--tw-shadow-colored:0 6px 16px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_6px_16px_rgba\(15\2c 91\2c 255\2c 0\.3\)\]{--tw-shadow:0 6px 16px rgba(15,91,255,.3);--tw-shadow-colored:0 6px 16px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_8px_20px_rgba\(10\2c 74\2c 176\2c 0\.35\)\2c 0_0_0_1px_rgba\(10\2c 74\2c 176\2c 0\.1\)\]{--tw-shadow:0 8px 20px rgba(10,74,176,.35),0 0 0 1px rgba(10,74,176,.1);--tw-shadow-colored:0 8px 20px var(--tw-shadow-color),0 0 0 1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_8px_20px_rgba\(15\2c 91\2c 255\2c 0\.3\)\]{--tw-shadow:0 8px 20px rgba(15,91,255,.3);--tw-shadow-colored:0 8px 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_8px_24px_rgba\(0\2c 0\2c 0\2c 0\.12\)\]{--tw-shadow:0 8px 24px rgba(0,0,0,.12);--tw-shadow-colored:0 8px 24px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_8px_24px_rgba\(15\2c 91\2c 255\2c 0\.06\)\]{--tw-shadow:0 8px 24px rgba(15,91,255,.06);--tw-shadow-colored:0 8px 24px var(--tw-shadow-color)}.shadow-\[0_8px_24px_rgba\(15\2c 91\2c 255\2c 0\.06\)\],.shadow-inner{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgba(0,0,0,.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-md{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.blur-\[12px\]{--tw-blur:blur(12px)}.blur-\[12px\],.blur-\[16px\]{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[16px\]{--tw-blur:blur(16px)}.blur-\[40px\]{--tw-blur:blur(40px)}.blur-\[40px\],.blur-\[60px\]{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[60px\]{--tw-blur:blur(60px)}.backdrop-blur{--tw-backdrop-blur:blur(8px)}.backdrop-blur,.backdrop-blur-xl{backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}#root,body,html{min-height:100%}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}[role=button]:not([aria-disabled=true]),button:not(:disabled),label[for],select:not(:disabled),summary{cursor:pointer}.hover\:-translate-y-\[2px\]:hover{--tw-translate-y:-2px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-\[\#0A4AB0\]:hover{--tw-bg-opacity:1;background-color:rgb(10 74 176/var(--tw-bg-opacity,1))}.hover\:bg-\[\#FF8C26\]:hover{--tw-bg-opacity:1;background-color:rgb(255 140 38/var(--tw-bg-opacity,1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.hover\:text-\[\#0A4AB0\]:hover{--tw-text-opacity:1;color:rgb(10 74 176/var(--tw-text-opacity,1))}.hover\:shadow-\[0_16px_32px_rgba\(15\2c 91\2c 255\2c 0\.12\)\]:hover{--tw-shadow:0 16px 32px rgba(15,91,255,.12);--tw-shadow-colored:0 16px 32px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}@media (min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:768px){.md\:bottom-5{bottom:1.25rem}.md\:left-5{left:1.25rem}.md\:right-5{right:1.25rem}.md\:right-8{right:2rem}.md\:top-8{top:2rem}.md\:block{display:block}.md\:flex{display:flex}.md\:inline-flex{display:inline-flex}.md\:aspect-\[4\/5\.1\]{aspect-ratio:4/5.1}.md\:gap-14{gap:3.5rem}.md\:rounded-\[36px\]{border-radius:36px}.md\:p-4{padding:1rem}.md\:p-5{padding:1.25rem}.md\:p-6{padding:1.5rem}.md\:p-8{padding:2rem}.md\:px-10{padding-left:2.5rem;padding-right:2.5rem}.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:py-10{padding-top:2.5rem;padding-bottom:2.5rem}.md\:py-8{padding-top:2rem;padding-bottom:2rem}.md\:text-\[12px\]{font-size:12px}.md\:text-\[20px\]{font-size:20px}.md\:text-\[28px\]{font-size:28px}.md\:text-\[32px\]{font-size:32px}.md\:text-\[38px\]{font-size:38px}.md\:text-\[40px\]{font-size:40px}.md\:text-\[44px\]{font-size:44px}}@media (min-width:1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-\[44\%_56\%\]{grid-template-columns:44% 56%}.lg\:flex-row{flex-direction:row}.lg\:items-center{align-items:center}.lg\:p-10{padding:2.5rem}.lg\:p-6{padding:1.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="min-h-screen bg-[#F7F9FF] text-[#0A1931]" style="font-family: Inter, sans-serif;">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');</style>
+        <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-100">
+          <div class="mx-auto max-w-[1280px] px-5 md:px-8 h-[68px] flex items-center justify-between">
+            <div class="flex items-center gap-8">
+              <div class="flex items-center gap-3">
+                <div class="relative">
+                  <div class="w-[56px] h-[56px] rounded-full bg-[#0A4AB0] border-[3px] border-white shadow-[0_8px_20px_rgba(10,74,176,0.35),0_0_0_1px_rgba(10,74,176,0.1)] flex items-center justify-center">
+                    <div class="w-[44px] h-[44px] rounded-full bg-white flex items-center justify-center overflow-hidden">
+                      <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIbGNtcwIQAABtbnRyUkdCIFhZWiAH4gADABQACQAOAB1hY3NwTVNGVAAAAABzYXdzY3RybAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWhhbmSdkQA9QICwPUB0LIGepSKOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAABxjcHJ0AAABDAAAAAx3dHB0AAABGAAAABRyWFlaAAABLAAAABRnWFlaAAABQAAAABRiWFlaAAABVAAAABRyVFJDAAABaAAAAGBnVFJDAAABaAAAAGBiVFJDAAABaAAAAGBkZXNjAAAAAAAAAAV1UkdCAAAAAAAAAAAAAAAAdGV4dAAAAABDQzAAWFlaIAAAAAAAAPNUAAEAAAABFslYWVogAAAAAAAAb6AAADjyAAADj1hZWiAAAAAAAABilgAAt4kAABjaWFlaIAAAAAAAACSgAAAPhQAAtsRjdXJ2AAAAAAAAACoAAAB8APgBnAJ1A4MEyQZOCBIKGAxiDvQRzxT2GGocLiBDJKwpai5+M+s5sz/WRldNNlR2XBdkHWyGdVZ+jYgskjacq6eMstu+mcrH12Xkd/H5////2wBDAAkGBggGBQkIBwgKCQkKDRYODQwMDRoTFBAWHxwhIB8cHh4jJzIqIyUvJR4eKzssLzM1ODg4ISo9QTw2QTI3ODX/2wBDAQkKCg0LDRkODhk1JB4kNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTX/wAARCACBAeoDASIAAhEBAxEB/8QAHAABAAICAwEAAAAAAAAAAAAAAAcIBQYBAwQC/8QATBAAAQMCAgUDEAcGBQQDAAAAAQACAwQFBhEHEiExQRNRkRQVFhciVFVhcYGSk6GxwdEjNkJDUnLhMjNFdLLwNDVic6IkU2OCJkSD/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAQFAgMGAf/EADERAAICAgAEBQMCBgMBAAAAAAABAgMEEQUSMVETFSFBYRQzgSJxIzJSkaHwJLHR4f/aAAwDAQACEQMRAD8AnFERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBEXiul4orLTcvXztiZwB2lx5gOK8bSW2exi5PSW2e1FoNfpSi7ptBSuyG6STj5l5ItIVzlZrRmB3/p+qhyzqU9b2WUeFZUltx1+5JKKOOz67A7RB6H6r0U+kSsY4cvTRSt4lpLSizqX7h8KyUt6X9zf0Wq02kCilIE1PLF4xk4LLU2JbXV5cnVsBPB+bT7VvjkVS6SREni3V/zRZlEXyyRkjdZjg4HiDmvpbiOEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQHzI9sUbnuOTWgknxKEMSXqa+3iaolJ5MOLYm55hrRuUzXaN8tmrGRftugeG+XVKgbI55HZkqjic5KMYrodJwKqLlOb6rRxuC7IZTDIHNPlXWTtXI2lUaOna2jMhwe0Hn2r6AXXCCIWZ/hC72rfv0Ij9D6Y1eiNmS642r0RjNaJM0yZ6qGaSOYZVEsLeePafetmortOwBrLlBPzNnaWHpWqt7k7M176JlLOTy8cgyO9sgHvC34984PUX/llbk1Rmttf9G60twlmOT4G5btaKRrh817lrEFusztXVrHxvPDlciF7o6ekiblDc5GHPfyoKv6rrGv1JP8AK/8AhRWVQT/Tv+zMyi+Y26sbRrF+Q/aPFfSmkQIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAEZjI7lEmNcJz2evkqaaMuopnFwLR+wTvBUtrhzWvaWuAc07CDxUfIx43x5ZEzDzJ4lnPH8or4Rq716aWkMpDnDJo27eKmGrwdZqx+u+ijY/wDEzYugYGtPFkp/9yqnyyxPqjoPPKWvWLTI3GeS7WNUiDA9oH3cvrCvoYLtI3RyemV6+HW90anxeh+z/wB/JoDG5L1wCIuAle5g5w3W+S3cYPtY+7k9Mrsjwra4ztgL/wAzisPLLt9V/k1S4pU16J/4NUihtgZ3dTUPcTuEQHxWYt1qpax7S2iqhHxfI8NHRvWw09tpKQZQU8bPIF6VNqwFF7nr+3/pXW5zl6R3/f8A8MeLDbwcxTtXeLbRtaAKaLIc7AvSinxqrj0iv7EF2TfVsAZDIbkRFsMAiIgCIiALrnnipoXSzyMijbtLnuAA865nmZTQPmlcGxxtLnE8AFAWN8bVWKbi9rXujoI3ERRA5A/6nc5UrGxpZEtLoR771THb6ksVWkvDVJMY3XAPI3mNjnDpC6e2rhjvyT1LvkoFTJWq4ZV3ZXPiFnZFibLjqyX+vFJb6ovnLS4NcwtzA8qz6rHablNZ7tT11OSJIHhw27+cdCsnba+K6W2CspznFOwPb51XZmKsdrl6Mm4uR4ye+p6URFBJgXy97Y2F73BrWjMknIBfSirS/iioiqY7JSyFkZjEk5bvdnub5OK3U1O6agjVbaqoOTNvrdI+G6GcxSXBr3NOR5JheB5wvP21MMd+yepd8lA3kXHFXPllSXq2Vb4hZ7JE9dtTDB/+7J6l3yTtp4Y79k9S75KBs9qL3yynuzzzCzsiee2phjv2T1Lvku+k0kYarJhGy4tjcdgMrSwdJVfztXyV4+GVezZ6uIWe6RaaGeKoiEkEjJWHc5jgQfOF9qu+E8ZXDC1awwyOfSOcOVgdtBHHLmKsBQVsVyt8FZTnOKeMSNPiIzVVk4ssd+vRljRkRuXp1PQiLWsf4mdhjDb5of8AFTnkofEefzBR4Qc5KMerN0pKEXJnuvOLLPYTq3Cujjefux3TugLEdtTDHfsnqXfJQVU1EtXUPnnkdJK86znuOZJXWryPDK9fqb2VMuIT3+lE/wBHpKw5X1kVNBWuMszgxodE4DM+NbQqtRSOhlZJGSHsIc0jgQrH4VvTcQYcpa5p7p7MpBzOGwqDmYio049CVi5Lu2pdTLIiKvJwWuXXSDYLNcJKOsrC2eI5Pa2Nzsj5QsternHZ7LVV0pGrBGXZHieA6VWuuq5K+umqpnF0kzy9xPOSp+HirI25dEQ8rIdOkurJz7amGO/ZPUu+Sy9nxbZr8dW310ckn/bJ1XdB2qt6+4ZpKadk0L3RyMObXNORBU6XDK9fpk9kOPEJ7/UkWkRazo/xM7E2G2TTkGqgPJzHnPA+cLZlSzg4ScZdUW0ZKcVJBERYGQXjuV4oLPBytwq4qdn+twBPkHFfF9usdjslVcJRmIIy4Nz/AGjwHSq7Xq9Vl/uMlZXSukkedgJ2NHMBwCm4uI8h9dJEXIyVSvkmt2lLDDXEdXPOXEQuI9y47amGO/ZPUu+SgUcy52qy8sq7v/fwV/19nZE89tPDHfsnqXfJO2phjv2T1LvkoGRe+WVd2PMLOyJ57amGO/ZPUu+S7aXSZhusq4qeGseZJXhjQYnDMnYOCgBZbCEBqcYWuPZmalh2+I5rCfDqoxctv0M4Z1kpJaRZJeO53ehs9OZrhVRU7OBe7InyDivu5V8Vrts9ZOco4GF7vMq6X+/1eI7pJWVkjnFxOozPYxvAAKuxcV5DfskTcnIVC+SZ3aU8MNJHVrzlzQu+SN0p4Ye4NFa/MnLbC75KBc03Kz8sq7sr/MLOyLSxvbLG17CHNcAQRxC+lp+i6/C8YSihe7Oei+hfmdpH2T0e5bgqOyDrm4v2LeE1OKkvcIi6qqoZSUktRKco4mF7j4gM1gZmEvOO7HYa80dfVlk7QCWtYXZZ+ReHtqYY79kH/wCLvkoUvlzfeb1V10uetPIX5HgOA6F4Vew4bW4rmb2U8+ITUnypaLH2fFtmvrtW310cj9+oe5d0FZhVbimkglbJC90b2nNrmnIgqedHWKX4mw/nUuzq6UiOU/i5nKHl4XgLmi9olY2X4z5ZLTNrREVcTgiIgCIiAIi6ayrioKKapncGxQsL3E8ABmnUGg6XsTGgtcdppn5TVfdTZHaI/wBSoc4rJ4lvcmIb/U18v3ju4H4WjcOhYxdRi0+DUl7+5z2Tb4tjfse+yWWpv1w6lpBnJqOft5mjNeBwLXEEZEHIjmUv6HLAaa2T3adgD6k6kWe/UG8+c+5aZpMw/wBZMWyviblT1g5ZmQ2Ak7R0+9YV5Sle6l/vcynjuNKsZqalvQ5iLl6OezTv7uE8pBnxad46dvnUSLIYfu8livtLcI8yYXgkD7Q4joW3Kp8apx9zXj2+FYpFl0XTR1UddRxVMLg6OZge0jmK7lyvQ6MKBtKp/wDntV/ts/pCnlQNpU+v1X+SP+kKx4b978EHP+1+TUFk8N2yO84ioqCZ7mR1Emo5zd4WN4rM4KnjpcZ22aeRscTJgXPecgBkVfWtqEnHrplPXpzSZJXaVtPf9X/x+SHQracv8fV9Dfktu7K7H4Wo/XBc9ldj8K0frQuc+oye7LzwMfsiJca6M5cM2819JVGppmuAeHNyczP3rRlLekjHtsqrBLa7ZO2qlqCA97NrWgHPf5lEnFXWHK2de7Sqyo1xnqsZ5KddEtTJU4FiEpJ5KZ8bc/wjIj3qDYonzTMjjaXveQ1rRvJKsRgmyvsOE6OklGrNq68o5nHaQo/E5RVaj77N3D4vnbM6ok02VhdcLdSAnJkbpCPGSB8FLag/TBNymNtTP91TsGXlzPxUDh63en2Jua9Uv5NIREXSFCFKGhe96s9ZaJX7HDlogTx3ED2KL1ksOXR1jxBR17ScoZAXAcW8R0KNk1eLU4m/Hs8KxSLKouuCZlTTxzRHWZI0OaecHavp72xsc9xya0Zk8wXKnRkaaZr7yVHTWiJ3dSnlZcjwG4f3zKJFlsU3l9/xJV17idWR+TBnuaNg9yxS6nFq8KpRfU53Is8Wxy9giIpRHJI0KVerea+mLj9JCHhvDYcvipfUH6HphHjYtJ/eUzwPYfgpwXN8Qjq9l9hPdKCIigEw0vS44twLJkcgZ4wfGNqgxTlpd+or/wCYj+KgxdBw37L/AHKXP+6v2OVvFDomvFwt8FXDUUoZPGHtDnHPIjNaOrJ4W+qls/lY/wCkLPOvnRGLgYYlMLm1IirtNXwn/EUnpH5J2mb33xSekfkppRVfmF/csPoaSFe0zfO+KT0j8llsK6LLpZsTUdfVzUzoqd+uQwnPdsUqIsZZ10ouLfUyjh1RaaNQ0qVZpcC1LR989kZ8mefwUDqZNNM+phujhzy5Spzy58mn5qG1acNjqnfdldnvdugnFEVkQTdNFN6FrxeynkdlFWt5I7dmtvH9+NTmqtwTyUtQyeFxZJE4Oa4cCFZWw3Nl5sdJXRuBE0YJy4HiOlUXE6tTVi9y4wLNxcH7HvWh6Xb8bbhttBC7KWudquyO0MG09OwLfFAOki9i9YwqTG8ugpvoY+bZv9uajYNXiXLfRepvy7PDqeurNWRcplsXTHPnCkXQtWcnf66mJ/fQBwHjaf1UdLcNFFQYMe0zOE0cjD6JPwUXLjzUSXwScWXLbEndERcsdEEREAREQBRtpixH1Lb4rNTvylqPpJsjuYNw859ykGvrYrdQTVdQ4NihYXuJ8SrhiG8zX+9VFwnPdTOJa38LeAVhgU+JZzPoiFm28kOVdWY5eu1W+W7XWnoYBnJPIGDzryLPYNxBTYZvfXCopHVT2MIjAfq6pOzPdzK/sclBuHUpoKLkuboWCt9FFbbdBSQACOBgY0Acy1PSrYjdsKOqImgzULuV8ZZl3Q+PmWE7d0PgiT1w+S+JtNFNUQPikszyyRpa4GYbQfMufrxsmE1NR/6LmeRRODg5EVIuyofG+okdE0sjc4lrSc8hnuXUujXqUZMWh/EnVdsls87hytN3cOZ2lh3jzH3qRlWzC97kw9iKlr49oY/J452nYR0Kx8E7KmnjmicHRyND2kcQRmFzufT4dvMujLzCt56+V9UdigbSp9fqv8kf9IU8qBtKn19q/wAjP6QveG/e/Bjn/a/JqKIslhy1x3rEVHb5XmNlRJqFzd42LoJSUU5MpYpyaSMYuVMHaUtnhCq9Fq57Sls8I1XQ1QfMKO/+CZ9Fd2IdRSNiHQ/U26jlqrXV9VNjGsYntyfl4uBUc7jtGSk1X13LcGaLKp1PUkb5o4uuFrbVsfc45W15IDJpQHRtPi5j4ypqjkbLG18bg9jhm1zTmCFVlSlokxbKajrFWPL2OaXUznHMty3t8nFVudiNp2xeyfh5K2q2iVlX3SPVdV48uLvwOEY8wAVglWnEdV1ZiW4T5569Q8jZ41q4ZHdjfwbOIPUEvkxy2jCeH+vlhvzmx60sEDXxHiHA5kdAWrqXNCtKOtFymcMxJKGEeQfqrPMsddTkuvoV+LBTsUX8kRn2rgrM4us5sWKa2i+wx+sz8pGY96w4UiElOKkvc0Si4tp+xOeim99dMIspnn6ahdyRz4t3tP8AfMu3Shfus2EpYo36tRWHko8ub7R6Peo70U3o2zFzKd79WGtbyZB3a32f78a40qXzrtit0ETiYKIckObW+0f75lTfS/8AL17df9/Ja/Uf8bfv0NM371y1pc9rWjMk5ALhbJo9tHXnGVHG5mtFC7lpPI39clcWTVcHJ+xVwi5yUUfWNrD1hFphLdWR9EHSbPtaxJ961hShpugyqLXMNxY9ntBUXrTiWOypSZtyYKFrijatGM4gx7QknLlNZnSCp+VccGSmDGlqeCB/1LBt8ZyVjlU8TX8VP4LLh7/htfIREVYWBpWl36iv/mI/ioMU56XfqK//AH2fFQYug4b9p/uUuf8AdX7HK2Om0h4io6WKnguBZFEwMYNRuwDdwWtrnVPMp84Qs9JrZChOUP5Xo2jtmYn8JH1bfknbMxP4Sd6tvyWr7uCeZa/p6f6V/Yz8e3+pm1xaSsTySsYLiSXOAH0bdvsU8U5c6mjMhzeWAu8uSrPZ4jNeqONuWb52AZ/mCs20ZNA5gqjiMIQcVBaLPBnOak5PZFem6ozfa6fMbA9/uCi1b/pmqeVxVTwg58jTjMcxJJ+S0DerPCjy0RIGW+a5mdwRamXnFlJSSs14naxePFkVi7nRPt10qaSQEOglcwgjLcVt2iCAy43D8tkdO8nz5Bd2l+y9Q4mZXsGUdawE/nGw/BeeNrK8P4Hhbx+f5NCClnQveuUpau1Sv2xkSwg8x/a9uXSomWcwXeesWLKKrJIjL9ST8rth+azy6vFpcfcxxrPDtTJwxnfBh7C9VVg/SlvJwjnedyro9xkcXOOZccyedSVpmvfLVlHaonZsjby78uJOYHs96jRR+HVclXM+rN2dZzWcq9gtnxNYes2GLE97cpqpkksh8Z1ch0LF4ZtRvWJKKhGeUsg1iODRtPsCkzTPSNZh63vjbk2GbUHiBb+i2XXct8KzCqrmqnMiBZ7AtSaTHFrk/wDNq9II+KwOayFgmFPiK3yn7FQw/wDIKTauauS+CPW+WafyWXREXInThERAERee418Nst09ZUO1YoGF7j5ES2OhHemPEvIUcVkp3jXn+kny3hoI1R5z7lES998us17vFTXTuLnzPJGZ3DgPMF4F1ONT4NSj7+5zuRb4s3L2OU3Lb9GmF2YjxCX1TA+jpBryNO55O4f3zKXuwnD2X+T0noLTfnQonyNbZtpxJWx5k9IrnmisX2EYd8D0noJ2EYd8D0noLR5pD+lm3y+fdFc8kVhLjgCw1VuqIYLZTQyyRlrJGs2tPA9KgCqpZKKqlp5m6ssTixwPAhS8bKjkbSWtEe/GlTrb3s6lNGiHERuNiktk785qI9xnxjO7oKhZZzBt+fh3E1LWaxEOtqTDPew7/n5ky6fGqaXX2GNb4VifsWNUDaVPr9V/kZ/SFO8cjZomyRuDmPAc0jcQVA+lX6/Vf5Gf0hVXDfvfgss/7X5NRzWfwH9erV/vj3FYALspqmWkqGTU8jopWHNr2nIgq9sjzQce5TQfLJPsWkRVu7Lb6f4tWetcuOy2++Fqz1xVL5ZZ/Ui28wh2LE3CvprbRSVNZK2KKNpJLjkqz3CoZU3GomibqMllc9reYE5r7rLvX3H/ABtZUVAHCSQuXkyU/ExPp9tveyFk5PjaSWkjnJbBgFzm47tRbn+/A82RWv71IWiLDctZeuu8rCKalBaxx+08jh5AVuypqFMm+xrx4uVsdEwVcvIUU0v4I3O6AqwTSGWd8h3vcXHzlWRxRUGlwtcZgciynfl5clWtV/C4+kmTOIP1ijlTdoepzDgt0h++qXuHkyA+ChBWB0bUppcB28EZGRpk6SStvEnqpL5NeBH+I38GpaaLHspLxEP/AAze9p94UWKx2MLQ294VraQt1nGMvZ+Zu0e5VxcC12R2EHLJe8Ot56uV+x5nV8tnN3OyCeSmqI54nFskbg5rhwIXE8z6ieSaV2s+Rxc485K+EVlpdSBv00FL+hmzcha6q6vB1qh3JM/K3f7fcokp4X1NRHDENZ8jg1oHOdislh61Mslgo6FgA5GMB2XF3E9KrOJW8tah3LDAr5pufY0fTZSmSz2+oB2RzOafOP0UQKcNMEPKYK5T/tVDD05j4qD1nw57p18mOctWntskvU9+oZTuZUMP/IKzQOYBG4qrLDk9pB3FWetknLWqlk/HCx3S0KLxResWSOHP0kj0oiKnLQ0rS79RX/zEfxUGKc9L31Ff/MR/FQZxXQcM+0/3KXP+6v2OQrGYWoabsWtpNPCSaZhJ1Bt2BVzVk8LfVS2fysf9IWvijajEz4f/ADSPb1DS97Q+rCdQ0ve0PoBd6Kk2y20jpbR0zSC2niBG0EMC7kReHpAelCq6px7WZfdBsfQAtUWYxlUdVYxukg3GpeB5jl8Fhs11lC1VFfCObue7JP5JI0KQa17r58v2IA3PmzP6LctJ9jF4wfNIxuc1EeWZlzD9r2LX9CMGVFc58t8jGZ+QZ/FSVPC2op5IZBmyRpa4eIqiyrHHKcl7Fvj1qWOov3Kubk3Fe29219ovdXQv3wSlnm4LxLootSSaKOScW0zuq6yeuqDNUyGSQgDWPMBkF0ouQM9i90l6DeyS9C9nMlfWXSRvcxN5KMnnO0+z3rZtLtOZsDPcPup2P94+KyuBLP1lwfRQOZqyvZysvPrO2+7ILo0kwGowHcAPstD+ggrnJXc+Up/Jexr5Mbl+Cvy7aZ/J1UT/AMLwfaupcron6ool6MtHBIJqeOQHMPaHbPGF2LG4bn6qwzbpvx07D7AskuPa09HUJ7WwiIvD0LQ9KUV6uVDDbbTQzzwv7ud8Y2bNzfit8RbK5+HNS1vRhZDni476ldewTEmf+UVPo/qnYHiMbes9Ts/0qxSKw8zt7IhfQV92azo+w2cNYYihnYG1cx5SbnBO4eYLZkRVs5ucnJ9WToxUUooIiLEyCiPSVgOvqcR9X2eikqI6putKI8u5eNnt2e1S4i3UXSonzRNVtUbY8siuvYFiTwRU9A+adgmJPA9T6IVikU3zK3siJ9BX3Zq+jvrnDhaOku9NNBNSuMbTLvc3eOjctD0jYVvNyxlU1NFb554XtZk9jcxsCmRFFryJV2OxLqSJ0Kdag30K59hGIvBFV6C47CMQj+EVXoKxqKX5nZ2RH8vr7srn2E4h8EVXoJ2E4h8EVXoKxiJ5nZ2R55fX3ZXLsIxD4IqvQXZBgHEk7w1lpqAedwDR7SrEonmdvZHv0FfdkQYf0NVkszJb5OyCIHMxRO1nO8RO4KV6Cgp7ZQxUlHE2KGJuq1oXoRQrr7Ln+tkqqmFS/SjX8e09XV4LrqegifNPK1rQxgzJGsM/YoUOBsRjfaKr0VYtFtoy5UR5Yo13Y0bntsrmcC4jyz60VXoqesN0jqDDVvppGlj4qdjXNI3HLaFkkXmRlTvSUl0PaceNLbTCg3F+AbrHimsNst809LI/lGOY3YM9pHSpyRYUZEqJc0TO6mNy1Irn2D4iB22iq9BBgjEPC0VXoKxiKZ5nb2RE8vr7shfAWBbnHi6mnutBNT09PnLm8DIuG4dPuU0IihX3yvlzSJdNMaY8qNb0hWye74Mq6alidNMS1zWNGZORChfsIxDnl1oqvQVjEW3HzJ0R5Yo13YsbpczZXLsHxCf4RVegp7w3HLDhi2x1DHRzMpY2va7eCGjNZJF5kZUshJSXQ9px40ttPqERFEJJqek22Vd3wg6moIH1E3LsdqMG3IZqIOwPEmeXWip9EfNWLRTKMydEeWKRFuxY3S5myuvYJiPwRU+iFPWHqeSkw7QQTtLJY6djXtPAgLIIvMjKnekpLoe040aW2n1CIiiEkL5eSI3FozIByX0iAr3X4MxHVV9RP1pqSZZXOz1ec5ro7BcRZ5daKr0VYtFZriViWtIr3gQb3tmlaKbLWWXDlRHcKd9PNJUF2o8ZHLVA+a3VEVfZN2Tc37k2EFCKivYifSjgyvrsQR19qo31DaiPKURjMhw2ZnzZLTBgfER/hFT6KsWim159lcFHSeiLZhQsk5b6ldewfEXgip9FZHD2AL3PiCjbWW6aGn5UOke9uQAG1TyiylxK1rWkYrArT3tnAAAAGwBY/EVG64YbuFMxpc+Wne1rRvJyOQ6VkUVcnp7JzW1orr2C4j8EVPorjsHxEP4RU+irForPzOzsiB5fX3ZhcGQVFLg+3QVkTop4oQ1zHbxkVmkRVsnzNsnxXKkgiIsT0IiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiID/2Q==" alt="ABM FM Logo - Place A" class="w-[34px] h-[34px] object-contain">
+                    </div>
+                  </div>
+                  <div class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-[#FF7A00] border-2 border-white shadow flex items-center justify-center text-[10px] font-black text-white">A</div>
+                </div>
+                <div class="flex flex-col leading-none">
+                  <span class="font-extrabold text-[18px] tracking-tight">
+                    <span class="text-[#0A4AB0]">ABM</span>
+                    <span class="text-[#FF7A00]">FM</span>
+                  </span>
+                  <span class="text-[10px] font-bold tracking-[0.18em] text-[#0A4AB0]/60 uppercase mt-[2px]">Place A • Blue Circle</span>
+                </div>
+              </div>
+              <nav class="hidden lg:flex items-center gap-7 text-[13.5px] font-semibold text-[#2D3748]">
+                <button class="relative hover:text-[#0A4AB0] transition ">Key Verticals</button>
+                <button class="relative hover:text-[#0A4AB0] transition ">Solutions</button>
+                <button class="relative hover:text-[#0A4AB0] transition ">Perspectives</button>
+                <button class="relative hover:text-[#0A4AB0] transition ">Who We Are</button>
+                <button class="relative hover:text-[#0A4AB0] transition text-[#0F5BFF]">
+                  Company
+                  <span class="absolute -bottom-[18px] left-0 right-0 h-[3px] bg-[#0F5BFF] rounded-full">
+                  </span>
+                </button>
+                <button class="relative hover:text-[#0A4AB0] transition ">Careers</button>
+              </nav>
+            </div>
+            <div class="flex items-center gap-3">
+              <button class="hidden md:inline-flex h-10 px-5 rounded-full bg-[#0F5BFF] text-white text-[13.5px] font-bold shadow-[0_8px_20px_rgba(15,91,255,0.3)] hover:bg-[#0A4AB0] transition">Contact Us</button>
+              <button class="lg:hidden w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+              </button>
+            </div>
+          </div>
+        </header>
+        <main class="mx-auto max-w-[1280px] px-4 md:px-6 lg:px-8 py-6 md:py-8 flex flex-col gap-10 md:gap-14">
+          <section id="section-company" class="bg-white rounded-[32px] md:rounded-[36px] shadow-[0_24px_80px_rgba(15,91,255,0.08)] border border-slate-100 overflow-hidden">
+            <div class="grid lg:grid-cols-[44%_56%] gap-0">
+              <div class="p-4 md:p-5 lg:p-6 bg-[#FBFCFF]">
+                <div class="relative w-full">
+                  <div class="relative rounded-[32px] overflow-hidden bg-[#0A4AB0] shadow-[0_24px_64px_-16px_rgba(10,74,176,0.35)] aspect-[4/5] md:aspect-[4/5.1]">
+                    <div class="absolute inset-0 w-full h-full absolute inset-0 w-full h-full object-cover" style="background: radial-gradient(120% 120% at 30% 20%, rgb(59, 130, 246) 0%, rgb(10, 74, 176) 45%, rgb(8, 30, 74) 100%);">
+                      <div class="absolute inset-0 opacity-20">
+                        <div class="w-full h-full" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 28px 28px;">
+                        </div>
+                      </div>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative">
+                          <div class="w-[220px] h-[280px] rounded-[32px] bg-gradient-to-b from-white/90 to-white/60 backdrop-blur shadow-[0_20px_60px_rgba(0,0,0,0.25)] flex flex-col items-center justify-center p-6 border border-white/30">
+                            <div class="w-24 h-24 rounded-full bg-[#0A4AB0] flex items-center justify-center text-white text-[36px] font-black shadow-lg">A</div>
+                            <div class="mt-4 h-3 w-24 rounded-full bg-[#0A4AB0]/20">
+                            </div>
+                            <div class="mt-2 h-3 w-16 rounded-full bg-[#0A4AB0]/15">
+                            </div>
+                            <div class="mt-6 flex gap-2">
+                              <div class="w-10 h-10 rounded-full bg-[#C6FF00] flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles text-[#0A1931]"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                              </div>
+                              <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-[#0A4AB0]"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                              </div>
+                            </div>
+                            <div class="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#FF7A00] flex items-center justify-center text-white font-bold text-[12px] shadow">ABM</div>
+                          </div>
+                          <div class="absolute -bottom-4 -left-8 w-20 h-20 rounded-full bg-[#C6FF00]/30 blur-[12px]">
+                          </div>
+                          <div class="absolute -top-6 -right-10 w-28 h-28 rounded-full bg-white/20 blur-[16px]">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-[22%] left-1/2 -translate-x-1/2 text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">Company • ABM FM Blazer #0A4AB0</div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1931]/30 via-transparent to-transparent">
+                    </div>
+                    <div class="absolute top-[22%] left-[28%] w-16 h-7 bg-[#0A4AB0] rounded-[6px] flex items-center justify-center shadow-md rotate-[-8deg] opacity-90">
+                      <span class="text-[9px] font-black tracking-widest text-white">
+                        ABM
+                        <span class="text-[#FF7A00]">FM</span>
+                      </span>
+                    </div>
+                    <div class="absolute top-5 left-5 z-10 flex items-center gap-2.5">
+                      <div class="relative">
+                        <div class="w-[56px] h-[56px] rounded-full bg-[#0A4AB0] border-[3px] border-white shadow-[0_10px_28px_rgba(10,74,176,0.4)] flex items-center justify-center">
+                          <div class="w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center overflow-hidden shadow-inner">
+                            <img src="data:image/png;base64,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" alt="ABM FM Logo Place A" class="w-[32px] h-[32px] object-contain">
+                          </div>
+                        </div>
+                        <div class="absolute -top-1 -right-1 w-[22px] h-[22px] rounded-full bg-[#FF7A00] border-2 border-white shadow flex items-center justify-center text-[11px] font-black text-white leading-none">A</div>
+                      </div>
+                      <div class="bg-white rounded-full pl-2 pr-4 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.12)] flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        </div>
+                        <span class="text-[12px] font-bold text-[#0A4AB0] tracking-wide">01</span>
+                        <span class="text-[12px] font-semibold text-[#0A1931]">Company</span>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-5 md:right-5">
+                      <div class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-5 md:p-6 shadow-[0_16px_32px_rgba(10,74,176,0.4)] border border-white/10">
+                        <h3 class="text-white font-extrabold leading-[1.15] text-[18px] md:text-[20px]">
+                          One Partner.
+                          <span class="text-[#C6FF00]">Multiple Capabilities. Global Reach.</span>
+                        </h3>
+                        <p class="text-white/80 text-[11px] md:text-[12px] font-medium mt-1.5 tracking-wide">US, Europe &amp; Southeast Asia.</p>
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-white"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Global Reach</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers text-white"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Multi-Capability</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow text-white"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Integrated Solutions</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award text-white"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Operational Excellence</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative p-6 md:p-8 lg:p-10">
+                <div class="absolute top-6 right-6 md:top-8 md:right-8">
+                  <div class="rounded-full px-4 py-1.5 text-[11px] font-bold tracking-wide text-white bg-gradient-to-r from-[#0F5BFF] to-[#2EC5B6] shadow-[0_6px_16px_rgba(15,91,255,0.25)]">Core Advisory Service</div>
+                </div>
+                <h2 class="text-[36px] md:text-[44px] font-extrabold leading-[0.95] tracking-tight">
+                  <span class="text-[#0A1931] block">Company</span>
+                  <span class="text-[#0F5BFF] block mt-1.5">One Partner. Multiple Capabilities. Global Reach.</span>
+                </h2>
+                <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-5 mb-6">
+                </div>
+                <div class="space-y-4 text-[14.5px] leading-[1.75] text-[#2D3748]">
+                  <p>
+                    We are a US-based
+                    <span class="font-bold text-[#0A1931]">Facility Management, Infrastructure, and Engineering</span>
+                    company delivering integrated solutions across the
+                    <span class="font-bold text-[#0A4AB0]">United States, Europe, and Southeast Asia.</span>
+                  </p>
+                  <p>
+                    Our strength comes from bringing facility expertise, engineering capability, infrastructure knowledge, and operational excellence together under one organization. This enables our clients to simplify complex requirements, improve performance, and create greater value across their facilities and operations.
+                  </p>
+                </div>
+                <div class="mt-7 rounded-[18px] bg-[#EEF4FF] border border-[#D9E6FF] p-4 md:p-5 flex gap-4">
+                  <div class="shrink-0 w-11 h-11 rounded-[12px] bg-white shadow flex items-center justify-center text-[#0F5BFF]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                  </div>
+                  <p class="text-[13.5px] leading-[1.6] text-[#1A2B4A]">
+                    We combine
+                    <span class="font-extrabold text-[#0F5BFF]">international standards</span>
+                    with
+                    <span class="font-extrabold text-[#0F5BFF]">local execution</span>
+                    to deliver
+                    <span class="font-extrabold text-[#0F5BFF]">measurable, efficient, resilient</span>
+                    FM function.
+                  </p>
+                </div>
+                <div class="mt-8 rounded-[18px] bg-[#EEF6FF] border border-[#D6E8FF] px-5 py-4 flex items-center justify-between gap-4 relative overflow-hidden">
+                  <div class="flex items-center gap-3.5">
+                    <div class="w-10 h-10 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white shadow-[0_6px_16px_rgba(15,91,255,0.3)]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                    </div>
+                    <div>
+                      <p class="text-[11px] font-bold tracking-widest text-[#0F5BFF] uppercase">Our Focus</p>
+                      <p class="text-[13px] font-semibold text-[#0A1931] leading-[1.4] mt-0.5 max-w-[520px]">To simplify complex requirements, improve performance, create greater value across facilities and operations.</p>
+                    </div>
+                  </div>
+                  <div class="hidden md:flex opacity-60">
+                    <div class="flex items-end gap-[3px] h-8">
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 12px;">
+                      </div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 22px;">
+                      </div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 16px;">
+                      </div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 28px;">
+                      </div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 20px;">
+                      </div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 14px;">
+                      </div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 24px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-white rounded-[32px] md:rounded-[36px] shadow-[0_24px_80px_rgba(15,91,255,0.08)] border border-slate-100 overflow-hidden">
+            <div class="grid lg:grid-cols-[44%_56%] gap-0">
+              <div class="p-4 md:p-5 lg:p-6 bg-[#FBFCFF]">
+                <div class="relative w-full">
+                  <div class="relative rounded-[32px] overflow-hidden bg-[#0A4AB0] shadow-[0_24px_64px_-16px_rgba(10,74,176,0.35)] aspect-[4/5] md:aspect-[4/5.1]">
+                    <div class="absolute inset-0 w-full h-full absolute inset-0 w-full h-full object-cover" style="background: radial-gradient(120% 120% at 30% 20%, rgb(59, 130, 246) 0%, rgb(10, 74, 176) 45%, rgb(8, 30, 74) 100%);">
+                      <div class="absolute inset-0 opacity-20">
+                        <div class="w-full h-full" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 28px 28px;">
+                        </div>
+                      </div>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative">
+                          <div class="w-[220px] h-[280px] rounded-[32px] bg-gradient-to-b from-white/90 to-white/60 backdrop-blur shadow-[0_20px_60px_rgba(0,0,0,0.25)] flex flex-col items-center justify-center p-6 border border-white/30">
+                            <div class="w-24 h-24 rounded-full bg-[#0A4AB0] flex items-center justify-center text-white text-[36px] font-black shadow-lg">A</div>
+                            <div class="mt-4 h-3 w-24 rounded-full bg-[#0A4AB0]/20">
+                            </div>
+                            <div class="mt-2 h-3 w-16 rounded-full bg-[#0A4AB0]/15">
+                            </div>
+                            <div class="mt-6 flex gap-2">
+                              <div class="w-10 h-10 rounded-full bg-[#C6FF00] flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles text-[#0A1931]"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                              </div>
+                              <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-[#0A4AB0]"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                              </div>
+                            </div>
+                            <div class="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#FF7A00] flex items-center justify-center text-white font-bold text-[12px] shadow">ABM</div>
+                          </div>
+                          <div class="absolute -bottom-4 -left-8 w-20 h-20 rounded-full bg-[#C6FF00]/30 blur-[12px]">
+                          </div>
+                          <div class="absolute -top-6 -right-10 w-28 h-28 rounded-full bg-white/20 blur-[16px]">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-[22%] left-1/2 -translate-x-1/2 text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">Global Presence • ABM FM Blazer #0A4AB0</div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1931]/30 via-transparent to-transparent">
+                    </div>
+                    <div class="absolute top-[22%] left-[28%] w-16 h-7 bg-[#0A4AB0] rounded-[6px] flex items-center justify-center shadow-md rotate-[-8deg] opacity-90">
+                      <span class="text-[9px] font-black tracking-widest text-white">
+                        ABM
+                        <span class="text-[#FF7A00]">FM</span>
+                      </span>
+                    </div>
+                    <div class="absolute top-5 left-5 z-10 flex items-center gap-2.5">
+                      <div class="bg-white rounded-full pl-2 pr-4 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.12)] flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        </div>
+                        <span class="text-[12px] font-bold text-[#0A4AB0] tracking-wide">02</span>
+                        <span class="text-[12px] font-semibold text-[#0A1931]">Global Presence</span>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-5 md:right-5">
+                      <div class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-5 md:p-6 shadow-[0_16px_32px_rgba(10,74,176,0.4)] border border-white/10">
+                        <h3 class="text-white font-extrabold leading-[1.15] text-[18px] md:text-[20px]">
+                          Global Standards.
+                          <span class="text-[#C6FF00]">Local Knowledge. Consistent Excellence.</span>
+                        </h3>
+                        <p class="text-white/80 text-[11px] md:text-[12px] font-medium mt-1.5 tracking-wide">Multi-region operations dashboard</p>
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flag text-white"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" x2="4" y1="22" y2="15"></line></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">US Operations</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark text-white"><line x1="3" x2="21" y1="22" y2="22"></line><line x1="6" x2="6" y1="18" y2="11"></line><line x1="10" x2="10" y1="18" y2="11"></line><line x1="14" x2="14" y1="18" y2="11"></line><line x1="18" x2="18" y1="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Europe Hub</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-white"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">SEA Growth</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Local Teams</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 md:p-8 lg:p-10">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <h2 class="text-[32px] md:text-[40px] font-extrabold leading-[0.95] tracking-tight">
+                      <span class="text-[#0A1931]">Our Global</span>
+                      <span class="text-[#0F5BFF]">Presence</span>
+                    </h2>
+                    <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-4 mb-5">
+                    </div>
+                  </div>
+                  <div class="hidden md:block rounded-full px-3 py-1 text-[11px] font-bold bg-gradient-to-r from-[#0F5BFF] to-[#2EC5B6] text-white">Core Advisory Service</div>
+                </div>
+                <p class="text-[14.5px] leading-[1.75] text-[#2D3748]">
+                  With operations spanning multiple regions, we combine international standards with local knowledge and execution. Our teams understand the unique operational, regulatory, cultural, and technical requirements of the markets we serve. From individual facilities to multi-site and international portfolios, we provide consistent service backed by local expertise.
+                </p>
+                <div class="mt-6">
+                  <p class="text-[11px] font-bold tracking-[0.18em] text-[#0A4AB0] uppercase mb-3 flex items-center gap-2">
+                    <span class="w-6 h-[2px] bg-[#0A4AB0]">
+                    </span>
+                    Key Areas
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(224, 231, 255); color: rgb(67, 56, 202);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" x2="4" y1="22" y2="15"></line></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">US Operations</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(209, 250, 229); color: rgb(5, 150, 105);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark"><line x1="3" x2="21" y1="22" y2="22"></line><line x1="6" x2="6" y1="18" y2="11"></line><line x1="10" x2="10" y1="18" y2="11"></line><line x1="14" x2="14" y1="18" y2="11"></line><line x1="18" x2="18" y1="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Europe Operations</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(254, 243, 199); color: rgb(217, 119, 6);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Southeast Asia Operations</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(252, 231, 243); color: rgb(219, 39, 119);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-boxes"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path><path d="m7 16.5-4.74-2.85"></path><path d="m7 16.5 5-3"></path><path d="M7 16.5v5.17"></path><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"></path><path d="m17 16.5-5-3"></path><path d="m17 16.5 4.74-2.85"></path><path d="M17 16.5v5.17"></path><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"></path><path d="M12 8 7.26 5.15"></path><path d="m12 8 4.74-2.85"></path><path d="M12 13.5V8"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Multi-Site Portfolios</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(224, 242, 254); color: rgb(2, 132, 199);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Local Expertise</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(237, 233, 254); color: rgb(124, 58, 237);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">International Standards</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-10 pt-8 border-t border-slate-100">
+                  <h3 class="text-[28px] md:text-[32px] font-extrabold leading-[0.95] tracking-tight">
+                    <span class="text-[#0A1931]">Our Global</span>
+                    <span class="text-[#0F5BFF]">Standard</span>
+                  </h3>
+                  <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-4 mb-4">
+                  </div>
+                  <p class="text-[14px] leading-[1.7] text-[#2D3748]">
+                    Wherever we operate, our commitment remains consistent:
+                    <span class="font-bold text-[#0A1931]">Operational excellence. Engineering expertise. Reliable delivery. Measurable results.</span>
+                    We help organizations operate better facilities today while building the capability, resilience, and efficiency needed for tomorrow.
+                  </p>
+                  <div class="mt-5 rounded-[18px] bg-[#EEF4FF] border border-[#D9E6FF] p-4 flex gap-3">
+                    <div class="w-9 h-9 rounded-[10px] bg-white flex items-center justify-center text-[#0F5BFF] shadow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                    </div>
+                    <p class="text-[13px] leading-[1.6] text-[#1A2B4A]">
+                      Consistent SOPs, safety, and quality across
+                      <span class="font-bold text-[#0F5BFF]">every geography</span>
+                      — from single sites to global portfolios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-white rounded-[32px] md:rounded-[36px] shadow-[0_24px_80px_rgba(15,91,255,0.08)] border border-slate-100 overflow-hidden">
+            <div class="grid lg:grid-cols-[44%_56%] gap-0">
+              <div class="p-4 md:p-5 lg:p-6 bg-[#FBFCFF]">
+                <div class="relative w-full">
+                  <div class="relative rounded-[32px] overflow-hidden bg-[#0A4AB0] shadow-[0_24px_64px_-16px_rgba(10,74,176,0.35)] aspect-[4/5] md:aspect-[4/5.1]">
+                    <div class="absolute inset-0 w-full h-full absolute inset-0 w-full h-full object-cover" style="background: radial-gradient(120% 120% at 30% 20%, rgb(59, 130, 246) 0%, rgb(10, 74, 176) 45%, rgb(8, 30, 74) 100%);">
+                      <div class="absolute inset-0 opacity-20">
+                        <div class="w-full h-full" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 28px 28px;">
+                        </div>
+                      </div>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative">
+                          <div class="w-[220px] h-[280px] rounded-[32px] bg-gradient-to-b from-white/90 to-white/60 backdrop-blur shadow-[0_20px_60px_rgba(0,0,0,0.25)] flex flex-col items-center justify-center p-6 border border-white/30">
+                            <div class="w-24 h-24 rounded-full bg-[#0A4AB0] flex items-center justify-center text-white text-[36px] font-black shadow-lg">A</div>
+                            <div class="mt-4 h-3 w-24 rounded-full bg-[#0A4AB0]/20">
+                            </div>
+                            <div class="mt-2 h-3 w-16 rounded-full bg-[#0A4AB0]/15">
+                            </div>
+                            <div class="mt-6 flex gap-2">
+                              <div class="w-10 h-10 rounded-full bg-[#C6FF00] flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles text-[#0A1931]"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                              </div>
+                              <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-[#0A4AB0]"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                              </div>
+                            </div>
+                            <div class="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#FF7A00] flex items-center justify-center text-white font-bold text-[12px] shadow">ABM</div>
+                          </div>
+                          <div class="absolute -bottom-4 -left-8 w-20 h-20 rounded-full bg-[#C6FF00]/30 blur-[12px]">
+                          </div>
+                          <div class="absolute -top-6 -right-10 w-28 h-28 rounded-full bg-white/20 blur-[16px]">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-[22%] left-1/2 -translate-x-1/2 text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">What We Do • ABM FM Blazer #0A4AB0</div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1931]/30 via-transparent to-transparent">
+                    </div>
+                    <div class="absolute top-[22%] left-[28%] w-16 h-7 bg-[#0A4AB0] rounded-[6px] flex items-center justify-center shadow-md rotate-[-8deg] opacity-90">
+                      <span class="text-[9px] font-black tracking-widest text-white">
+                        ABM
+                        <span class="text-[#FF7A00]">FM</span>
+                      </span>
+                    </div>
+                    <div class="absolute top-5 left-5 z-10 flex items-center gap-2.5">
+                      <div class="bg-white rounded-full pl-2 pr-4 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.12)] flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        </div>
+                        <span class="text-[12px] font-bold text-[#0A4AB0] tracking-wide">03</span>
+                        <span class="text-[12px] font-semibold text-[#0A1931]">What We Do</span>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-5 md:right-5">
+                      <div class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-5 md:p-6 shadow-[0_16px_32px_rgba(10,74,176,0.4)] border border-white/10">
+                        <h3 class="text-white font-extrabold leading-[1.15] text-[18px] md:text-[20px]">
+                          Complete Facility &amp;
+                          <span class="text-[#C6FF00]">Asset Lifecycle. End-to-End Capabilities.</span>
+                        </h3>
+                        <p class="text-white/80 text-[11px] md:text-[12px] font-medium mt-1.5 tracking-wide">Engineering plant room operations</p>
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings2 text-white"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Full Lifecycle</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench text-white"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Engineering</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 text-white"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Integrated FM</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity text-white"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Reliability</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 md:p-8 lg:p-10">
+                <h2 class="text-[32px] md:text-[40px] font-extrabold leading-[0.95] tracking-tight">
+                  <span class="text-[#0A1931]">What We</span>
+                  <span class="text-[#0F5BFF]">Do</span>
+                </h2>
+                <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-4 mb-5">
+                </div>
+                <p class="text-[14.5px] leading-[1.7] text-[#2D3748]">Our capabilities extend across the complete facility and asset lifecycle, including:</p>
+                <div class="mt-6">
+                  <p class="text-[11px] font-bold tracking-[0.18em] text-[#0A4AB0] uppercase mb-3 flex items-center gap-2">
+                    <span class="w-6 h-[2px] bg-[#0A4AB0]">
+                    </span>
+                    Key Areas
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(219, 234, 254); color: rgb(37, 99, 235);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Facility Management &amp; Operations</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(254, 243, 199); color: rgb(217, 119, 6);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Technical &amp; Engineering Services</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(209, 250, 229); color: rgb(5, 150, 105);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-hat"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"></path><path d="M14 6a6 6 0 0 1 6 6v3"></path><path d="M4 15v-3a6 6 0 0 1 6-6"></path><rect x="2" y="15" width="20" height="4" rx="1"></rect></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Infrastructure Management</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(224, 231, 255); color: rgb(79, 70, 229);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings2"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Building Maintenance &amp; Asset Management</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(220, 252, 231); color: rgb(22, 163, 74);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Energy &amp; Sustainability Solutions</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(255, 237, 213); color: rgb(234, 88, 12);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coffee"><path d="M10 2v2"></path><path d="M14 2v2"></path><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"></path><path d="M6 2v2"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Workplace &amp; Support Services</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(243, 232, 255); color: rgb(147, 51, 234);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="m9 14 2 2 4-4"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Project Management &amp; Engineering</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(254, 226, 226); color: rgb(220, 38, 38);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Reliability &amp; Preventive Maintenance</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(204, 251, 241); color: rgb(13, 148, 136);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Integrated Facilities Solutions</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8 rounded-[18px] bg-[#EEF6FF] border border-[#D6E8FF] px-5 py-4 flex items-center gap-3.5 relative overflow-hidden">
+                  <div class="w-10 h-10 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white shadow-[0_6px_16px_rgba(15,91,255,0.3)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-[11px] font-bold tracking-widest text-[#0F5BFF] uppercase">Our Focus</p>
+                    <p class="text-[13px] font-semibold text-[#0A1931] leading-[1.4] mt-0.5">To deliver integrated solutions across the full facility and asset lifecycle with engineering excellence.</p>
+                  </div>
+                  <div class="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 opacity-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 text-[#0F5BFF]"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-white rounded-[32px] md:rounded-[36px] shadow-[0_24px_80px_rgba(15,91,255,0.08)] border border-slate-100 overflow-hidden">
+            <div class="grid lg:grid-cols-[44%_56%] gap-0">
+              <div class="p-4 md:p-5 lg:p-6 bg-[#FBFCFF]">
+                <div class="relative w-full">
+                  <div class="relative rounded-[32px] overflow-hidden bg-[#0A4AB0] shadow-[0_24px_64px_-16px_rgba(10,74,176,0.35)] aspect-[4/5] md:aspect-[4/5.1]">
+                    <div class="absolute inset-0 w-full h-full absolute inset-0 w-full h-full object-cover" style="background: radial-gradient(120% 120% at 30% 20%, rgb(59, 130, 246) 0%, rgb(10, 74, 176) 45%, rgb(8, 30, 74) 100%);">
+                      <div class="absolute inset-0 opacity-20">
+                        <div class="w-full h-full" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 28px 28px;">
+                        </div>
+                      </div>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative">
+                          <div class="w-[220px] h-[280px] rounded-[32px] bg-gradient-to-b from-white/90 to-white/60 backdrop-blur shadow-[0_20px_60px_rgba(0,0,0,0.25)] flex flex-col items-center justify-center p-6 border border-white/30">
+                            <div class="w-24 h-24 rounded-full bg-[#0A4AB0] flex items-center justify-center text-white text-[36px] font-black shadow-lg">A</div>
+                            <div class="mt-4 h-3 w-24 rounded-full bg-[#0A4AB0]/20">
+                            </div>
+                            <div class="mt-2 h-3 w-16 rounded-full bg-[#0A4AB0]/15">
+                            </div>
+                            <div class="mt-6 flex gap-2">
+                              <div class="w-10 h-10 rounded-full bg-[#C6FF00] flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles text-[#0A1931]"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                              </div>
+                              <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-[#0A4AB0]"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                              </div>
+                            </div>
+                            <div class="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#FF7A00] flex items-center justify-center text-white font-bold text-[12px] shadow">ABM</div>
+                          </div>
+                          <div class="absolute -bottom-4 -left-8 w-20 h-20 rounded-full bg-[#C6FF00]/30 blur-[12px]">
+                          </div>
+                          <div class="absolute -top-6 -right-10 w-28 h-28 rounded-full bg-white/20 blur-[16px]">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-[22%] left-1/2 -translate-x-1/2 text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">Complex Environments • ABM FM Blazer #0A4AB0</div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1931]/30 via-transparent to-transparent">
+                    </div>
+                    <div class="absolute top-[22%] left-[28%] w-16 h-7 bg-[#0A4AB0] rounded-[6px] flex items-center justify-center shadow-md rotate-[-8deg] opacity-90">
+                      <span class="text-[9px] font-black tracking-widest text-white">
+                        ABM
+                        <span class="text-[#FF7A00]">FM</span>
+                      </span>
+                    </div>
+                    <div class="absolute top-5 left-5 z-10 flex items-center gap-2.5">
+                      <div class="bg-white rounded-full pl-2 pr-4 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.12)] flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        </div>
+                        <span class="text-[12px] font-bold text-[#0A4AB0] tracking-wide">04</span>
+                        <span class="text-[12px] font-semibold text-[#0A1931]">Complex Environments</span>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-5 md:right-5">
+                      <div class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-5 md:p-6 shadow-[0_16px_32px_rgba(10,74,176,0.4)] border border-white/10">
+                        <h3 class="text-white font-extrabold leading-[1.15] text-[18px] md:text-[20px]">
+                          Built For Complex.
+                          <span class="text-[#C6FF00]">Engineered For Continuity. Reliable, Safe, Compliant.</span>
+                        </h3>
+                        <p class="text-white/80 text-[11px] md:text-[12px] font-medium mt-1.5 tracking-wide">Critical environments &amp; data centers</p>
+                        <div class="grid grid-cols-2 gap-3 mt-4">
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-white"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Reliable</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield text-white"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Safe</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check text-white"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="m9 14 2 2 4-4"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Compliant</span>
+                          </div>
+                          <div class="flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity text-white"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                            </div>
+                            <span class="text-[11px] font-semibold text-white/90 leading-tight">24/7 Continuity</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 md:p-8 lg:p-10">
+                <h2 class="text-[30px] md:text-[38px] font-extrabold leading-[0.95] tracking-tight">
+                  <span class="text-[#0A1931] block">Built for Complex</span>
+                  <span class="text-[#0F5BFF] block">Environments</span>
+                </h2>
+                <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-4 mb-5">
+                </div>
+                <p class="text-[14.5px] leading-[1.75] text-[#2D3748]">
+                  We support commercial, industrial, healthcare, technology, infrastructure, and other critical environments where
+                  <span class="font-bold text-[#0A1931]">reliability, safety, compliance, and operational continuity</span>
+                  matter. Our teams are equipped to manage both everyday facility requirements and complex engineering and infrastructure challenges.
+                </p>
+                <div class="mt-6">
+                  <p class="text-[11px] font-bold tracking-[0.18em] text-[#0A4AB0] uppercase mb-3 flex items-center gap-2">
+                    <span class="w-6 h-[2px] bg-[#0A4AB0]">
+                    </span>
+                    Key Areas
+                  </p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(219, 234, 254); color: rgb(37, 99, 235);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Commercial Environments</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(254, 243, 199); color: rgb(180, 83, 9);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-factory"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M17 18h1"></path><path d="M12 18h1"></path><path d="M7 18h1"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Industrial Facilities</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(252, 231, 243); color: rgb(190, 24, 93);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-pulse"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Healthcare Facilities</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(224, 231, 255); color: rgb(67, 56, 202);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Technology &amp; Data Centers</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(209, 250, 229); color: rgb(4, 120, 87);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark"><line x1="3" x2="21" y1="22" y2="22"></line><line x1="6" x2="6" y1="18" y2="11"></line><line x1="10" x2="10" y1="18" y2="11"></line><line x1="14" x2="14" y1="18" y2="11"></line><line x1="18" x2="18" y1="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Infrastructure &amp; Critical Environments</p>
+                    </div>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(237, 233, 254); color: rgb(109, 40, 217);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                      </div>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Operational Continuity &amp; Compliance</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8 rounded-[18px] bg-gradient-to-r from-[#EEF6FF] to-[#F0FDF4] border border-[#D6E8FF] px-5 py-4 flex items-center gap-3.5">
+                  <div class="w-10 h-10 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white shadow-[0_6px_16px_rgba(15,91,255,0.3)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                  </div>
+                  <div>
+                    <p class="text-[11px] font-bold tracking-widest text-[#0F5BFF] uppercase">Our Focus</p>
+                    <p class="text-[13px] font-semibold text-[#0A1931] leading-[1.4] mt-0.5 max-w-[560px]">
+                      To manage both everyday facility requirements and complex engineering challenges with reliability, safety, compliance and continuity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="relative rounded-[28px] overflow-hidden shadow-[0_24px_64px_rgba(10,74,176,0.25)]">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0A4AB0] via-[#0D6EFD] to-[#0A4AB0]">
+            </div>
+            <div class="absolute inset-0 opacity-30">
+              <div class="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full bg-white/10 blur-[40px]">
+              </div>
+              <div class="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-[#C6FF00]/20 blur-[60px]">
+              </div>
+            </div>
+            <div class="relative px-6 md:px-10 py-8 md:py-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+              <div class="flex-1">
+                <div class="inline-flex items-center gap-2 bg-white/15 border border-white/20 rounded-full px-3 py-1 text-[11px] font-bold tracking-wide text-white mb-3">
+                  <span class="w-2 h-2 rounded-full bg-[#C6FF00] animate-pulse">
+                  </span>
+                  One Partner Ecosystem
+                </div>
+                <h3 class="text-white font-extrabold text-[22px] md:text-[28px] leading-[1.15]">
+                  One Partner for All Your Facility Needs —
+                  <span class="text-[#C6FF00]">Global Reach, Local Expertise</span>
+                </h3>
+                <p class="text-white/75 text-[13.5px] mt-2 max-w-[560px]">
+                  From day-to-day operations to mission-critical continuity, we deliver measurable performance across US, Europe &amp; Southeast Asia.
+                </p>
+              </div>
+              <div class="flex items-center gap-3 shrink-0">
+                <button class="h-11 px-6 rounded-full bg-[#FF7A00] text-white text-[13.5px] font-bold shadow-[0_10px_24px_rgba(255,122,0,0.4)] hover:bg-[#FF8C26] transition flex items-center gap-2">
+                  News &amp; Events
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </button>
+                <button class="h-11 px-6 rounded-full bg-white text-[#0A4AB0] text-[13.5px] font-bold shadow-[0_10px_24px_rgba(0,0,0,0.15)] hover:bg-slate-50 transition">Contact Us</button>
+              </div>
+            </div>
+          </section>
+          <footer class="pb-8 pt-2 text-center">
+            <p class="text-[11px] tracking-widest font-bold text-slate-400 uppercase">ABM FM • Facility Management • Infrastructure • Engineering • © 2025</p>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script>(function(){function m(a){var h=a.getAttribute("href");if(!h)return;try{var u=new URL(h,document.baseURI);if((u.protocol==="http:"||u.protocol==="https:")&&u.host!==location.host){a.target="_blank";a.rel="noopener noreferrer";}}catch(e){}}function s(){document.querySelectorAll("a[href]").forEach(m);}if(document.readyState!=="loading"){s();}else{document.addEventListener("DOMContentLoaded",s);}document.addEventListener("click",function(e){var a=e.target&&e.target.closest&&e.target.closest("a[href]");if(a){m(a);}},true);})();</script>
+  </body>
+</html>

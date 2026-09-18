@@ -111,7 +111,7 @@
         'expertise-value.html'
       ];
       if (whoWeArePages.includes(cleanPath)) {
-        document.getElementById('whoWeAreDropdown')?.classList.add('active');
+        document.querySelector('.site-header-abm-floating a[href="about-us.html"]')?.classList.add('active');
         return;
       }
 
@@ -123,7 +123,7 @@
         'smarter-sustainable-facilities.html'
       ];
       if (perspectivesPages.includes(cleanPath)) {
-        document.getElementById('perspectivesDropdown')?.classList.add('active');
+        document.querySelector('.site-header-abm-floating a[href="perspectives.html"]')?.classList.add('active');
         return;
       }
     }
