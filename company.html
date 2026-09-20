@@ -1959,6 +1959,95 @@
       z-index: 1;
       font-family: 'Inter', sans-serif;
     }
+
+    .company-image-card {
+      position: relative;
+      border-radius: 32px;
+      overflow: hidden;
+      background-color: #0A1931;
+      box-shadow: 0 30px 80px -20px rgba(10, 74, 176, 0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
+      height: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      .company-image-card {
+        padding: 18px;
+        gap: 16px;
+      }
+    }
+
+    .company-img-container {
+      position: relative;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #051024;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+      flex-shrink: 0;
+    }
+
+    .company-full-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .company-badges-wrapper {
+      position: relative;
+      width: 100%;
+      z-index: 10;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .company-badge-box {
+      border-radius: 22px;
+      background: linear-gradient(135deg, #0D6EFD 0%, #0A4AB0 100%);
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(10, 74, 176, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .company-banner-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+      font-weight: 700;
+      line-height: 1.28;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+
+    .company-pillar-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.22;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 767px) {
+      .company-banner-title {
+        font-size: 1.08rem;
+        margin-bottom: 12px;
+      }
+
+      .company-pillar-name {
+        font-size: 0.68rem;
+      }
+    }
   </style>
 </head>
 
@@ -1983,235 +2072,142 @@
     <!-- Master Presentation Deck Section -->
     <section class="solution-slide-section py-4" style="background-color: #F8FAFF;">
       <div id="root">
-        <div class="mx-auto max-w-[1280px] px-4 md:px-6 lg:px-8 py-6 md:py-8 flex flex-col gap-10 md:gap-14">
-          <section id="section-company"
-            class="bg-white rounded-[32px] md:rounded-[36px] shadow-[0_24px_80px_rgba(15,91,255,0.08)] border border-slate-100 overflow-hidden">
-            <div class="grid lg:grid-cols-[44%_56%] gap-0">
-              <div class="p-4 md:p-5 lg:p-6 bg-[#FBFCFF]">
-                <div class="relative w-full">
-                  <div
-                    class="relative rounded-[32px] overflow-hidden bg-[#0A4AB0] shadow-[0_24px_64px_-16px_rgba(10,74,176,0.35)] aspect-[4/5] md:aspect-[4/5.1]">
-                    <div class="absolute inset-0 w-full h-full absolute inset-0 w-full h-full object-cover"
-                      style="background: radial-gradient(120% 120% at 30% 20%, rgb(59, 130, 246) 0%, rgb(10, 74, 176) 45%, rgb(8, 30, 74) 100%);">
-                      <div class="absolute inset-0 opacity-20">
-                        <div class="w-full h-full"
-                          style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 28px 28px;">
-                        </div>
-                      </div>
-                      <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="relative">
-                          <div
-                            class="w-[220px] h-[280px] rounded-[32px] bg-gradient-to-b from-white/90 to-white/60 backdrop-blur shadow-[0_20px_60px_rgba(0,0,0,0.25)] flex flex-col items-center justify-center p-6 border border-white/30">
-                            <div
-                              class="w-24 h-24 rounded-full bg-[#0A4AB0] flex items-center justify-center text-white text-[36px] font-black shadow-lg">
-                              A</div>
-                            <div class="mt-4 h-3 w-24 rounded-full bg-[#0A4AB0]/20">
-                            </div>
-                            <div class="mt-2 h-3 w-16 rounded-full bg-[#0A4AB0]/15">
-                            </div>
-                            <div class="mt-6 flex gap-2">
-                              <div class="w-10 h-10 rounded-full bg-[#C6FF00] flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" class="lucide lucide-sparkles text-[#0A1931]">
-                                  <path
-                                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
-                                  </path>
-                                  <path d="M20 3v4"></path>
-                                  <path d="M22 5h-4"></path>
-                                  <path d="M4 17v2"></path>
-                                  <path d="M5 18H3"></path>
-                                </svg>
-                              </div>
-                              <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" class="lucide lucide-globe text-[#0A4AB0]">
-                                  <circle cx="12" cy="12" r="10"></circle>
-                                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                  <path d="M2 12h20"></path>
-                                </svg>
-                              </div>
-                            </div>
-                            <div
-                              class="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#FF7A00] flex items-center justify-center text-white font-bold text-[12px] shadow">
-                              ABM</div>
-                          </div>
-                          <div class="absolute -bottom-4 -left-8 w-20 h-20 rounded-full bg-[#C6FF00]/30 blur-[12px]">
-                          </div>
-                          <div class="absolute -top-6 -right-10 w-28 h-28 rounded-full bg-white/20 blur-[16px]">
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="absolute bottom-[22%] left-1/2 -translate-x-1/2 text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">
-                        Company • ABM FM Blazer #0A4AB0</div>
+        <div class="relative z-10 mx-auto max-w-[1440px] px-4 lg:px-6 py-6 lg:py-10 space-y-10 lg:space-y-16">
+          <!-- Section 01: Company / One Partner -->
+          <section id="section-company" class="relative">
+            <div class="grid lg:grid-cols-[1.15fr_1.35fr] gap-5 lg:gap-6 items-stretch">
+              <!-- Left Column: Full Image & Badges Card -->
+              <div class="company-image-card group">
+                <div class="company-img-container">
+                  <img
+                    src="img/company/our-partner.webp"
+                    alt="One Partner. Multiple Capabilities. Global Reach."
+                    class="company-full-img">
+                </div>
+
+                <!-- Bottom Badges Card -->
+                <div class="company-badges-wrapper">
+                  <div class="company-badge-box">
+                    <div class="company-banner-title">
+                      <div>One Partner.</div>
+                      <div class="text-[#C6FF00] mt-0.5">Multiple Capabilities. Global Reach.</div>
                     </div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1931]/30 via-transparent to-transparent">
-                    </div>
-                    <div
-                      class="absolute top-[22%] left-[28%] w-16 h-7 bg-[#0A4AB0] rounded-[6px] flex items-center justify-center shadow-md rotate-[-8deg] opacity-90">
-                      <span class="text-[9px] font-black tracking-widest text-white">
-                        ABM
-                        <span class="text-[#FF7A00]">FM</span>
-                      </span>
-                    </div>
-                    <div class="absolute top-5 left-5 z-10 flex items-center gap-2.5">
-                      <div class="relative">
+                    <div class="grid grid-cols-4 gap-2">
+                      <div class="text-center">
                         <div
-                          class="w-[56px] h-[56px] rounded-full bg-[#0A4AB0] border-[3px] border-white shadow-[0_10px_28px_rgba(10,74,176,0.4)] flex items-center justify-center">
-                          <div
-                            class="w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center overflow-hidden shadow-inner">
-                            <img
-                              src="data:image/png;base64,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"
-                              alt="ABM FM Logo Place A" class="w-[32px] h-[32px] object-contain">
-                          </div>
-                        </div>
-                        <div
-                          class="absolute -top-1 -right-1 w-[22px] h-[22px] rounded-full bg-[#FF7A00] border-2 border-white shadow flex items-center justify-center text-[11px] font-black text-white leading-none">
-                          A</div>
-                      </div>
-                      <div
-                        class="bg-white rounded-full pl-2 pr-3.5 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.12)] flex items-center gap-2.5">
-                        <div class="w-8 h-8 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-target">
+                            class="lucide lucide-globe w-4 h-4 text-white">
                             <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
                           </svg>
                         </div>
-                        <span class="text-[12px] font-bold text-[#0A4AB0] tracking-wide">01</span>
+                        <div class="company-pillar-name">
+                          Global Reach
+                        </div>
                       </div>
-                    </div>
-                    <div class="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-5 md:right-5">
-                      <div
-                        class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-5 md:p-6 shadow-[0_16px_32px_rgba(10,74,176,0.4)] border border-white/10">
-                        <h3 class="text-white font-extrabold leading-[1.15] text-[18px] md:text-[20px]">
-                          One Partner.
-                          <span class="text-[#C6FF00]">Multiple Capabilities. Global Reach.</span>
-                        </h3>
-                        <p class="text-white/80 text-[11px] md:text-[12px] font-medium mt-1.5 tracking-wide">US, Europe
-                          &amp; Southeast Asia.</p>
-                        <div class="grid grid-cols-2 gap-3 mt-4">
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-globe text-white">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                <path d="M2 12h20"></path>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Global Reach</span>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-layers text-white">
-                                <path
-                                  d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z">
-                                </path>
-                                <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12">
-                                </path>
-                                <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17">
-                                </path>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Multi-Capability</span>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-workflow text-white">
-                                <rect width="8" height="8" x="3" y="3" rx="2"></rect>
-                                <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                                <rect width="8" height="8" x="13" y="13" rx="2"></rect>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Integrated
-                              Solutions</span>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-award text-white">
-                                <path
-                                  d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
-                                </path>
-                                <circle cx="12" cy="8" r="6"></circle>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Operational
-                              Excellence</span>
-                          </div>
+                      <div class="text-center">
+                        <div
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-layers w-4 h-4 text-white">
+                            <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+                            <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                            <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+                          </svg>
+                        </div>
+                        <div class="company-pillar-name">
+                          Multi-Capability
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <div
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-workflow w-4 h-4 text-white">
+                            <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                            <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
+                            <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                          </svg>
+                        </div>
+                        <div class="company-pillar-name">
+                          Integrated FM
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <div
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-award w-4 h-4 text-white">
+                            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                            <circle cx="12" cy="8" r="6"></circle>
+                          </svg>
+                        </div>
+                        <div class="company-pillar-name">
+                          Excellence
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="absolute inset-0 rounded-[32px] ring-1 ring-white/10 pointer-events-none"></div>
               </div>
-              <div class="relative p-6 md:p-8 lg:p-10">
-                <h2 class="text-[36px] md:text-[44px] font-extrabold leading-[1.1] tracking-tight text-[#0F5BFF]">
-                  One Partner. Multiple Capabilities. Global Reach.
-                </h2>
-                <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-5 mb-6">
-                </div>
-                <div class="space-y-4 text-[14.5px] leading-[1.75] text-[#2D3748]">
-                  <p>
-                    We are a US-based
-                    <span class="font-bold text-[#0A1931]">Facility Management, Infrastructure, and Engineering</span>
-                    company delivering integrated solutions across the
-                    <span class="font-bold text-[#0A4AB0]">United States, Europe, and Southeast Asia.</span>
-                  </p>
-                  <p>
-                    Our strength comes from bringing facility expertise, engineering capability, infrastructure
-                    knowledge, and operational excellence together under one organization. This enables our clients to
-                    simplify complex requirements, improve performance, and create greater value across their facilities
-                    and operations.
-                  </p>
-                </div>
-                <div class="mt-7 rounded-[18px] bg-[#EEF4FF] border border-[#D9E6FF] p-4 md:p-5 flex gap-4">
-                  <div
-                    class="shrink-0 w-11 h-11 rounded-[12px] bg-white shadow flex items-center justify-center text-[#0F5BFF]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-target">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <circle cx="12" cy="12" r="6"></circle>
-                      <circle cx="12" cy="12" r="2"></circle>
-                    </svg>
+
+              <!-- Right Column: Content Card -->
+              <div class="relative rounded-[32px] bg-white shadow-[0_20px_60px_-20px_rgba(10,25,49,0.12)] border border-[#EAF0FF] p-6 lg:p-10 overflow-hidden flex flex-col justify-between">
+                <div>
+                  <h2 class="text-[36px] md:text-[44px] font-extrabold leading-[1.1] tracking-tight text-[#0F5BFF]">
+                    One Partner. Multiple Capabilities. Global Reach.
+                  </h2>
+                  <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-5 mb-6"></div>
+                  <div class="space-y-4 text-[14.5px] leading-[1.75] text-[#2D3748]">
+                    <p>
+                      We are a US-based
+                      <span class="font-bold text-[#0A1931]">Facility Management, Infrastructure, and Engineering</span>
+                      company delivering integrated solutions across the
+                      <span class="font-bold text-[#0A4AB0]">United States, Europe, and Southeast Asia.</span>
+                    </p>
+                    <p>
+                      Our strength comes from bringing facility expertise, engineering capability, infrastructure
+                      knowledge, and operational excellence together under one organization. This enables our clients to
+                      simplify complex requirements, improve performance, and create greater value across their facilities
+                      and operations.
+                    </p>
                   </div>
-                  <p class="text-[13.5px] leading-[1.6] text-[#1A2B4A]">
-                    We combine
-                    <span class="font-extrabold text-[#0F5BFF]">international standards</span>
-                    with
-                    <span class="font-extrabold text-[#0F5BFF]">local execution</span>
-                    to deliver
-                    <span class="font-extrabold text-[#0F5BFF]">measurable, efficient, resilient</span>
-                    FM function.
-                  </p>
+                  <div class="mt-7 rounded-[18px] bg-[#EEF4FF] border border-[#D9E6FF] p-4 md:p-5 flex gap-4 items-center">
+                    <div class="shrink-0 w-11 h-11 rounded-[12px] bg-white shadow flex items-center justify-center text-[#0F5BFF]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-target">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                      </svg>
+                    </div>
+                    <p class="text-[13.5px] leading-[1.6] text-[#1A2B4A]">
+                      We combine
+                      <span class="font-extrabold text-[#0F5BFF]">international standards</span>
+                      with
+                      <span class="font-extrabold text-[#0F5BFF]">local execution</span>
+                      to deliver
+                      <span class="font-extrabold text-[#0F5BFF]">measurable, efficient, resilient</span>
+                      FM function.
+                    </p>
+                  </div>
                 </div>
-                <div
-                  class="mt-8 rounded-[18px] bg-[#EEF6FF] border border-[#D6E8FF] px-5 py-4 flex items-center justify-between gap-4 relative overflow-hidden">
+
+                <div class="mt-8 rounded-[18px] bg-[#EEF6FF] border border-[#D6E8FF] px-5 py-4 flex items-center justify-between gap-4 relative overflow-hidden">
                   <div class="flex items-center gap-3.5">
-                    <div
-                      class="w-10 h-10 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white shadow-[0_6px_16px_rgba(15,91,255,0.3)]">
+                    <div class="w-10 h-10 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white shadow-[0_6px_16px_rgba(15,91,255,0.3)]">
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-lightbulb">
-                        <path
-                          d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5">
-                        </path>
+                        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
                         <path d="M9 18h6"></path>
                         <path d="M10 22h4"></path>
                       </svg>
@@ -2225,296 +2221,159 @@
                   </div>
                   <div class="hidden md:flex opacity-60">
                     <div class="flex items-end gap-[3px] h-8">
-                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 12px;">
-                      </div>
-                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 22px;">
-                      </div>
-                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 16px;">
-                      </div>
-                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 28px;">
-                      </div>
-                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 20px;">
-                      </div>
-                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 14px;">
-                      </div>
-                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 24px;">
-                      </div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 12px;"></div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 22px;"></div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 16px;"></div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 28px;"></div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 20px;"></div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 14px;"></div>
+                      <div class="w-[5px] rounded-full bg-[#0F5BFF]/20" style="height: 24px;"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section
-            class="bg-white rounded-[32px] md:rounded-[36px] shadow-[0_24px_80px_rgba(15,91,255,0.08)] border border-slate-100 overflow-hidden">
-            <div class="grid lg:grid-cols-[44%_56%] gap-0">
-              <div class="p-4 md:p-5 lg:p-6 bg-[#FBFCFF]">
-                <div class="relative w-full">
-                  <div
-                    class="relative rounded-[32px] overflow-hidden bg-[#0A4AB0] shadow-[0_24px_64px_-16px_rgba(10,74,176,0.35)] aspect-[4/5] md:aspect-[4/5.1]">
-                    <div class="absolute inset-0 w-full h-full absolute inset-0 w-full h-full object-cover"
-                      style="background: radial-gradient(120% 120% at 30% 20%, rgb(59, 130, 246) 0%, rgb(10, 74, 176) 45%, rgb(8, 30, 74) 100%);">
-                      <div class="absolute inset-0 opacity-20">
-                        <div class="w-full h-full"
-                          style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 28px 28px;">
-                        </div>
-                      </div>
-                      <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="relative">
-                          <div
-                            class="w-[220px] h-[280px] rounded-[32px] bg-gradient-to-b from-white/90 to-white/60 backdrop-blur shadow-[0_20px_60px_rgba(0,0,0,0.25)] flex flex-col items-center justify-center p-6 border border-white/30">
-                            <div
-                              class="w-24 h-24 rounded-full bg-[#0A4AB0] flex items-center justify-center text-white text-[36px] font-black shadow-lg">
-                              A</div>
-                            <div class="mt-4 h-3 w-24 rounded-full bg-[#0A4AB0]/20">
-                            </div>
-                            <div class="mt-2 h-3 w-16 rounded-full bg-[#0A4AB0]/15">
-                            </div>
-                            <div class="mt-6 flex gap-2">
-                              <div class="w-10 h-10 rounded-full bg-[#C6FF00] flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" class="lucide lucide-sparkles text-[#0A1931]">
-                                  <path
-                                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
-                                  </path>
-                                  <path d="M20 3v4"></path>
-                                  <path d="M22 5h-4"></path>
-                                  <path d="M4 17v2"></path>
-                                  <path d="M5 18H3"></path>
-                                </svg>
-                              </div>
-                              <div class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" class="lucide lucide-globe text-[#0A4AB0]">
-                                  <circle cx="12" cy="12" r="10"></circle>
-                                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                  <path d="M2 12h20"></path>
-                                </svg>
-                              </div>
-                            </div>
-                            <div
-                              class="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-[#FF7A00] flex items-center justify-center text-white font-bold text-[12px] shadow">
-                              ABM</div>
-                          </div>
-                          <div class="absolute -bottom-4 -left-8 w-20 h-20 rounded-full bg-[#C6FF00]/30 blur-[12px]">
-                          </div>
-                          <div class="absolute -top-6 -right-10 w-28 h-28 rounded-full bg-white/20 blur-[16px]">
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="absolute bottom-[22%] left-1/2 -translate-x-1/2 text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">
-                        Global Presence • ABM FM Blazer #0A4AB0</div>
+
+          <!-- Section 02: Our Global Presence -->
+          <section class="relative">
+            <div class="grid lg:grid-cols-[1.15fr_1.35fr] gap-5 lg:gap-6 items-stretch">
+              <!-- Left Column: Full Image & Badges Card -->
+              <div class="company-image-card group">
+                <div class="company-img-container">
+                  <img
+                    src="img/company/our-global-presence.webp"
+                    alt="Global Standards. Local Knowledge. Consistent Excellence."
+                    class="company-full-img">
+                </div>
+
+                <!-- Bottom Badges Card -->
+                <div class="company-badges-wrapper">
+                  <div class="company-badge-box">
+                    <div class="company-banner-title">
+                      <div>Global Standards.</div>
+                      <div class="text-[#C6FF00] mt-0.5">Local Knowledge. Consistent Excellence.</div>
                     </div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1931]/30 via-transparent to-transparent">
-                    </div>
-                    <div
-                      class="absolute top-[22%] left-[28%] w-16 h-7 bg-[#0A4AB0] rounded-[6px] flex items-center justify-center shadow-md rotate-[-8deg] opacity-90">
-                      <span class="text-[9px] font-black tracking-widest text-white">
-                        ABM
-                        <span class="text-[#FF7A00]">FM</span>
-                      </span>
-                    </div>
-                    <div class="absolute top-5 left-5 z-10 flex items-center gap-2.5">
-                      <div
-                        class="bg-white rounded-full pl-2 pr-4 py-2 shadow-[0_8px_24px_rgba(0,0,0,0.12)] flex items-center gap-2.5">
-                        <div class="w-8 h-8 rounded-full bg-[#0F5BFF] flex items-center justify-center text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    <div class="grid grid-cols-4 gap-2">
+                      <div class="text-center">
+                        <div
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-target">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
+                            class="lucide lucide-flag w-4 h-4 text-white">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                            <line x1="4" x2="4" y1="22" y2="15"></line>
                           </svg>
                         </div>
-                        <span class="text-[12px] font-bold text-[#0A4AB0] tracking-wide">02</span>
-                        <span class="text-[12px] font-semibold text-[#0A1931]">Global Presence</span>
+                        <div class="company-pillar-name">
+                          US Operations
+                        </div>
                       </div>
-                    </div>
-                    <div class="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-5 md:right-5">
-                      <div
-                        class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-5 md:p-6 shadow-[0_16px_32px_rgba(10,74,176,0.4)] border border-white/10">
-                        <h3 class="text-white font-extrabold leading-[1.15] text-[18px] md:text-[20px]">
-                          Global Standards.
-                          <span class="text-[#C6FF00]">Local Knowledge. Consistent Excellence.</span>
-                        </h3>
-                        <p class="text-white/80 text-[11px] md:text-[12px] font-medium mt-1.5 tracking-wide">
-                          Multi-region operations dashboard</p>
-                        <div class="grid grid-cols-2 gap-3 mt-4">
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-flag text-white">
-                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                                <line x1="4" x2="4" y1="22" y2="15"></line>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">US Operations</span>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-landmark text-white">
-                                <line x1="3" x2="21" y1="22" y2="22"></line>
-                                <line x1="6" x2="6" y1="18" y2="11"></line>
-                                <line x1="10" x2="10" y1="18" y2="11"></line>
-                                <line x1="14" x2="14" y1="18" y2="11"></line>
-                                <line x1="18" x2="18" y1="18" y2="11"></line>
-                                <polygon points="12 2 20 7 4 7"></polygon>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Europe Hub</span>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-globe text-white">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                <path d="M2 12h20"></path>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">SEA Growth</span>
-                          </div>
-                          <div class="flex items-center gap-2">
-                            <div
-                              class="w-7 h-7 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-users text-white">
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                              </svg>
-                            </div>
-                            <span class="text-[11px] font-semibold text-white/90 leading-tight">Local Teams</span>
-                          </div>
+                      <div class="text-center">
+                        <div
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-landmark w-4 h-4 text-white">
+                            <line x1="3" x2="21" y1="22" y2="22"></line>
+                            <line x1="6" x2="6" y1="18" y2="11"></line>
+                            <line x1="10" x2="10" y1="18" y2="11"></line>
+                            <line x1="14" x2="14" y1="18" y2="11"></line>
+                            <line x1="18" x2="18" y1="18" y2="11"></line>
+                            <polygon points="12 2 20 7 4 7"></polygon>
+                          </svg>
+                        </div>
+                        <div class="company-pillar-name">
+                          Europe Hub
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <div
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-globe w-4 h-4 text-white">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                          </svg>
+                        </div>
+                        <div class="company-pillar-name">
+                          SEA Growth
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <div
+                          class="mx-auto w-9 h-9 rounded-[12px] bg-white/15 backdrop-blur flex items-center justify-center border border-white/20">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-users w-4 h-4 text-white">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                          </svg>
+                        </div>
+                        <div class="company-pillar-name">
+                          Local Teams
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="absolute inset-0 rounded-[32px] ring-1 ring-white/10 pointer-events-none"></div>
               </div>
-              <div class="p-6 md:p-8 lg:p-10">
-                <div class="flex items-start justify-between gap-4">
-                  <div>
-                    <h2 class="text-[32px] md:text-[40px] font-extrabold leading-[0.95] tracking-tight">
-                      <span class="text-[#0A1931]">Our Global</span>
-                      <span class="text-[#0F5BFF]">Presence</span>
-                    </h2>
-                    <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-4 mb-5">
+
+              <!-- Right Column: Content Card -->
+              <div class="relative rounded-[32px] bg-white shadow-[0_20px_60px_-20px_rgba(10,25,49,0.12)] border border-[#EAF0FF] p-6 lg:p-10 overflow-hidden flex flex-col justify-between">
+                <div>
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <h2 class="text-[32px] md:text-[40px] font-extrabold leading-[0.95] tracking-tight">
+                        <span class="text-[#0A1931]">Our Global</span>
+                        <span class="text-[#0F5BFF]">Presence</span>
+                      </h2>
+                      <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-4 mb-5"></div>
+                    </div>
+                    <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#EEF4FF] border border-[#D9E6FF]">
+                      <div class="w-2 h-2 rounded-full bg-[#00D1A0]"></div>
+                      <span class="text-[11.5px] font-bold text-[#0F5BFF] uppercase tracking-wider">Active Operations</span>
                     </div>
                   </div>
-                  <div
-                    class="hidden md:block rounded-full px-3 py-1 text-[11px] font-bold bg-gradient-to-r from-[#0F5BFF] to-[#2EC5B6] text-white">
-                    Core Advisory Service</div>
-                </div>
-                <p class="text-[14.5px] leading-[1.75] text-[#2D3748]">
-                  With operations spanning multiple regions, we combine international standards with local knowledge and
-                  execution. Our teams understand the unique operational, regulatory, cultural, and technical
-                  requirements of the markets we serve. From individual facilities to multi-site and international
-                  portfolios, we provide consistent service backed by local expertise.
-                </p>
-                <div class="mt-6">
-                  <p
-                    class="text-[11px] font-bold tracking-[0.18em] text-[#0A4AB0] uppercase mb-3 flex items-center gap-2">
-                    <span class="w-6 h-[2px] bg-[#0A4AB0]">
-                    </span>
-                    Key Areas
+                  <p class="text-[14px] md:text-[14.5px] leading-[1.7] text-[#2D3748] mb-6">
+                    Delivering world-class facility management across key global hubs — ensuring consistency, compliance,
+                    and operational continuity everywhere our clients operate.
                   </p>
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                    <div
-                      class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
-                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center"
-                        style="background-color: rgb(224, 231, 255); color: rgb(67, 56, 202);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide lucide-flag">
-                          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                          <line x1="4" x2="4" y1="22" y2="15"></line>
+                  <div class="grid sm:grid-cols-2 gap-3.5 mb-6">
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(238, 242, 255); color: rgb(79, 70, 229);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-2">
+                          <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                          <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                          <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                          <path d="M10 6h4"></path>
+                          <path d="M10 10h4"></path>
+                          <path d="M10 14h4"></path>
+                          <path d="M10 18h4"></path>
                         </svg>
                       </div>
-                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">US Operations</p>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Multi-Regional Delivery</p>
                     </div>
-                    <div
-                      class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
-                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center"
-                        style="background-color: rgb(209, 250, 229); color: rgb(5, 150, 105);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide lucide-landmark">
-                          <line x1="3" x2="21" y1="22" y2="22"></line>
-                          <line x1="6" x2="6" y1="18" y2="11"></line>
-                          <line x1="10" x2="10" y1="18" y2="11"></line>
-                          <line x1="14" x2="14" y1="18" y2="11"></line>
-                          <line x1="18" x2="18" y1="18" y2="11"></line>
-                          <polygon points="12 2 20 7 4 7"></polygon>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(240, 253, 244); color: rgb(22, 163, 74);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network">
+                          <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                          <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                          <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                          <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                          <path d="M12 12V8"></path>
                         </svg>
                       </div>
-                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Europe Operations
-                      </p>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Connected Global Network</p>
                     </div>
-                    <div
-                      class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
-                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center"
-                        style="background-color: rgb(254, 243, 199); color: rgb(217, 119, 6);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide lucide-globe">
-                          <circle cx="12" cy="12" r="10"></circle>
-                          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                          <path d="M2 12h20"></path>
-                        </svg>
-                      </div>
-                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Southeast Asia
-                        Operations</p>
-                    </div>
-                    <div
-                      class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
-                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center"
-                        style="background-color: rgb(252, 231, 243); color: rgb(219, 39, 119);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide lucide-boxes">
-                          <path
-                            d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z">
-                          </path>
-                          <path d="m7 16.5-4.74-2.85"></path>
-                          <path d="m7 16.5 5-3"></path>
-                          <path d="M7 16.5v5.17"></path>
-                          <path
-                            d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z">
-                          </path>
-                          <path d="m17 16.5-5-3"></path>
-                          <path d="m17 16.5 4.74-2.85"></path>
-                          <path d="M17 16.5v5.17"></path>
-                          <path
-                            d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z">
-                          </path>
-                          <path d="M12 8 7.26 5.15"></path>
-                          <path d="m12 8 4.74-2.85"></path>
-                          <path d="M12 13.5V8"></path>
-                        </svg>
-                      </div>
-                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Multi-Site
-                        Portfolios</p>
-                    </div>
-                    <div
-                      class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
-                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center"
-                        style="background-color: rgb(224, 242, 254); color: rgb(2, 132, 199);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide lucide-users">
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(255, 247, 237); color: rgb(234, 88, 12);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users">
                           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                           <circle cx="9" cy="7" r="4"></circle>
                           <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -2523,46 +2382,31 @@
                       </div>
                       <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">Local Expertise</p>
                     </div>
-                    <div
-                      class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
-                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center"
-                        style="background-color: rgb(237, 233, 254); color: rgb(124, 58, 237);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide lucide-shield-check">
-                          <path
-                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
-                          </path>
+                    <div class="group bg-white rounded-[18px] p-[14px] md:p-4 border border-slate-100 shadow-[0_8px_24px_rgba(15,91,255,0.06)] hover:shadow-[0_16px_32px_rgba(15,91,255,0.12)] hover:-translate-y-[2px] transition-all duration-300 flex items-start gap-3.5">
+                      <div class="shrink-0 w-11 h-11 rounded-[12px] flex items-center justify-center" style="background-color: rgb(237, 233, 254); color: rgb(124, 58, 237);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check">
+                          <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                           <path d="m9 12 2 2 4-4"></path>
                         </svg>
                       </div>
-                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">International
-                        Standards</p>
+                      <p class="text-[13.5px] font-semibold leading-[1.35] text-[#0A1931] pt-[3px]">International Standards</p>
                     </div>
                   </div>
                 </div>
-                <div class="mt-10 pt-8 border-t border-slate-100">
-                  <h3 class="text-[28px] md:text-[32px] font-extrabold leading-[0.95] tracking-tight">
+                <div class="mt-8 pt-6 border-t border-slate-100">
+                  <h3 class="text-[24px] md:text-[28px] font-extrabold leading-[0.95] tracking-tight">
                     <span class="text-[#0A1931]">Our Global</span>
                     <span class="text-[#0F5BFF]">Standard</span>
                   </h3>
-                  <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-4 mb-4">
-                  </div>
+                  <div class="w-12 h-1 bg-[#FF7A00] rounded-full mt-3 mb-3"></div>
                   <p class="text-[14px] leading-[1.7] text-[#2D3748]">
                     Wherever we operate, our commitment remains consistent:
-                    <span class="font-bold text-[#0A1931]">Operational excellence. Engineering expertise. Reliable
-                      delivery. Measurable results.</span>
-                    We help organizations operate better facilities today while building the capability, resilience, and
-                    efficiency needed for tomorrow.
+                    <span class="font-bold text-[#0A1931]">Operational excellence. Engineering expertise. Reliable delivery. Measurable results.</span>
                   </p>
-                  <div class="mt-5 rounded-[18px] bg-[#EEF4FF] border border-[#D9E6FF] p-4 flex gap-3">
+                  <div class="mt-4 rounded-[18px] bg-[#EEF4FF] border border-[#D9E6FF] p-4 flex gap-3 items-center">
                     <div class="w-9 h-9 rounded-[10px] bg-white flex items-center justify-center text-[#0F5BFF] shadow">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-graduation-cap">
-                        <path
-                          d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
-                        </path>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap">
+                        <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
                         <path d="M22 10v6"></path>
                         <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
                       </svg>
@@ -2621,10 +2465,7 @@
               </div>
             </div>
           </section>
-          <footer class="pb-8 pt-2 text-center">
-            <p class="text-[11px] tracking-widest font-bold text-slate-400 uppercase">ABM FM • Facility Management •
-              Infrastructure • Engineering • © 2025</p>
-          </footer>
+
         </div>
       </div>
     </section>
