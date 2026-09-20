@@ -1792,6 +1792,36 @@
       z-index: 1;
       font-family: 'Inter', sans-serif;
     }
+
+    .perspective-banner-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.15rem, 1.6vw, 1.38rem);
+      font-weight: 700;
+      line-height: 1.28;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+
+    .perspective-pillar-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      line-height: 1.22;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 767px) {
+      .perspective-banner-title {
+        font-size: 1.08rem;
+        margin-bottom: 12px;
+      }
+
+      .perspective-pillar-name {
+        font-size: 0.68rem;
+      }
+    }
   </style>
 </head>
 
@@ -1838,10 +1868,9 @@
                 <div class="absolute bottom-4 left-4 right-4 z-10">
                   <div
                     class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-[22px] shadow-[0_20px_40px_rgba(10,74,176,0.45)] border border-white/10 backdrop-blur-sm">
-                    <div class="display font-extrabold leading-[1.05] tracking-tight">
-                      <div class="text-white text-[20px] lg:text-[22px]">Creating Better Places.</div>
-                      <div class="text-[#C6FF00] text-[20px] lg:text-[22px] mt-1">Better Facilities. Stronger Business.
-                      </div>
+                    <div class="perspective-banner-title">
+                      <div>Creating Better Places.</div>
+                      <div class="text-[#C6FF00] mt-0.5">Better Facilities. Stronger Business.</div>
                     </div>
                     <div class="mt-4 sm:mt-5 grid grid-cols-4 gap-1.5 sm:gap-2.5">
                       <div class="text-center">
@@ -1855,8 +1884,7 @@
                             <circle cx="12" cy="12" r="2"></circle>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Strategic Alignment
                         </div>
                       </div>
@@ -1872,8 +1900,7 @@
                             <circle cx="7" cy="7" r="3"></circle>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Operational Excellence
                         </div>
                       </div>
@@ -1888,8 +1915,7 @@
                             </path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Risk &amp; Cost Optimization
                         </div>
                       </div>
@@ -1904,8 +1930,7 @@
                             <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Sustainable Future
                         </div>
                       </div>
@@ -2022,10 +2047,9 @@
                 <div class="absolute bottom-4 left-4 right-4 z-10">
                   <div
                     class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-[22px] shadow-[0_20px_40px_rgba(10,74,176,0.45)] border border-white/10 backdrop-blur-sm">
-                    <div class="display font-extrabold leading-[1.05] tracking-tight">
-                      <div class="text-white text-[20px] lg:text-[22px]">A Well-Managed Facility Should Be</div>
-                      <div class="text-[#C6FF00] text-[20px] lg:text-[22px] mt-1">Safe, Efficient, Reliable, and
-                        Future-Ready.</div>
+                    <div class="perspective-banner-title">
+                      <div>A Well-Managed Facility Should Be</div>
+                      <div class="text-[#C6FF00] mt-0.5">Safe, Efficient, Reliable, and Future-Ready.</div>
                     </div>
                     <div class="mt-4 sm:mt-5 grid grid-cols-4 gap-1.5 sm:gap-2.5">
                       <div class="text-center">
@@ -2039,8 +2063,7 @@
                             </path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Reliability First
                         </div>
                       </div>
@@ -2056,8 +2079,7 @@
                             <path d="M8 17v-3"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Risk Profiling
                         </div>
                       </div>
@@ -2072,8 +2094,7 @@
                             </path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Predictive Insights
                         </div>
                       </div>
@@ -2084,7 +2105,7 @@
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-building2 w-4 h-4 text-white">
                             <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
-                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 2 2h2"></path>
                             <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
                             <path d="M10 6h4"></path>
                             <path d="M10 10h4"></path>
@@ -2092,8 +2113,7 @@
                             <path d="M10 18h4"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Asset Value
                         </div>
                       </div>
@@ -2352,9 +2372,9 @@
                 <div class="absolute bottom-4 left-4 right-4 z-10">
                   <div
                     class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-[22px] shadow-[0_20px_40px_rgba(10,74,176,0.45)] border border-white/10 backdrop-blur-sm">
-                    <div class="display font-extrabold leading-[1.05] tracking-tight">
-                      <div class="text-white text-[20px] lg:text-[22px]">Facilities Are Ultimately</div>
-                      <div class="text-[#C6FF00] text-[20px] lg:text-[22px] mt-1">About People.</div>
+                    <div class="perspective-banner-title">
+                      <div>Facilities Are Ultimately</div>
+                      <div class="text-[#C6FF00] mt-0.5">About People.</div>
                     </div>
                     <div class="mt-4 sm:mt-5 grid grid-cols-4 gap-1.5 sm:gap-2.5">
                       <div class="text-center">
@@ -2373,8 +2393,7 @@
                             <path d="m15 18-2-2"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Stakeholder Alignment
                         </div>
                       </div>
@@ -2389,8 +2408,7 @@
                             <path d="m9 14 2 2 4-4"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           SLA Governance
                         </div>
                       </div>
@@ -2406,8 +2424,7 @@
                             <path d="M8 17v-3"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Experience Metrics
                         </div>
                       </div>
@@ -2422,8 +2439,7 @@
                             <circle cx="12" cy="12" r="2"></circle>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Accountable Delivery
                         </div>
                       </div>
@@ -2686,10 +2702,9 @@
                 <div class="absolute bottom-4 left-4 right-4 z-10">
                   <div
                     class="rounded-[22px] bg-gradient-to-br from-[#0D6EFD] to-[#0A4AB0] p-[22px] shadow-[0_20px_40px_rgba(10,74,176,0.45)] border border-white/10 backdrop-blur-sm">
-                    <div class="display font-extrabold leading-[1.05] tracking-tight">
-                      <div class="text-white text-[20px] lg:text-[22px]">Driving Sustainability.</div>
-                      <div class="text-[#C6FF00] text-[20px] lg:text-[22px] mt-1">Powering Green Value. Engineering
-                        Intelligence.</div>
+                    <div class="perspective-banner-title">
+                      <div>Driving Sustainability.</div>
+                      <div class="text-[#C6FF00] mt-0.5">Powering Green Value. Engineering Intelligence.</div>
                     </div>
                     <div class="mt-4 sm:mt-5 grid grid-cols-4 gap-1.5 sm:gap-2.5">
                       <div class="text-center">
@@ -2710,8 +2725,7 @@
                             <path d="M9 20v2"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           CAFM Strategy
                         </div>
                       </div>
@@ -2726,8 +2740,7 @@
                             </path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           IoT Monitoring
                         </div>
                       </div>
@@ -2743,8 +2756,7 @@
                             <path d="M8 17v-3"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Energy Analytics
                         </div>
                       </div>
@@ -2766,8 +2778,7 @@
                             <path d="m13.378 9.633 4.096 1.098 1.097-4.096"></path>
                           </svg>
                         </div>
-                        <div
-                          class="mt-1.5 text-[7.5px] sm:text-[8.5px] md:text-[9px] font-bold leading-tight tracking-tight sm:tracking-wide text-white/90 uppercase whitespace-nowrap">
+                        <div class="perspective-pillar-name">
                           Net-Zero Roadmap
                         </div>
                       </div>
