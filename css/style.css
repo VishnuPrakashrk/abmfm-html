@@ -7785,3 +7785,57 @@ sup {
     padding-right: 14px !important;
   }
 }
+
+
+/* ==========================================================================
+   Pillar Circular Icon Badges & Text - Prevent Overlap & Oval Distortion
+   ========================================================================== */
+.pillar-circle-badge {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.pillar-circle-badge svg {
+  width: 13px !important;
+  height: 13px !important;
+  flex-shrink: 0 !important;
+}
+
+.pillar-badge-text {
+  font-size: 9.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+  line-height: 1.15 !important;
+  color: #FFFFFF !important;
+  min-width: 0 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+}
+
+@media (min-width: 640px) {
+  .pillar-badge-text {
+    font-size: 10px !important;
+  }
+}
+
+
+/* ==========================================================================
+   About Page Hero Presentation Graphic Background (CSS Diagonal Blue & Orange)
+   ========================================================================== */
+.about-hero-color-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0F49E8 0%, #0F49E8 57.5%, #F57F04 58%, #F57F04 100%);
+}
