@@ -7439,14 +7439,16 @@ sup {
   margin-bottom: 16px;
 }
 
-.company-pillar-name {
+.company-pillar-name,
+.perspective-pillar-name,
+.about-pillar-name {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 600;
   color: #FFFFFF;
   line-height: 1.22;
   text-align: center;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .perspective-banner-title {
@@ -7456,16 +7458,6 @@ sup {
   line-height: 1.28;
   color: #FFFFFF;
   margin-bottom: 16px;
-}
-
-.perspective-pillar-name {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #FFFFFF;
-  line-height: 1.22;
-  text-align: center;
-  margin-top: 8px;
 }
 
 /* ==========================================================================
